@@ -118,7 +118,8 @@ namespace InterfaceDATMA
             this.Fecha});
             this.dgvInfCurso.EnableHeadersVisualStyles = false;
             this.dgvInfCurso.GridColor = System.Drawing.Color.SteelBlue;
-            this.dgvInfCurso.Location = new System.Drawing.Point(514, 458);
+            this.dgvInfCurso.Location = new System.Drawing.Point(343, 298);
+            this.dgvInfCurso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvInfCurso.Name = "dgvInfCurso";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
@@ -136,27 +137,25 @@ namespace InterfaceDATMA
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dgvInfCurso.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInfCurso.RowTemplate.Height = 28;
-            this.dgvInfCurso.Size = new System.Drawing.Size(933, 248);
+            this.dgvInfCurso.Size = new System.Drawing.Size(622, 161);
             this.dgvInfCurso.TabIndex = 18;
             // 
             // lblTituloDescripcion
             // 
             this.lblTituloDescripcion.AutoSize = true;
             this.lblTituloDescripcion.ForeColor = System.Drawing.Color.White;
-            this.lblTituloDescripcion.Location = new System.Drawing.Point(969, 77);
-            this.lblTituloDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTituloDescripcion.Location = new System.Drawing.Point(646, 50);
             this.lblTituloDescripcion.Name = "lblTituloDescripcion";
-            this.lblTituloDescripcion.Size = new System.Drawing.Size(162, 20);
+            this.lblTituloDescripcion.Size = new System.Drawing.Size(109, 13);
             this.lblTituloDescripcion.TabIndex = 8;
             this.lblTituloDescripcion.Text = "Acerca de este Curso";
             // 
             // lblDescripcionCurso
             // 
             this.lblDescripcionCurso.ForeColor = System.Drawing.Color.White;
-            this.lblDescripcionCurso.Location = new System.Drawing.Point(996, 117);
-            this.lblDescripcionCurso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescripcionCurso.Location = new System.Drawing.Point(664, 76);
             this.lblDescripcionCurso.Name = "lblDescripcionCurso";
-            this.lblDescripcionCurso.Size = new System.Drawing.Size(453, 111);
+            this.lblDescripcionCurso.Size = new System.Drawing.Size(302, 72);
             this.lblDescripcionCurso.TabIndex = 9;
             this.lblDescripcionCurso.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate fringil" +
     "la ante, id varius purus mollis non.";
@@ -165,47 +164,42 @@ namespace InterfaceDATMA
             // 
             this.lblTituloEncargado.AutoSize = true;
             this.lblTituloEncargado.ForeColor = System.Drawing.Color.White;
-            this.lblTituloEncargado.Location = new System.Drawing.Point(974, 195);
-            this.lblTituloEncargado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTituloEncargado.Location = new System.Drawing.Point(649, 127);
             this.lblTituloEncargado.Name = "lblTituloEncargado";
-            this.lblTituloEncargado.Size = new System.Drawing.Size(177, 20);
+            this.lblTituloEncargado.Size = new System.Drawing.Size(118, 13);
             this.lblTituloEncargado.TabIndex = 10;
             this.lblTituloEncargado.Text = "Encargado(a) del Curso";
             // 
             // lblInformacionEncargada
             // 
             this.lblInformacionEncargada.ForeColor = System.Drawing.Color.White;
-            this.lblInformacionEncargada.Location = new System.Drawing.Point(1154, 254);
-            this.lblInformacionEncargada.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInformacionEncargada.Location = new System.Drawing.Point(769, 165);
             this.lblInformacionEncargada.Name = "lblInformacionEncargada";
-            this.lblInformacionEncargada.Size = new System.Drawing.Size(356, 52);
+            this.lblInformacionEncargada.Size = new System.Drawing.Size(237, 34);
             this.lblInformacionEncargada.TabIndex = 11;
             this.lblInformacionEncargada.Text = "Caballera Mellanois\nEducación: Abogada Penalista";
             // 
             // txtBoxFechaIni
             // 
-            this.txtBoxFechaIni.Location = new System.Drawing.Point(658, 220);
-            this.txtBoxFechaIni.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBoxFechaIni.Location = new System.Drawing.Point(439, 143);
             this.txtBoxFechaIni.Name = "txtBoxFechaIni";
-            this.txtBoxFechaIni.Size = new System.Drawing.Size(148, 26);
+            this.txtBoxFechaIni.Size = new System.Drawing.Size(100, 20);
             this.txtBoxFechaIni.TabIndex = 6;
             // 
             // txtBoxFechaFin
             // 
-            this.txtBoxFechaFin.Location = new System.Drawing.Point(658, 272);
-            this.txtBoxFechaFin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBoxFechaFin.Location = new System.Drawing.Point(439, 177);
             this.txtBoxFechaFin.Name = "txtBoxFechaFin";
-            this.txtBoxFechaFin.Size = new System.Drawing.Size(148, 26);
+            this.txtBoxFechaFin.Size = new System.Drawing.Size(100, 20);
             this.txtBoxFechaFin.TabIndex = 7;
             // 
             // lblMes
             // 
             this.lblMes.AutoSize = true;
             this.lblMes.ForeColor = System.Drawing.Color.White;
-            this.lblMes.Location = new System.Drawing.Point(684, 400);
-            this.lblMes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMes.Location = new System.Drawing.Point(456, 260);
             this.lblMes.Name = "lblMes";
-            this.lblMes.Size = new System.Drawing.Size(96, 20);
+            this.lblMes.Size = new System.Drawing.Size(65, 13);
             this.lblMes.TabIndex = 17;
             this.lblMes.Text = "MAYO 2021";
             // 
@@ -213,10 +207,9 @@ namespace InterfaceDATMA
             // 
             this.lblNumeroModulo.AutoSize = true;
             this.lblNumeroModulo.ForeColor = System.Drawing.Color.White;
-            this.lblNumeroModulo.Location = new System.Drawing.Point(432, 78);
-            this.lblNumeroModulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumeroModulo.Location = new System.Drawing.Point(288, 51);
             this.lblNumeroModulo.Name = "lblNumeroModulo";
-            this.lblNumeroModulo.Size = new System.Drawing.Size(74, 20);
+            this.lblNumeroModulo.Size = new System.Drawing.Size(51, 13);
             this.lblNumeroModulo.TabIndex = 3;
             this.lblNumeroModulo.Text = "Modulo 1";
             // 
@@ -224,10 +217,9 @@ namespace InterfaceDATMA
             // 
             this.lblTituloGeneral.AutoSize = true;
             this.lblTituloGeneral.ForeColor = System.Drawing.Color.White;
-            this.lblTituloGeneral.Location = new System.Drawing.Point(426, 129);
-            this.lblTituloGeneral.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTituloGeneral.Location = new System.Drawing.Point(284, 84);
             this.lblTituloGeneral.Name = "lblTituloGeneral";
-            this.lblTituloGeneral.Size = new System.Drawing.Size(164, 20);
+            this.lblTituloGeneral.Size = new System.Drawing.Size(109, 13);
             this.lblTituloGeneral.TabIndex = 2;
             this.lblTituloGeneral.Text = "Información del Curso";
             // 
@@ -235,10 +227,9 @@ namespace InterfaceDATMA
             // 
             this.lblNombreModulo.AutoSize = true;
             this.lblNombreModulo.ForeColor = System.Drawing.Color.White;
-            this.lblNombreModulo.Location = new System.Drawing.Point(510, 175);
-            this.lblNombreModulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreModulo.Location = new System.Drawing.Point(340, 114);
             this.lblNombreModulo.Name = "lblNombreModulo";
-            this.lblNombreModulo.Size = new System.Drawing.Size(133, 20);
+            this.lblNombreModulo.Size = new System.Drawing.Size(90, 13);
             this.lblNombreModulo.TabIndex = 0;
             this.lblNombreModulo.Text = "Modulo nro1-3.52";
             // 
@@ -246,10 +237,9 @@ namespace InterfaceDATMA
             // 
             this.lblFechaIni.AutoSize = true;
             this.lblFechaIni.ForeColor = System.Drawing.Color.White;
-            this.lblFechaIni.Location = new System.Drawing.Point(510, 220);
-            this.lblFechaIni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFechaIni.Location = new System.Drawing.Point(340, 143);
             this.lblFechaIni.Name = "lblFechaIni";
-            this.lblFechaIni.Size = new System.Drawing.Size(117, 20);
+            this.lblFechaIni.Size = new System.Drawing.Size(80, 13);
             this.lblFechaIni.TabIndex = 5;
             this.lblFechaIni.Text = "Fecha de Inicio";
             // 
@@ -257,10 +247,9 @@ namespace InterfaceDATMA
             // 
             this.lblFechaFin.AutoSize = true;
             this.lblFechaFin.ForeColor = System.Drawing.Color.White;
-            this.lblFechaFin.Location = new System.Drawing.Point(510, 272);
-            this.lblFechaFin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFechaFin.Location = new System.Drawing.Point(340, 177);
             this.lblFechaFin.Name = "lblFechaFin";
-            this.lblFechaFin.Size = new System.Drawing.Size(102, 20);
+            this.lblFechaFin.Size = new System.Drawing.Size(69, 13);
             this.lblFechaFin.TabIndex = 4;
             this.lblFechaFin.Text = "Fecha de Fin";
             // 
@@ -268,10 +257,9 @@ namespace InterfaceDATMA
             // 
             this.lblHorario.AutoSize = true;
             this.lblHorario.ForeColor = System.Drawing.Color.White;
-            this.lblHorario.Location = new System.Drawing.Point(432, 400);
-            this.lblHorario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHorario.Location = new System.Drawing.Point(288, 260);
             this.lblHorario.Name = "lblHorario";
-            this.lblHorario.Size = new System.Drawing.Size(61, 20);
+            this.lblHorario.Size = new System.Drawing.Size(41, 13);
             this.lblHorario.TabIndex = 14;
             this.lblHorario.Text = "Horario";
             // 
@@ -288,16 +276,18 @@ namespace InterfaceDATMA
             this.pnlMenuVertical.Controls.Add(this.pictureBox1);
             this.pnlMenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenuVertical.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenuVertical.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlMenuVertical.Name = "pnlMenuVertical";
-            this.pnlMenuVertical.Size = new System.Drawing.Size(381, 723);
+            this.pnlMenuVertical.Size = new System.Drawing.Size(254, 470);
             this.pnlMenuVertical.TabIndex = 19;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(3, 789);
+            this.panel4.Location = new System.Drawing.Point(2, 513);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 55);
+            this.panel4.Size = new System.Drawing.Size(7, 36);
             this.panel4.TabIndex = 8;
             // 
             // btnSalir
@@ -308,9 +298,10 @@ namespace InterfaceDATMA
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(22, 789);
+            this.btnSalir.Location = new System.Drawing.Point(15, 513);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(356, 55);
+            this.btnSalir.Size = new System.Drawing.Size(237, 36);
             this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -318,17 +309,19 @@ namespace InterfaceDATMA
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(3, 438);
+            this.panel3.Location = new System.Drawing.Point(2, 285);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 55);
+            this.panel3.Size = new System.Drawing.Size(7, 36);
             this.panel3.TabIndex = 6;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(3, 378);
+            this.panel2.Location = new System.Drawing.Point(2, 246);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 55);
+            this.panel2.Size = new System.Drawing.Size(7, 36);
             this.panel2.TabIndex = 4;
             // 
             // btnPerfil
@@ -341,9 +334,10 @@ namespace InterfaceDATMA
             this.btnPerfil.ForeColor = System.Drawing.Color.White;
             this.btnPerfil.Image = global::InterfazDATMA.Properties.Resources.empleados;
             this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPerfil.Location = new System.Drawing.Point(22, 378);
+            this.btnPerfil.Location = new System.Drawing.Point(15, 246);
+            this.btnPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(356, 55);
+            this.btnPerfil.Size = new System.Drawing.Size(237, 36);
             this.btnPerfil.TabIndex = 3;
             this.btnPerfil.Text = "PERFIL";
             this.btnPerfil.UseVisualStyleBackColor = false;
@@ -351,9 +345,10 @@ namespace InterfaceDATMA
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(3, 315);
+            this.panel1.Location = new System.Drawing.Point(2, 205);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 55);
+            this.panel1.Size = new System.Drawing.Size(7, 36);
             this.panel1.TabIndex = 2;
             // 
             // btnInicio
@@ -366,9 +361,10 @@ namespace InterfaceDATMA
             this.btnInicio.ForeColor = System.Drawing.Color.White;
             this.btnInicio.Image = global::InterfazDATMA.Properties.Resources.producto;
             this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.Location = new System.Drawing.Point(22, 315);
+            this.btnInicio.Location = new System.Drawing.Point(15, 205);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(356, 55);
+            this.btnInicio.Size = new System.Drawing.Size(237, 36);
             this.btnInicio.TabIndex = 1;
             this.btnInicio.Text = "INICIO";
             this.btnInicio.UseVisualStyleBackColor = false;
@@ -377,9 +373,10 @@ namespace InterfaceDATMA
             // pictureBox1
             // 
             this.pictureBox1.Image = global::InterfazDATMA.Properties.Resources.DATMA_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(46, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(284, 228);
+            this.pictureBox1.Size = new System.Drawing.Size(189, 148);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -387,10 +384,10 @@ namespace InterfaceDATMA
             // pictBoxEncargada
             // 
             this.pictBoxEncargada.Image = global::InterfazDATMA.Properties.Resources.avatarPsicologa;
-            this.pictBoxEncargada.Location = new System.Drawing.Point(1000, 232);
-            this.pictBoxEncargada.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictBoxEncargada.Location = new System.Drawing.Point(667, 151);
             this.pictBoxEncargada.Name = "pictBoxEncargada";
-            this.pictBoxEncargada.Size = new System.Drawing.Size(117, 92);
+            this.pictBoxEncargada.Size = new System.Drawing.Size(78, 60);
+            this.pictBoxEncargada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictBoxEncargada.TabIndex = 12;
             this.pictBoxEncargada.TabStop = false;
             // 
@@ -401,9 +398,10 @@ namespace InterfaceDATMA
             this.btnVerMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnVerMas.ForeColor = System.Drawing.Color.White;
-            this.btnVerMas.Location = new System.Drawing.Point(582, 69);
+            this.btnVerMas.Location = new System.Drawing.Point(388, 45);
+            this.btnVerMas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVerMas.Name = "btnVerMas";
-            this.btnVerMas.Size = new System.Drawing.Size(136, 37);
+            this.btnVerMas.Size = new System.Drawing.Size(91, 24);
             this.btnVerMas.TabIndex = 20;
             this.btnVerMas.Text = "VER MÁS";
             this.btnVerMas.UseVisualStyleBackColor = false;
@@ -416,9 +414,10 @@ namespace InterfaceDATMA
             this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnAnterior.ForeColor = System.Drawing.Color.White;
-            this.btnAnterior.Location = new System.Drawing.Point(514, 392);
+            this.btnAnterior.Location = new System.Drawing.Point(343, 255);
+            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(136, 37);
+            this.btnAnterior.Size = new System.Drawing.Size(91, 24);
             this.btnAnterior.TabIndex = 21;
             this.btnAnterior.Text = "Anterior";
             this.btnAnterior.UseVisualStyleBackColor = false;
@@ -430,19 +429,20 @@ namespace InterfaceDATMA
             this.btnSig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnSig.ForeColor = System.Drawing.Color.White;
-            this.btnSig.Location = new System.Drawing.Point(802, 391);
+            this.btnSig.Location = new System.Drawing.Point(535, 254);
+            this.btnSig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSig.Name = "btnSig";
-            this.btnSig.Size = new System.Drawing.Size(136, 37);
+            this.btnSig.Size = new System.Drawing.Size(91, 24);
             this.btnSig.TabIndex = 22;
             this.btnSig.Text = "Siguiente";
             this.btnSig.UseVisualStyleBackColor = false;
             // 
             // frmInformacionCurso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(1544, 723);
+            this.ClientSize = new System.Drawing.Size(1029, 470);
             this.Controls.Add(this.btnSig);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnVerMas);
@@ -462,7 +462,6 @@ namespace InterfaceDATMA
             this.Controls.Add(this.lblNumeroModulo);
             this.Controls.Add(this.lblTituloGeneral);
             this.Controls.Add(this.lblNombreModulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmInformacionCurso";
             this.Text = "Informacion del Curso";
             this.Load += new System.EventHandler(this.frmInformacionCurso_Load);

@@ -28,5 +28,10 @@ namespace InterfaceDATMA
             formularioMostrar.Show();
             this.Hide();
         }
+
+        private void btnIrCurso_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -60,6 +60,7 @@ namespace InterfaceDATMA
             this.btnIrCurso.TabIndex = 23;
             this.btnIrCurso.Text = "IR AL CURSO";
             this.btnIrCurso.UseVisualStyleBackColor = false;
+            this.btnIrCurso.Click += new System.EventHandler(this.btnIrCurso_Click);
             // 
             // btnIrLista
             // 

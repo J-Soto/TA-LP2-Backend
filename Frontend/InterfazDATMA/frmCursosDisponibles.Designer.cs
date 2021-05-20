@@ -284,6 +284,7 @@ namespace InterfaceDATMA
             this.btnMasInfo.TabIndex = 24;
             this.btnMasInfo.Text = "VER MÁS INFORMACIÓN";
             this.btnMasInfo.UseVisualStyleBackColor = false;
+            this.btnMasInfo.Click += new System.EventHandler(this.btnMasInfo_Click);
             // 
             // frmCursosDisponibles
             // 
