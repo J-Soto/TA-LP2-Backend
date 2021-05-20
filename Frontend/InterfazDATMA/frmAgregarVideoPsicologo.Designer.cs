@@ -40,38 +40,43 @@ namespace InterfaceDATMA
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 45);
+            this.label1.Location = new System.Drawing.Point(16, 56);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 29);
+            this.label1.Size = new System.Drawing.Size(193, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Descripcion:";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(194, 45);
+            this.txtDescripcion.Location = new System.Drawing.Point(259, 56);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(451, 81);
+            this.txtDescripcion.Size = new System.Drawing.Size(600, 100);
             this.txtDescripcion.TabIndex = 1;
             this.txtDescripcion.Text = "";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(63, 162);
+            this.label2.Location = new System.Drawing.Point(84, 202);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 29);
+            this.label2.Size = new System.Drawing.Size(108, 37);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Archivo:";
+            this.label2.Text = "Video:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtlinkArchivo
             // 
-            this.txtlinkArchivo.Location = new System.Drawing.Point(194, 162);
+            this.txtlinkArchivo.Location = new System.Drawing.Point(259, 202);
+            this.txtlinkArchivo.Margin = new System.Windows.Forms.Padding(4);
             this.txtlinkArchivo.Name = "txtlinkArchivo";
-            this.txtlinkArchivo.Size = new System.Drawing.Size(340, 26);
+            this.txtlinkArchivo.Size = new System.Drawing.Size(452, 31);
             this.txtlinkArchivo.TabIndex = 3;
             // 
             // btnLinkArchivo
@@ -79,11 +84,12 @@ namespace InterfaceDATMA
             this.btnLinkArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(154)))), ((int)(((byte)(100)))));
             this.btnLinkArchivo.FlatAppearance.BorderSize = 0;
             this.btnLinkArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLinkArchivo.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold);
+            this.btnLinkArchivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnLinkArchivo.ForeColor = System.Drawing.Color.White;
-            this.btnLinkArchivo.Location = new System.Drawing.Point(569, 157);
+            this.btnLinkArchivo.Location = new System.Drawing.Point(759, 196);
+            this.btnLinkArchivo.Margin = new System.Windows.Forms.Padding(4);
             this.btnLinkArchivo.Name = "btnLinkArchivo";
-            this.btnLinkArchivo.Size = new System.Drawing.Size(76, 37);
+            this.btnLinkArchivo.Size = new System.Drawing.Size(101, 46);
             this.btnLinkArchivo.TabIndex = 4;
             this.btnLinkArchivo.Text = "...";
             this.btnLinkArchivo.UseVisualStyleBackColor = false;
@@ -93,21 +99,22 @@ namespace InterfaceDATMA
             this.btnGuardarArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(154)))), ((int)(((byte)(100)))));
             this.btnGuardarArchivo.FlatAppearance.BorderSize = 0;
             this.btnGuardarArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarArchivo.Font = new System.Drawing.Font("Montserrat", 10F);
+            this.btnGuardarArchivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnGuardarArchivo.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarArchivo.Location = new System.Drawing.Point(219, 237);
+            this.btnGuardarArchivo.Location = new System.Drawing.Point(292, 296);
+            this.btnGuardarArchivo.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarArchivo.Name = "btnGuardarArchivo";
-            this.btnGuardarArchivo.Size = new System.Drawing.Size(268, 44);
+            this.btnGuardarArchivo.Size = new System.Drawing.Size(357, 55);
             this.btnGuardarArchivo.TabIndex = 5;
             this.btnGuardarArchivo.Text = "GUARDAR";
             this.btnGuardarArchivo.UseVisualStyleBackColor = false;
             // 
             // frmAgregarMaterialPsicologo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(691, 337);
+            this.ClientSize = new System.Drawing.Size(921, 421);
             this.Controls.Add(this.btnGuardarArchivo);
             this.Controls.Add(this.btnLinkArchivo);
             this.Controls.Add(this.txtlinkArchivo);
@@ -115,6 +122,7 @@ namespace InterfaceDATMA
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAgregarMaterialPsicologo";
             this.Text = "frmAgregarMaterialPsicologo";
             this.ResumeLayout(false);
