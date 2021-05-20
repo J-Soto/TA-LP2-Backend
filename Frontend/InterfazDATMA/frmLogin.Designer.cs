@@ -91,6 +91,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Name = "frmLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

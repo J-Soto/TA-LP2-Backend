@@ -51,5 +51,10 @@ namespace InterfaceDATMA
             if (verificarLogin(txtUsuario.Text, txtContraseña.Text) > 0)
                 abrirFormulario(new frmWalkthrough());
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
