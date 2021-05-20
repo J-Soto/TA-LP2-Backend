@@ -35,15 +35,15 @@ namespace InterfaceDATMA
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void frmDetalleCursoInscrito_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
             Hide();
             frmListaCursoInscritos.current.Show();
-        }
-
-        private void frmDetalleCursoInscrito_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnVideos_Click(object sender, EventArgs e)

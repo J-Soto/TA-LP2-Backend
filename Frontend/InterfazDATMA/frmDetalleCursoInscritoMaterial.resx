@@ -117,12 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="richTextBox2.Text" xml:space="preserve">
     <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus augue ac nibh elementum tempor. Mauris eu augue quis quam efficitur convallis quis ac lacus. Suspendisse ac mauris ac ligula semper vehicula. Nulla at nulla ut ex mattis dapibus sit amet quis enim. Curabitur malesuada risus urna, ut accumsan mi congue sed. Phasellus dictum, lorem non feugiat posuere, quam felis tempus dolor, sit amet ultricies nulla ipsum ac nisl. Maecenas urna urna, venenatis vel porta eu, aliquam sed justo. Nulla malesuada magna sit amet dui laoreet imperdiet.
 
 Aenean interdum turpis nulla, et faucibus diam fermentum pretium. Morbi volutpat, odio sed malesuada pharetra, odio lectus facilisis tortor, ac ultricies quam tellus ut nibh. Ut at sem sit amet sapien interdum rhoncus id sed quam. Integer ac leo felis. Mauris tincidunt nunc sit amet arcu faucibus porttitor. Cras sagittis ante et diam egestas, eget mollis est viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus finibus dapibus eros non commodo. Nam et neque aliquam, varius nibh convallis, faucibus lectus. Praesent nec convallis nisl. Nunc at placerat tortor. Nam vitae felis in neque facilisis semper id vel diam.</value>
   </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
+  <data name="richTextBox1.Text" xml:space="preserve">
     <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus augue ac nibh elementum tempor. Mauris eu augue quis quam efficitur convallis quis ac lacus. Suspendisse ac mauris ac ligula semper vehicula. Nulla at nulla ut ex mattis dapibus sit amet quis enim. Curabitur malesuada risus urna, ut accumsan mi congue sed. Phasellus dictum, lorem non feugiat posuere, quam felis tempus dolor, sit amet ultricies nulla ipsum ac nisl. Maecenas urna urna, venenatis vel porta eu, aliquam sed justo. Nulla malesuada magna sit amet dui laoreet imperdiet.
 
 Aenean interdum turpis nulla, et faucibus diam fermentum pretium. Morbi volutpat, odio sed malesuada pharetra, odio lectus facilisis tortor, ac ultricies quam tellus ut nibh. Ut at sem sit amet sapien interdum rhoncus id sed quam. Integer ac leo felis. Mauris tincidunt nunc sit amet arcu faucibus porttitor. Cras sagittis ante et diam egestas, eget mollis est viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus finibus dapibus eros non commodo. Nam et neque aliquam, varius nibh convallis, faucibus lectus. Praesent nec convallis nisl. Nunc at placerat tortor. Nam vitae felis in neque facilisis semper id vel diam.</value>

@@ -17,29 +17,10 @@ namespace InterfaceDATMA
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void VisitLink()
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
+            linkLabel1.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=QHRuTYtSbJQ");
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -58,12 +39,6 @@ namespace InterfaceDATMA
             {
                 MessageBox.Show("Unable to open link that was clicked.");
             }
-        }
-
-        private void VisitLink()
-        {
-            linkLabel1.LinkVisited = true;
-            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=QHRuTYtSbJQ");
         }
     }
 }

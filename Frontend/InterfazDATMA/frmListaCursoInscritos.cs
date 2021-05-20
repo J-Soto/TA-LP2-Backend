@@ -20,11 +20,6 @@ namespace InterfaceDATMA
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnModulo1_Click(object sender, EventArgs e)
         {
             Form next = new frmDetalleCursoInscrito();
@@ -35,6 +30,24 @@ namespace InterfaceDATMA
         private void frmListaCursoInscritos_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnCursosDisponibles_Click(object sender, EventArgs e)
+        {
+            bool hayCursos = verificarCursosDisponibles();
+            Form formularioMostrar;
+            if (hayCursos) formularioMostrar = new frmCursosDisponibles();
+            else formularioMostrar = new frmSinCursosDisponibles();
+
+            formularioMostrar.Show();
+            this.Hide();
+        }
+
+        private bool verificarCursosDisponibles()
+        {
+            Random rd = new Random();
+            if (rd.Next(2) == 1) return true;
+            else return false;
         }
     }
 }
