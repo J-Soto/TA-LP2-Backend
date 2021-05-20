@@ -12,6 +12,8 @@ namespace InterfaceDATMA
 {
     public partial class frmLogin : Form
     {
+        private string _user = null;
+        private string _password = null;
         private Form formularioActivo = null;
         public frmLogin()
         {
@@ -39,6 +41,11 @@ namespace InterfaceDATMA
             panelContenedor.Tag = formularioMostrar;*/
             formularioMostrar.Show();
             this.Hide();
+            if (checkBoxRecordarme.Checked)
+            {
+                _user = txtUsuario.Text;
+                _password = txtContraseña.Text;
+            }
         }
 
         private int verificarLogin(string user,string password)

@@ -32,6 +32,8 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnOlvido = new System.Windows.Forms.Button();
+            this.checkBoxRecordarme = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(99, 222);
+            this.txtContraseña.Location = new System.Drawing.Point(99, 203);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(152, 20);
             this.txtContraseña.TabIndex = 1;
@@ -79,12 +81,40 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // btnOlvido
+            // 
+            this.btnOlvido.BackColor = System.Drawing.Color.Transparent;
+            this.btnOlvido.FlatAppearance.BorderSize = 0;
+            this.btnOlvido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOlvido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline);
+            this.btnOlvido.ForeColor = System.Drawing.Color.Blue;
+            this.btnOlvido.Location = new System.Drawing.Point(92, 300);
+            this.btnOlvido.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOlvido.Name = "btnOlvido";
+            this.btnOlvido.Size = new System.Drawing.Size(159, 24);
+            this.btnOlvido.TabIndex = 22;
+            this.btnOlvido.Text = "Olvidó su contraseña?";
+            this.btnOlvido.UseVisualStyleBackColor = false;
+            // 
+            // checkBoxRecordarme
+            // 
+            this.checkBoxRecordarme.AutoSize = true;
+            this.checkBoxRecordarme.ForeColor = System.Drawing.Color.White;
+            this.checkBoxRecordarme.Location = new System.Drawing.Point(99, 239);
+            this.checkBoxRecordarme.Name = "checkBoxRecordarme";
+            this.checkBoxRecordarme.Size = new System.Drawing.Size(84, 17);
+            this.checkBoxRecordarme.TabIndex = 23;
+            this.checkBoxRecordarme.Text = "Recordarme";
+            this.checkBoxRecordarme.UseVisualStyleBackColor = true;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(353, 332);
+            this.Controls.Add(this.checkBoxRecordarme);
+            this.Controls.Add(this.btnOlvido);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtContraseña);
@@ -104,5 +134,7 @@
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.Button btnOlvido;
+        private System.Windows.Forms.CheckBox checkBoxRecordarme;
     }
 }
