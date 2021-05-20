@@ -39,5 +39,12 @@ namespace InterfaceDATMA
             formGestionarModulosPsicologo.Show();
             this.Hide();
         }
+
+        private void btnListaCuidadores_Click(object sender, EventArgs e)
+        {
+            frmListaCuidadoresDePsicologo formListaCuidadoresDePsicologo = new frmListaCuidadoresDePsicologo();
+            this.Hide();
+            formListaCuidadoresDePsicologo.Show();
+        }
     }
 }

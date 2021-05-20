@@ -43,5 +43,12 @@ namespace InterfaceDATMA
             formAgregarReunionPsicologo.ShowDialog();
 
         }
+
+        private void btnAsitencia_Click(object sender, EventArgs e)
+        {
+            frmRegistrarAsistenciaCuidadores formRegistrarAsistenciaCuidadores = new frmRegistrarAsistenciaCuidadores();
+            this.Hide();
+            formRegistrarAsistenciaCuidadores.Show();
+        }
     }
 }

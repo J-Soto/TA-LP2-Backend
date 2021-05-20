@@ -29,9 +29,9 @@ namespace InterfaceDATMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblNombreModulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnModificarPrograma = new System.Windows.Forms.Button();
@@ -97,12 +97,13 @@ namespace InterfaceDATMA
             this.btnListaCuidadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListaCuidadores.Font = new System.Drawing.Font("Montserrat", 10F);
             this.btnListaCuidadores.ForeColor = System.Drawing.Color.White;
-            this.btnListaCuidadores.Location = new System.Drawing.Point(1026, 639);
+            this.btnListaCuidadores.Location = new System.Drawing.Point(794, 637);
             this.btnListaCuidadores.Name = "btnListaCuidadores";
-            this.btnListaCuidadores.Size = new System.Drawing.Size(313, 36);
+            this.btnListaCuidadores.Size = new System.Drawing.Size(313, 54);
             this.btnListaCuidadores.TabIndex = 4;
             this.btnListaCuidadores.Text = "Lista de Cuidadores";
             this.btnListaCuidadores.UseVisualStyleBackColor = false;
+            this.btnListaCuidadores.Click += new System.EventHandler(this.btnListaCuidadores_Click);
             // 
             // btnListaCursos
             // 
@@ -111,9 +112,9 @@ namespace InterfaceDATMA
             this.btnListaCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListaCursos.Font = new System.Drawing.Font("Montserrat", 10F);
             this.btnListaCursos.ForeColor = System.Drawing.Color.White;
-            this.btnListaCursos.Location = new System.Drawing.Point(1147, 751);
+            this.btnListaCursos.Location = new System.Drawing.Point(1090, 764);
             this.btnListaCursos.Name = "btnListaCursos";
-            this.btnListaCursos.Size = new System.Drawing.Size(313, 65);
+            this.btnListaCursos.Size = new System.Drawing.Size(370, 52);
             this.btnListaCursos.TabIndex = 5;
             this.btnListaCursos.Text = "VOLVER A LA LISTA DE CURSOS";
             this.btnListaCursos.UseVisualStyleBackColor = false;
@@ -224,14 +225,14 @@ namespace InterfaceDATMA
             this.dgvPrograma.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.dgvPrograma.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPrograma.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrograma.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrograma.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvPrograma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPrograma.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Semana,
@@ -240,21 +241,21 @@ namespace InterfaceDATMA
             this.dgvPrograma.GridColor = System.Drawing.Color.SteelBlue;
             this.dgvPrograma.Location = new System.Drawing.Point(567, 204);
             this.dgvPrograma.Name = "dgvPrograma";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrograma.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrograma.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvPrograma.RowHeadersWidth = 62;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(65)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvPrograma.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(65)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvPrograma.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvPrograma.RowTemplate.Height = 28;
             this.dgvPrograma.Size = new System.Drawing.Size(772, 407);
             this.dgvPrograma.TabIndex = 9;

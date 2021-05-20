@@ -324,6 +324,7 @@ namespace InterfaceDATMA
             this.btnAsitencia.TabIndex = 14;
             this.btnAsitencia.Text = "Asistencia";
             this.btnAsitencia.UseVisualStyleBackColor = false;
+            this.btnAsitencia.Click += new System.EventHandler(this.btnAsitencia_Click);
             // 
             // bntConfigurarTiempo
             // 

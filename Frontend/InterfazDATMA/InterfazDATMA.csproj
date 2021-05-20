@@ -112,6 +112,12 @@
     <Compile Include="frmInscripcionHecha.Designer.cs">
       <DependentUpon>frmInscripcionHecha.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListaCuidadoresDePsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaCuidadoresDePsicologo.designer.cs">
+      <DependentUpon>frmListaCuidadoresDePsicologo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListaCursoInscritos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,12 @@
     </Compile>
     <Compile Include="frmNotificacionActiva.Designer.cs">
       <DependentUpon>frmNotificacionActiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarAsistenciaCuidadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarAsistenciaCuidadores.designer.cs">
+      <DependentUpon>frmRegistrarAsistenciaCuidadores.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSinCursosDisponibles.cs">
       <SubType>Form</SubType>
@@ -189,6 +201,9 @@
     <EmbeddedResource Include="frmInscripcionHecha.resx">
       <DependentUpon>frmInscripcionHecha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListaCuidadoresDePsicologo.resx">
+      <DependentUpon>frmListaCuidadoresDePsicologo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListaCursoInscritos.resx">
       <DependentUpon>frmListaCursoInscritos.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNotificacionActiva.resx">
       <DependentUpon>frmNotificacionActiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarAsistenciaCuidadores.resx">
+      <DependentUpon>frmRegistrarAsistenciaCuidadores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSinCursosDisponibles.resx">
       <DependentUpon>frmSinCursosDisponibles.cs</DependentUpon>
