@@ -84,3 +84,5 @@ C:\Users\maldo\OneDrive\Documentos\Laboratorios_Lp2\TA_Final\Frontend\InterfazDA
 C:\Users\maldo\OneDrive\Documentos\Laboratorios_Lp2\TA_Final\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
 C:\Users\maldo\OneDrive\Documentos\Laboratorios_Lp2\TA_Final\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmListaCuidadoresDePsicologo.resources
 C:\Users\maldo\OneDrive\Documentos\Laboratorios_Lp2\TA_Final\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmRegistrarAsistenciaCuidadores.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmListaCuidadoresDePsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmRegistrarAsistenciaCuidadores.resources

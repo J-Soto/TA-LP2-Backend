@@ -16,9 +16,9 @@ namespace InterfaceDATMA
         public frmWalkthrough()
         {
             InitializeComponent();
-            //cambiarEstado(estado);
+            cambiarEstado(estado);
         }
-        /*
+        
         private void cambiarEstado(int estado)
         {
             if (estado == 1)
@@ -39,7 +39,7 @@ namespace InterfaceDATMA
                 pictureboxWalk.Image = global::InterfazDATMA.Properties.Resources.canon3;
             }
         }
-        */
+        
 
         private void btnFinalizar_Click_1(object sender, EventArgs e)
         {
@@ -51,13 +51,13 @@ namespace InterfaceDATMA
         private void btnNext_Click_1(object sender, EventArgs e)
         {
             estado += 1;
-           // cambiarEstado(estado);
+            cambiarEstado(estado);
         }
 
         private void btnAnt_Click_1(object sender, EventArgs e)
         {
             estado -= 1;
-            //cambiarEstado(estado);
+            cambiarEstado(estado);
         }
     }
 }
