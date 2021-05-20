@@ -218,6 +218,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -231,6 +232,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\walkthrough\canon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\walkthrough\canon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\walkthrough\canon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\avatarPsicologa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\DATMA logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\LogoDatmaV2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\zoom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
