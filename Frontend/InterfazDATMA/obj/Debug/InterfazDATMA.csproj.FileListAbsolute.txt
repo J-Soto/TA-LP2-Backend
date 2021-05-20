@@ -20,3 +20,8 @@ C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\Interfac
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Properties.Resources.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csproj.GenerateResource.cache
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csproj.CoreCompileInputs.cache
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe.config
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.pdb
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.exe
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb

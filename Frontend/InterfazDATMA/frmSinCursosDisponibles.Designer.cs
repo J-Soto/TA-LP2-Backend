@@ -31,7 +31,6 @@ namespace InterfaceDATMA
         {
             this.lblCursosDisponibles = new System.Windows.Forms.Label();
             this.grpBoxJustificacion = new System.Windows.Forms.GroupBox();
-            this.btnDashboard = new System.Windows.Forms.Button();
             this.lblJustificacion = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnNotificar = new System.Windows.Forms.Button();
@@ -54,17 +53,16 @@ namespace InterfaceDATMA
             // lblCursosDisponibles
             // 
             this.lblCursosDisponibles.AutoSize = true;
-            this.lblCursosDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCursosDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblCursosDisponibles.ForeColor = System.Drawing.Color.White;
             this.lblCursosDisponibles.Location = new System.Drawing.Point(335, 61);
             this.lblCursosDisponibles.Name = "lblCursosDisponibles";
-            this.lblCursosDisponibles.Size = new System.Drawing.Size(183, 17);
+            this.lblCursosDisponibles.Size = new System.Drawing.Size(205, 20);
             this.lblCursosDisponibles.TabIndex = 0;
             this.lblCursosDisponibles.Text = "Lista de Cursos Disponibles";
             // 
             // grpBoxJustificacion
             // 
-            this.grpBoxJustificacion.Controls.Add(this.btnDashboard);
             this.grpBoxJustificacion.Controls.Add(this.lblJustificacion);
             this.grpBoxJustificacion.Location = new System.Drawing.Point(313, 110);
             this.grpBoxJustificacion.Name = "grpBoxJustificacion";
@@ -72,25 +70,11 @@ namespace InterfaceDATMA
             this.grpBoxJustificacion.TabIndex = 1;
             this.grpBoxJustificacion.TabStop = false;
             // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(154)))), ((int)(((byte)(100)))));
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(53, 77);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(178, 24);
-            this.btnDashboard.TabIndex = 25;
-            this.btnDashboard.Text = "IR AL DASHBOARD";
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
             // lblJustificacion
             // 
+            this.lblJustificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblJustificacion.ForeColor = System.Drawing.Color.White;
-            this.lblJustificacion.Location = new System.Drawing.Point(50, 24);
+            this.lblJustificacion.Location = new System.Drawing.Point(50, 44);
             this.lblJustificacion.Name = "lblJustificacion";
             this.lblJustificacion.Size = new System.Drawing.Size(193, 51);
             this.lblJustificacion.TabIndex = 2;
@@ -286,7 +270,6 @@ namespace InterfaceDATMA
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnNotificar;
     }
 }

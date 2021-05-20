@@ -22,5 +22,11 @@ namespace InterfaceDATMA
 
         }
 
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            Form formulario = new frmMenuUsuario();
+            this.Hide();
+            formulario.Show();
+        }
     }
 }
