@@ -52,8 +52,176 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarMaterialPsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarMaterialPsicologo.Designer.cs">
+      <DependentUpon>frmAgregarMaterialPsicologo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarReunionPsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarReunionPsicologo.Designer.cs">
+      <DependentUpon>frmAgregarReunionPsicologo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigurarModuloPsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigurarModuloPsicologo.Designer.cs">
+      <DependentUpon>frmConfigurarModuloPsicologo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCursosDisponibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCursosDisponibles.Designer.cs">
+      <DependentUpon>frmCursosDisponibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleCurso.Designer.cs">
+      <DependentUpon>frmDetalleCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleCursoInscrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleCursoInscrito.Designer.cs">
+      <DependentUpon>frmDetalleCursoInscrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleCursoInscritoMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleCursoInscritoMaterial.Designer.cs">
+      <DependentUpon>frmDetalleCursoInscritoMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleCursoInscritoReunion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleCursoInscritoReunion.Designer.cs">
+      <DependentUpon>frmDetalleCursoInscritoReunion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionarModulosPsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionarModulosPsicologo.Designer.cs">
+      <DependentUpon>frmGestionarModulosPsicologo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformacionCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformacionCurso.Designer.cs">
+      <DependentUpon>frmInformacionCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInscripcionHecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInscripcionHecha.Designer.cs">
+      <DependentUpon>frmInscripcionHecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaCursoInscritos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaCursoInscritos.Designer.cs">
+      <DependentUpon>frmListaCursoInscritos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuUsuario.Designer.cs">
+      <DependentUpon>frmMenuUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarProgramaPsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarProgramaPsicologo.Designer.cs">
+      <DependentUpon>frmModificarProgramaPsicologo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotificacionActiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotificacionActiva.Designer.cs">
+      <DependentUpon>frmNotificacionActiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSinCursosDisponibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSinCursosDisponibles.Designer.cs">
+      <DependentUpon>frmSinCursosDisponibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWalkthrough.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWalkthrough.Designer.cs">
+      <DependentUpon>frmWalkthrough.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAgregarMaterialPsicologo.resx">
+      <DependentUpon>frmAgregarMaterialPsicologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarReunionPsicologo.resx">
+      <DependentUpon>frmAgregarReunionPsicologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfigurarModuloPsicologo.resx">
+      <DependentUpon>frmConfigurarModuloPsicologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCursosDisponibles.resx">
+      <DependentUpon>frmCursosDisponibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleCurso.resx">
+      <DependentUpon>frmDetalleCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleCursoInscrito.resx">
+      <DependentUpon>frmDetalleCursoInscrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleCursoInscritoMaterial.resx">
+      <DependentUpon>frmDetalleCursoInscritoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleCursoInscritoReunion.resx">
+      <DependentUpon>frmDetalleCursoInscritoReunion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionarModulosPsicologo.resx">
+      <DependentUpon>frmGestionarModulosPsicologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformacionCurso.resx">
+      <DependentUpon>frmInformacionCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInscripcionHecha.resx">
+      <DependentUpon>frmInscripcionHecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaCursoInscritos.resx">
+      <DependentUpon>frmListaCursoInscritos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuUsuario.resx">
+      <DependentUpon>frmMenuUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarProgramaPsicologo.resx">
+      <DependentUpon>frmModificarProgramaPsicologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotificacionActiva.resx">
+      <DependentUpon>frmNotificacionActiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSinCursosDisponibles.resx">
+      <DependentUpon>frmSinCursosDisponibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWalkthrough.resx">
+      <DependentUpon>frmWalkthrough.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
