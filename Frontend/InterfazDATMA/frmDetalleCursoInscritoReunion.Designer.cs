@@ -38,7 +38,7 @@ namespace InterfaceDATMA
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::InterfaceDATMA.Properties.Resources.zoom;
+            this.pictureBox1.Image = global::InterfazDATMA.Properties.Resources.zoom;
             this.pictureBox1.Location = new System.Drawing.Point(248, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(301, 301);

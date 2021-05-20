@@ -103,7 +103,7 @@ namespace InterfaceDATMA
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerfil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerfil.ForeColor = System.Drawing.Color.White;
-            this.btnPerfil.Image = global::InterfaceDATMA.Properties.Resources.empleados;
+            this.btnPerfil.Image = global::InterfazDATMA.Properties.Resources.empleados;
             this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPerfil.Location = new System.Drawing.Point(15, 246);
             this.btnPerfil.Margin = new System.Windows.Forms.Padding(2);
@@ -122,7 +122,7 @@ namespace InterfaceDATMA
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicio.ForeColor = System.Drawing.Color.White;
-            this.btnInicio.Image = global::InterfaceDATMA.Properties.Resources.producto;
+            this.btnInicio.Image = global::InterfazDATMA.Properties.Resources.producto;
             this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInicio.Location = new System.Drawing.Point(15, 205);
             this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
@@ -135,7 +135,7 @@ namespace InterfaceDATMA
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::InterfaceDATMA.Properties.Resources.DATMA_logo;
+            this.pictureBox1.Image = global::InterfazDATMA.Properties.Resources.DATMA_logo;
             this.pictureBox1.Location = new System.Drawing.Point(58, 37);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";

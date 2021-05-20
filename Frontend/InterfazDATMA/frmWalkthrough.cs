@@ -24,7 +24,7 @@ namespace InterfaceDATMA
             if (estado == 1)
             {
                 btnAnt.Enabled = false;
-                pictureboxWalk.Image = Properties.Resources._1;
+                pictureboxWalk.Image = ;
             }
                 
             else if (estado == 2)

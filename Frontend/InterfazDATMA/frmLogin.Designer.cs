@@ -71,7 +71,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::InterfaceDATMA.Properties.Resources.DATMA_logo;
+            this.pictureBox1.Image = global::InterfazDATMA.Properties.Resources.DATMA_logo;
             this.pictureBox1.Location = new System.Drawing.Point(132, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(95, 106);
