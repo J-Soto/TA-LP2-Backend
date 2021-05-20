@@ -24,7 +24,7 @@ namespace InterfaceDATMA
 
         private void btnIrLista_Click(object sender, EventArgs e)
         {
-            Form formularioMostrar = new frmMenuUsuario();
+            Form formularioMostrar = new frmCursosDisponibles();
             formularioMostrar.Show();
             this.Hide();
         }
