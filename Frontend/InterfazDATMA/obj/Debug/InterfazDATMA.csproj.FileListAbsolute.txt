@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csprojAssemblyReference.cache
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmAgregarMaterialPsicologo.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmAgregarReunionPsicologo.resources
@@ -25,3 +26,32 @@ C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\Interfaz
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.pdb
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.exe
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
+=======
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csprojAssemblyReference.cache
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmAgregarMaterialPsicologo.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmAgregarReunionPsicologo.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmConfigurarModuloPsicologo.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmCursosDisponibles.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmDetalleCurso.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmDetalleCursoInscrito.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmDetalleCursoInscritoMaterial.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmDetalleCursoInscritoReunion.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmGestionarModulosPsicologo.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmInformacionCurso.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmInscripcionHecha.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmListaCursoInscritos.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmLogin.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmMenuUsuario.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmModificarPrograma.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmNotificacionActiva.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmSinCursosDisponibles.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmWalkthrough.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Properties.Resources.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csproj.GenerateResource.cache
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csproj.CoreCompileInputs.cache
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe.config
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.pdb
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.exe
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
+>>>>>>> adfd61a74cc8c7fb8b0dce4bf905bef3f195c179
