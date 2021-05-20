@@ -16,11 +16,7 @@ namespace InterfaceDATMA
         { 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-                 
-=======
             Application.Run(new frmLogin());
->>>>>>> 1392c00cd8f62672c2cb5ccbedc52532e95b2d15
         }
     }
 }
