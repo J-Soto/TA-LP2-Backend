@@ -24,19 +24,19 @@ namespace InterfaceDATMA
             if (estado == 1)
             {
                 btnAnt.Enabled = false;
-                pictureboxWalk.Image = ;
+                pictureboxWalk.Image = global::InterfazDATMA.Properties.Resources.canon1 ;
             }
                 
             else if (estado == 2)
             {
                 btnAnt.Enabled = true;
                 btnNext.Enabled = true;
-                pictureboxWalk.Image = Properties.Resources._2;
+                pictureboxWalk.Image = global::InterfazDATMA.Properties.Resources.canon2;
             }
             else
             {
                 btnNext.Enabled = false;
-                pictureboxWalk.Image = Properties.Resources._3;
+                pictureboxWalk.Image = global::InterfazDATMA.Properties.Resources.canon3;
             }
         }
 
