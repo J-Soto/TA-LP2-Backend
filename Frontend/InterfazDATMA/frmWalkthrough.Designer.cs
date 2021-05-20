@@ -58,9 +58,10 @@ namespace InterfaceDATMA
             // pictureboxWalk
             // 
             this.pictureboxWalk.Image = global::InterfazDATMA.Properties.Resources.canon1;
-            this.pictureboxWalk.Location = new System.Drawing.Point(393, 28);
+            this.pictureboxWalk.Location = new System.Drawing.Point(304, 28);
             this.pictureboxWalk.Name = "pictureboxWalk";
-            this.pictureboxWalk.Size = new System.Drawing.Size(262, 265);
+            this.pictureboxWalk.Size = new System.Drawing.Size(445, 265);
+            this.pictureboxWalk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureboxWalk.TabIndex = 2;
             this.pictureboxWalk.TabStop = false;
             // 

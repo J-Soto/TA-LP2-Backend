@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InterfazDATMA
+namespace InterfaceDATMA
 {
     static class Program
     {
@@ -16,7 +16,11 @@ namespace InterfazDATMA
         { 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
                  
+=======
+            Application.Run(new frmLogin());
+>>>>>>> 1392c00cd8f62672c2cb5ccbedc52532e95b2d15
         }
     }
 }

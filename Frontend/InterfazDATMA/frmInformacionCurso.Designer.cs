@@ -386,7 +386,7 @@ namespace InterfaceDATMA
             // 
             // pictBoxEncargada
             // 
-            this.pictBoxEncargada.Image = global::InterfaceDATMA.Properties.Resources._1;
+            this.pictBoxEncargada.Image = global::InterfazDATMA.Properties.Resources.avatarPsicologa;
             this.pictBoxEncargada.Location = new System.Drawing.Point(1000, 232);
             this.pictBoxEncargada.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictBoxEncargada.Name = "pictBoxEncargada";
