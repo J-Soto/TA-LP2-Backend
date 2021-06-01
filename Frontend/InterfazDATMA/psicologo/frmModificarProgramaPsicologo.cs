@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,14 @@ namespace InterfaceDATMA
 {
     public partial class frmModificarPrograma : Form
     {
-        public frmModificarPrograma()
+        private frmConfigurarModuloPsicologo formConfigurarModuloPsicologo;
+        private frmPlantillaGestion formPlantillaGestion;
+
+        public frmModificarPrograma(frmConfigurarModuloPsicologo formConfigurarModuloPsicologo, frmPlantillaGestion formPlantillaGestion)
         {
             InitializeComponent();
+            this.formConfigurarModuloPsicologo = formConfigurarModuloPsicologo;
+            this.formPlantillaGestion = formPlantillaGestion;
         }
 
         private void btnAgregarMaterial_Click(object sender, EventArgs e)
@@ -25,16 +31,12 @@ namespace InterfaceDATMA
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            frmGestionarModulosPsicologo formGestionarModulosPsicologo = new frmGestionarModulosPsicologo();
-            formGestionarModulosPsicologo.Show();
-            this.Hide();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmConfigurarModuloPsicologo formconfigurarmodulopsicologo = new frmConfigurarModuloPsicologo();
-            this.Hide();
-            formconfigurarmodulopsicologo.Show();
+            formPlantillaGestion.abrirFormulario(formConfigurarModuloPsicologo);
         }
 
         private void btnAgregarReunion_Click(object sender, EventArgs e)
@@ -46,9 +48,7 @@ namespace InterfaceDATMA
 
         private void btnAsitencia_Click(object sender, EventArgs e)
         {
-            frmRegistrarAsistenciaCuidadores formRegistrarAsistenciaCuidadores = new frmRegistrarAsistenciaCuidadores();
-            this.Hide();
-            formRegistrarAsistenciaCuidadores.Show();
+            formPlantillaGestion.abrirFormulario(new frmRegistrarAsistenciaCuidadores(this, formPlantillaGestion));
         }
     }
 }

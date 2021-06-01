@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using InterfazDATMA.plantilla;
 
 namespace InterfaceDATMA
 {
@@ -55,8 +56,12 @@ namespace InterfaceDATMA
 
         private void btnIngresar_Click_1(object sender, EventArgs e)
         {
-            if (verificarLogin(txtUsuario.Text, txtContraseña.Text) > 0)
-                abrirFormulario(new frmWalkthrough());
+            //if (verificarLogin(txtUsuario.Text, txtContraseña.Text) > 0)
+            //abrirFormulario(new frmWalkthrough());
+            //0->cuidador
+            //1->psicologo
+            //2->admin
+            abrirFormulario(new frmPlantillaGestion(1));
         }
 
         private void frmLogin_Load(object sender, EventArgs e)

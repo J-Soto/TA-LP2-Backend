@@ -34,10 +34,10 @@ namespace InterfaceDATMA
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dtpFechaReunion = new System.Windows.Forms.DateTimePicker();
-            this.txtHoraFin = new System.Windows.Forms.RichTextBox();
-            this.txtHoraInicio = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtLink = new System.Windows.Forms.RichTextBox();
+            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtpFin = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // btnGuardarReunion
@@ -92,34 +92,11 @@ namespace InterfaceDATMA
             // 
             this.dtpFechaReunion.CalendarMonthBackground = System.Drawing.SystemColors.MenuHighlight;
             this.dtpFechaReunion.CustomFormat = "\"dd/MM/yyyy\"";
+            this.dtpFechaReunion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaReunion.Location = new System.Drawing.Point(290, 73);
             this.dtpFechaReunion.Name = "dtpFechaReunion";
-            this.dtpFechaReunion.Size = new System.Drawing.Size(339, 26);
+            this.dtpFechaReunion.Size = new System.Drawing.Size(204, 26);
             this.dtpFechaReunion.TabIndex = 10;
-            // 
-            // txtHoraFin
-            // 
-            this.txtHoraFin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.txtHoraFin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHoraFin.Font = new System.Drawing.Font("Montserrat", 10F);
-            this.txtHoraFin.ForeColor = System.Drawing.Color.White;
-            this.txtHoraFin.Location = new System.Drawing.Point(290, 190);
-            this.txtHoraFin.Name = "txtHoraFin";
-            this.txtHoraFin.Size = new System.Drawing.Size(339, 29);
-            this.txtHoraFin.TabIndex = 11;
-            this.txtHoraFin.Text = "";
-            // 
-            // txtHoraInicio
-            // 
-            this.txtHoraInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.txtHoraInicio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHoraInicio.Font = new System.Drawing.Font("Montserrat", 10F);
-            this.txtHoraInicio.ForeColor = System.Drawing.Color.White;
-            this.txtHoraInicio.Location = new System.Drawing.Point(290, 132);
-            this.txtHoraInicio.Name = "txtHoraInicio";
-            this.txtHoraInicio.Size = new System.Drawing.Size(339, 29);
-            this.txtHoraInicio.TabIndex = 12;
-            this.txtHoraInicio.Text = "";
             // 
             // label4
             // 
@@ -146,16 +123,30 @@ namespace InterfaceDATMA
             this.txtLink.Text = "";
             this.txtLink.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
             // 
+            // dtpInicio
+            // 
+            this.dtpInicio.Location = new System.Drawing.Point(290, 131);
+            this.dtpInicio.Name = "dtpInicio";
+            this.dtpInicio.Size = new System.Drawing.Size(162, 26);
+            this.dtpInicio.TabIndex = 15;
+            // 
+            // dtpFin
+            // 
+            this.dtpFin.Location = new System.Drawing.Point(290, 190);
+            this.dtpFin.Name = "dtpFin";
+            this.dtpFin.Size = new System.Drawing.Size(162, 26);
+            this.dtpFin.TabIndex = 16;
+            // 
             // frmAgregarReunionPsicologo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(720, 433);
+            this.Controls.Add(this.dtpFin);
+            this.Controls.Add(this.dtpInicio);
             this.Controls.Add(this.txtLink);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtHoraInicio);
-            this.Controls.Add(this.txtHoraFin);
             this.Controls.Add(this.dtpFechaReunion);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -175,9 +166,9 @@ namespace InterfaceDATMA
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dtpFechaReunion;
-        private System.Windows.Forms.RichTextBox txtHoraFin;
-        private System.Windows.Forms.RichTextBox txtHoraInicio;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox txtLink;
+        private System.Windows.Forms.DateTimePicker dtpInicio;
+        private System.Windows.Forms.DateTimePicker dtpFin;
     }
 }

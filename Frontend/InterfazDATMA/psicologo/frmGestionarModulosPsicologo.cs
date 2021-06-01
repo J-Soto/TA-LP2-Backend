@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using InterfazDATMA.plantilla;
 
 namespace InterfaceDATMA
 {
     public partial class frmGestionarModulosPsicologo : Form
     {
-        public frmGestionarModulosPsicologo()
+        private frmPlantillaGestion plantillaGestion;
+
+        public frmGestionarModulosPsicologo(frmPlantillaGestion plantilla)
         {
             InitializeComponent();
+            plantillaGestion = plantilla;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -22,16 +26,13 @@ namespace InterfaceDATMA
 
         }
 
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-            frmConfigurarModuloPsicologo formconfigurarmodulopsicologo = new frmConfigurarModuloPsicologo();
-            this.Hide();
-            formconfigurarmodulopsicologo.Show();
+            plantillaGestion.abrirFormulario(new frmConfigurarModuloPsicologo(this,plantillaGestion));
         }
 
-        private void btnInicio_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

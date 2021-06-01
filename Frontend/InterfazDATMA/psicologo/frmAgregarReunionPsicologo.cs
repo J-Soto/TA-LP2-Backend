@@ -15,6 +15,16 @@ namespace InterfaceDATMA
         public frmAgregarReunionPsicologo()
         {
             InitializeComponent();
+            dtpInicio.CustomFormat = "hh:mm tt";
+            dtpInicio.Format = DateTimePickerFormat.Custom;
+            dtpInicio.ShowUpDown = true;
+
+            dtpFin.CustomFormat = "hh:mm tt";
+            dtpFin.Format = DateTimePickerFormat.Custom;
+            dtpFin.ShowUpDown = true;
+
+            dtpFechaReunion.CustomFormat = "dd/MM/yyyy";
+            dtpFechaReunion.Format = DateTimePickerFormat.Custom;
         }
 
         private void label2_Click(object sender, EventArgs e)

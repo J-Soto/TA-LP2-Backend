@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,14 @@ namespace InterfaceDATMA
 {
     public partial class frmListaCuidadoresDePsicologo : Form
     {
-        public frmListaCuidadoresDePsicologo()
+        private frmConfigurarModuloPsicologo formConfigurarModulo;
+        private frmPlantillaGestion formPlantillaGestion;
+
+        public frmListaCuidadoresDePsicologo(frmConfigurarModuloPsicologo formConfigurarModulo, frmPlantillaGestion formPlantillaGestion)
         {
             InitializeComponent();
+            this.formConfigurarModulo = formConfigurarModulo;
+            this.formPlantillaGestion = formPlantillaGestion;
         }
 
         private void frmListaCuidadoresDePsicologo_Load(object sender, EventArgs e)
@@ -24,16 +30,12 @@ namespace InterfaceDATMA
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            frmConfigurarModuloPsicologo formconfigurarmodulopsicologo = new frmConfigurarModuloPsicologo();
-            this.Hide();
-            formconfigurarmodulopsicologo.Show();
+          
         }
 
         private void btnRegresarCurso_Click(object sender, EventArgs e)
         {
-            frmConfigurarModuloPsicologo formconfigurarmodulopsicologo = new frmConfigurarModuloPsicologo();
-            this.Hide();
-            formconfigurarmodulopsicologo.Show();
+            formPlantillaGestion.abrirFormulario(formConfigurarModulo);
         }
     }
 }
