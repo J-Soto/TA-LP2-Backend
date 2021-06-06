@@ -22,7 +22,7 @@ public class TutorMySQL implements TutorDAO {
 
     @Override
     public ArrayList<Tutor> listar(int idCuidador) {
-        ArrayList<Cuidador> arr = new ArrayList<>();
+        ArrayList<Tutor> arr = new ArrayList<>();
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
@@ -37,7 +37,7 @@ public class TutorMySQL implements TutorDAO {
             }
             rs = st.executeQuery();
             while (rs.next()) {
-                Cuidador cui = new Cuidador();
+                Tutor cui = new Tutor();
                 cui.setGestante(rs.getBoolean("gestante"));
                 cui.setBajosRecursos(rs.getBoolean("bajosrecursos"));
                 arr.add(cui);

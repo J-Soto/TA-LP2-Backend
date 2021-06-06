@@ -1,8 +1,6 @@
 package pe.datma.datmasoft.mysql;
 
-import org.apache.commons.dbutils.DbUtils;
 import pe.datma.datmasoft.config.DBManager;
-import pe.datma.datmasoft.cursos.actividades.sincrona.Actividad;
 import pe.datma.datmasoft.dao.ActividadDAO;
 
 import java.sql.Connection;

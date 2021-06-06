@@ -20,11 +20,22 @@ namespace InterfazDATMA.Administrador
             InitializeComponent();
             this.formPlantilla = formPlantilla;
             this.formAnterior = formAnterior;
+
+            chblDias.CheckOnClick = true;
+            chblDispositivos.CheckOnClick = true;
+            chblInternet.CheckOnClick = true;
+            chblTurno.CheckOnClick = true;
+            chblRedes.CheckOnClick = true;
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
+            formPlantilla.abrirFormulario(formAnterior.formOperacionPersona);
+        }
 
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            formPlantilla.abrirFormulario(formAnterior);
         }
     }
 }

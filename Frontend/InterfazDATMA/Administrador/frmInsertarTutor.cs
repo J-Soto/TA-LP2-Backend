@@ -14,7 +14,7 @@ namespace InterfazDATMA.Administrador
     public partial class frmInsertarTutor : Form
     {
         private frmPlantillaGestion formPlantilla;
-        private frmOperacionesPersona formOperacionPersona;
+        public frmOperacionesPersona formOperacionPersona;
 
         public frmInsertarTutor(frmOperacionesPersona formOperacionPersona, frmPlantillaGestion formPlantilla)
         {
@@ -43,7 +43,7 @@ namespace InterfazDATMA.Administrador
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            formPlantilla.abrirFormulario(new frmOperacionesPersona(this, formPlantilla));
+            formPlantilla.abrirFormulario(formOperacionPersona);
         }
     }
 }

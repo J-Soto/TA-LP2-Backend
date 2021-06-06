@@ -169,7 +169,7 @@ namespace InterfazDATMA.Administrador
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnDeshabilitar);
             this.Name = "frmOperacionesPersona";
-            this.Text = "frmOperacionesPersona";
+            this.Text = "Operaciones Persona";
             this.ResumeLayout(false);
             this.PerformLayout();
 

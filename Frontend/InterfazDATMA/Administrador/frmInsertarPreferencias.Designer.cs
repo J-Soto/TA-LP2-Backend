@@ -40,7 +40,7 @@ namespace InterfazDATMA.Administrador
             this.chblTurno = new System.Windows.Forms.CheckedListBox();
             this.chblDias = new System.Windows.Forms.CheckedListBox();
             this.chbGestante = new System.Windows.Forms.CheckBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.chblRedes = new System.Windows.Forms.CheckedListBox();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -119,7 +119,6 @@ namespace InterfazDATMA.Administrador
             this.chblDispositivos.Name = "chblDispositivos";
             this.chblDispositivos.Size = new System.Drawing.Size(229, 64);
             this.chblDispositivos.TabIndex = 24;
-            this.chblDispositivos.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // chbRecursos
             // 
@@ -192,21 +191,21 @@ namespace InterfazDATMA.Administrador
             this.chbGestante.Text = "Gestante";
             this.chbGestante.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox1
+            // chblRedes
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
-            this.checkedListBox1.ForeColor = System.Drawing.Color.White;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.chblRedes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
+            this.chblRedes.ForeColor = System.Drawing.Color.White;
+            this.chblRedes.FormattingEnabled = true;
+            this.chblRedes.Items.AddRange(new object[] {
             "Whatsapp",
             "Facebook",
             "Instagram",
             "Telegram",
             "Twitter"});
-            this.checkedListBox1.Location = new System.Drawing.Point(292, 192);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(229, 79);
-            this.checkedListBox1.TabIndex = 30;
+            this.chblRedes.Location = new System.Drawing.Point(292, 192);
+            this.chblRedes.Name = "chblRedes";
+            this.chblRedes.Size = new System.Drawing.Size(229, 79);
+            this.chblRedes.TabIndex = 30;
             // 
             // btnRegresar
             // 
@@ -222,6 +221,7 @@ namespace InterfazDATMA.Administrador
             this.btnRegresar.TabIndex = 38;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnGuardar
             // 
@@ -237,6 +237,7 @@ namespace InterfazDATMA.Administrador
             this.btnGuardar.TabIndex = 39;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // frmInsertarPreferencias
             // 
@@ -246,7 +247,7 @@ namespace InterfazDATMA.Administrador
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.chblRedes);
             this.Controls.Add(this.chbGestante);
             this.Controls.Add(this.chblDias);
             this.Controls.Add(this.chblTurno);
@@ -278,7 +279,7 @@ namespace InterfazDATMA.Administrador
         private System.Windows.Forms.CheckedListBox chblTurno;
         private System.Windows.Forms.CheckedListBox chblDias;
         private System.Windows.Forms.CheckBox chbGestante;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox chblRedes;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnGuardar;
     }
