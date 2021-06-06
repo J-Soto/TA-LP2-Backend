@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import pe.datma.datmasoft.rrhh.Tutor;
 
 public interface TutorDAO {
-    ArrayList<Tutor> listar();
-    ArrayList<Tutor> listar(int idCuidador);
+    public int insertarTutor(Tutor tutor);
+    public int modificarTutor(Tutor tutor);
+    public int eliminarTutor(int idTutor, int idUsuario);
+    public ArrayList<Tutor> listarTutores();
 }
