@@ -26,7 +26,26 @@ public class UsuarioMySQL implements UsuarioDAO{
 
     @Override
     public int insertarUsuario(Usuario user) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int resultado = 0;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            cs = con.prepareCall("{CALL INSERTAR_USUARIO(?,?,?,?,?)}");
+            cs.registerOutParameter("_id_usuario", java.sql.Types.INTEGER);
+            cs.setString("_user",user.getUser());
+            cs.setString("_password", user.getPassword());
+            cs.setInt("_tipo", user.getTipo());
+            cs.setBytes("_foto", user.getFotoPerfil());
+            cs.executeUpdate();
+            user.setIdPersona(cs.getInt("_id_usuario"));
+            resultado = user.getIdUsuario();
+            cs.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+        }
+        return resultado;
     }
 
     @Override

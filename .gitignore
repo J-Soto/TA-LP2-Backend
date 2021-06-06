@@ -22,3 +22,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /mainFake/nbproject/private/
+/Backend/DatmaSoftModel/nbproject/private/
+/Backend/DatmaSoftController/nbproject/private/
+/Backend/DatmaSoft/nbproject/private/
+!/Backend/DatmaSoftController/src/pe/datma/datmasoft/lib/mysql-connector-java-8.0.24.jar
+/Backend/DatmaSoftWebServices/nbproject/private/
+!/Backend/DatmaSoftWebServices/src/java/pe/datma/datmasoft/lib/mysql-connector-java-8.0.24.jar
+/Backend/DatmaSoftController/build/
+/Backend/DatmaSoftModel/dist/
+/Backend/DatmaSoftModel/build/

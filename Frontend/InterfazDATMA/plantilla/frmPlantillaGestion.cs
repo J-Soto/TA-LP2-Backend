@@ -19,10 +19,21 @@ namespace InterfazDATMA.plantilla
         public frmPlantillaGestion(int tipoUser)
         {
             InitializeComponent();
+            //Psicologo
             if(tipoUser == 1)
             {
                 formInicial = new frmGestionarModulosPsicologo(this);
                 abrirFormulario(formInicial);
+            }
+            //Administrador
+            else if (tipoUser == 2)
+            {
+
+            }
+            //Tutor
+            else
+            {
+
             }
 
 

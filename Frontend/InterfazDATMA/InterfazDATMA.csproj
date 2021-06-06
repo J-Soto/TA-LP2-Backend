@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\frmConfigurarModuloAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmConfigurarModuloAdmin.Designer.cs">
+      <DependentUpon>frmConfigurarModuloAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="psicologo\frmAgregarVideoPsicologo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrador\frmConfigurarModuloAdmin.resx">
+      <DependentUpon>frmConfigurarModuloAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="psicologo\frmAgregarVideoPsicologo.resx">
       <DependentUpon>frmAgregarVideoPsicologo.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +298,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Imagenes\zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
