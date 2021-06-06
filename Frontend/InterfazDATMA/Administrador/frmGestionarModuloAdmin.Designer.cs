@@ -1,7 +1,7 @@
 ﻿
 namespace InterfazDATMA.Administrador
 {
-    partial class frmConfigurarModuloAdmin
+    partial class frmGestionarModuloAdmin
     {
         /// <summary>
         /// Required designer variable.

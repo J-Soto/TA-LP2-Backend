@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace InterfazDATMA.Administrador
 {
-    public partial class frmConfigurarModuloAdmin : Form
+    public partial class frmGestionarModuloAdmin : Form
     {
         private frmPlantillaGestion plantillaGestion;
-        public frmConfigurarModuloAdmin(frmPlantillaGestion plantilla)
+        public frmGestionarModuloAdmin(frmPlantillaGestion plantilla)
         {
             InitializeComponent();
             dgvTutores.AutoGenerateColumns = false;
@@ -26,7 +26,7 @@ namespace InterfazDATMA.Administrador
 
         private void btnOpPersona_Click(object sender, EventArgs e)
         {
-            plantillaGestion.abrirFormulario(new frmConfigurarModuloPsicologo(this, plantillaGestion));
+            plantillaGestion.abrirFormulario(new frmOperacionesPersona(this, plantillaGestion));
         }
     }
 }

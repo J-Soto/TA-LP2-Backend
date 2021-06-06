@@ -46,11 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrador\frmConfigurarModuloAdmin.cs">
+    <Compile Include="Administrador\frmGestionarModuloAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrador\frmConfigurarModuloAdmin.Designer.cs">
-      <DependentUpon>frmConfigurarModuloAdmin.cs</DependentUpon>
+    <Compile Include="Administrador\frmGestionarModuloAdmin.Designer.cs">
+      <DependentUpon>frmGestionarModuloAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmInsertarPreferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmInsertarPreferencias.Designer.cs">
+      <DependentUpon>frmInsertarPreferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmInsertarPsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmInsertarPsicologo.Designer.cs">
+      <DependentUpon>frmInsertarPsicologo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmInsertarTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmInsertarTutor.Designer.cs">
+      <DependentUpon>frmInsertarTutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmModificarPsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmModificarPsicologo.Designer.cs">
+      <DependentUpon>frmModificarPsicologo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmModificarTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmModificarTutor.Designer.cs">
+      <DependentUpon>frmModificarTutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmOperacionesPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmOperacionesPersona.Designer.cs">
+      <DependentUpon>frmOperacionesPersona.cs</DependentUpon>
     </Compile>
     <Compile Include="psicologo\frmAgregarVideoPsicologo.cs">
       <SubType>Form</SubType>
@@ -180,8 +216,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Administrador\frmConfigurarModuloAdmin.resx">
-      <DependentUpon>frmConfigurarModuloAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="Administrador\frmGestionarModuloAdmin.resx">
+      <DependentUpon>frmGestionarModuloAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmInsertarPreferencias.resx">
+      <DependentUpon>frmInsertarPreferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmInsertarPsicologo.resx">
+      <DependentUpon>frmInsertarPsicologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmInsertarTutor.resx">
+      <DependentUpon>frmInsertarTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmModificarPsicologo.resx">
+      <DependentUpon>frmModificarPsicologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmModificarTutor.resx">
+      <DependentUpon>frmModificarTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmOperacionesPersona.resx">
+      <DependentUpon>frmOperacionesPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="psicologo\frmAgregarVideoPsicologo.resx">
       <DependentUpon>frmAgregarVideoPsicologo.cs</DependentUpon>

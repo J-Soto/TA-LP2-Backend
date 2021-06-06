@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using InterfaceDATMA;
+using InterfazDATMA.Administrador;
 
 namespace InterfazDATMA.plantilla
 {
@@ -28,7 +29,8 @@ namespace InterfazDATMA.plantilla
             //Administrador
             else if (tipoUser == 2)
             {
-
+                formInicial = new frmGestionarModuloAdmin(this);
+                abrirFormulario(formInicial);
             }
             //Tutor
             else
