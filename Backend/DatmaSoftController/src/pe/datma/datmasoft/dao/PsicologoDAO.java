@@ -5,9 +5,9 @@ import pe.datma.datmasoft.rrhh.Psicologo;
 import java.util.ArrayList;
 
 public interface PsicologoDAO {
-     ArrayList<Psicologo> listar();
-     int insertar(Psicologo psicologo);
-     int modificar(Psicologo psicologo);
-     int eliminar(int idPsicologo, int idUsuario);
+     ArrayList<Psicologo> listarPsicologos();
+     int insertarPsicologo(Psicologo psicologo);
+     int modificarPsicologo(Psicologo psicologo);
+     int eliminarPsicologo(int idPsicologo, int idUsuario);
 }
 

@@ -12,7 +12,7 @@ import pe.datma.datmasoft.rrhh.Distrito;
 import pe.datma.datmasoft.rrhh.Tutor;
 
 public class TutorMySQL implements TutorDAO {
-   Connection con;
+    Connection con;
     CallableStatement cst;
     ResultSet rs;
     
