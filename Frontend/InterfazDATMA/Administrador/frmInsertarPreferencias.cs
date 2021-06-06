@@ -25,7 +25,7 @@ namespace InterfazDATMA.Administrador
             chblDispositivos.CheckOnClick = true;
             chblInternet.CheckOnClick = true;
             chblTurno.CheckOnClick = true;
-            chblRedes.CheckOnClick = true;
+            chblRedes.CheckOnClick = true;a
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
