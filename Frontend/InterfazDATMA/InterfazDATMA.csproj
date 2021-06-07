@@ -70,6 +70,30 @@
     <Compile Include="Administrador\frmInsertarTutor.Designer.cs">
       <DependentUpon>frmInsertarTutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrador\frmListaPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmListaPersonas.Designer.cs">
+      <DependentUpon>frmListaPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmListaPsicologos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmListaPsicologos.Designer.cs">
+      <DependentUpon>frmListaPsicologos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmListaTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmListaTotal.Designer.cs">
+      <DependentUpon>frmListaTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmListaTutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmListaTutores.Designer.cs">
+      <DependentUpon>frmListaTutores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrador\frmModificarPsicologo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +111,12 @@
     </Compile>
     <Compile Include="Administrador\frmOperacionesPersona.Designer.cs">
       <DependentUpon>frmOperacionesPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cuidador\frmPerfilCuidador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cuidador\frmPerfilCuidador.Designer.cs">
+      <DependentUpon>frmPerfilCuidador.cs</DependentUpon>
     </Compile>
     <Compile Include="plantilla\frmPlantillaV2.cs">
       <SubType>Form</SubType>
@@ -202,6 +232,12 @@
     <Compile Include="plantilla\frmPlantillaGestion.designer.cs">
       <DependentUpon>frmPlantillaGestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="psicologo\frmPerfiPsicologo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="psicologo\frmPerfiPsicologo.Designer.cs">
+      <DependentUpon>frmPerfiPsicologo.cs</DependentUpon>
+    </Compile>
     <Compile Include="psicologo\frmRegistrarAsistenciaCuidadores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmInsertarTutor.resx">
       <DependentUpon>frmInsertarTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmListaTutores.resx">
+      <DependentUpon>frmListaTutores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmModificarPsicologo.resx">
       <DependentUpon>frmModificarPsicologo.cs</DependentUpon>

@@ -51,9 +51,9 @@ namespace InterfazDATMA.plantilla
             // aside
             // 
             this.aside.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.aside.Controls.Add(this.ImagenDATMA);
             this.aside.Controls.Add(this.Ayuda);
             this.aside.Controls.Add(this.Calendar);
-            this.aside.Controls.Add(this.ImagenDATMA);
             this.aside.Controls.Add(this.Salir);
             this.aside.Controls.Add(this.Perfil);
             this.aside.Controls.Add(this.home);
@@ -69,7 +69,7 @@ namespace InterfazDATMA.plantilla
             this.Ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Ayuda.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ayuda.ForeColor = System.Drawing.Color.White;
-            this.Ayuda.Location = new System.Drawing.Point(4, 625);
+            this.Ayuda.Location = new System.Drawing.Point(4, 766);
             this.Ayuda.Margin = new System.Windows.Forms.Padding(0);
             this.Ayuda.Name = "Ayuda";
             this.Ayuda.Size = new System.Drawing.Size(277, 60);
@@ -84,7 +84,7 @@ namespace InterfazDATMA.plantilla
             this.Calendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Calendar.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Calendar.ForeColor = System.Drawing.Color.White;
-            this.Calendar.Location = new System.Drawing.Point(4, 512);
+            this.Calendar.Location = new System.Drawing.Point(4, 653);
             this.Calendar.Margin = new System.Windows.Forms.Padding(0);
             this.Calendar.Name = "Calendar";
             this.Calendar.Size = new System.Drawing.Size(277, 60);
@@ -96,9 +96,10 @@ namespace InterfazDATMA.plantilla
             // ImagenDATMA
             // 
             this.ImagenDATMA.BackColor = System.Drawing.Color.White;
-            this.ImagenDATMA.Location = new System.Drawing.Point(30, 30);
+            this.ImagenDATMA.Image = global::InterfazDATMA.Properties.Resources.DATMA_logo;
+            this.ImagenDATMA.Location = new System.Drawing.Point(12, 12);
             this.ImagenDATMA.Name = "ImagenDATMA";
-            this.ImagenDATMA.Size = new System.Drawing.Size(229, 193);
+            this.ImagenDATMA.Size = new System.Drawing.Size(256, 326);
             this.ImagenDATMA.TabIndex = 3;
             this.ImagenDATMA.TabStop = false;
             this.ImagenDATMA.Click += new System.EventHandler(this.ImagenDATMA_Click);
@@ -109,7 +110,7 @@ namespace InterfazDATMA.plantilla
             this.Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Salir.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Salir.ForeColor = System.Drawing.Color.White;
-            this.Salir.Location = new System.Drawing.Point(0, 880);
+            this.Salir.Location = new System.Drawing.Point(0, 1021);
             this.Salir.Margin = new System.Windows.Forms.Padding(0);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(277, 60);
@@ -124,7 +125,7 @@ namespace InterfazDATMA.plantilla
             this.Perfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Perfil.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Perfil.ForeColor = System.Drawing.Color.White;
-            this.Perfil.Location = new System.Drawing.Point(4, 393);
+            this.Perfil.Location = new System.Drawing.Point(4, 534);
             this.Perfil.Margin = new System.Windows.Forms.Padding(0);
             this.Perfil.Name = "Perfil";
             this.Perfil.Size = new System.Drawing.Size(277, 60);
@@ -139,7 +140,7 @@ namespace InterfazDATMA.plantilla
             this.home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.home.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.home.ForeColor = System.Drawing.Color.White;
-            this.home.Location = new System.Drawing.Point(9, 285);
+            this.home.Location = new System.Drawing.Point(9, 426);
             this.home.Margin = new System.Windows.Forms.Padding(0);
             this.home.Name = "home";
             this.home.Size = new System.Drawing.Size(277, 60);

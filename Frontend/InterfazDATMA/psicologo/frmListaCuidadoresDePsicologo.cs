@@ -35,7 +35,7 @@ namespace InterfaceDATMA
 
         private void btnRegresarCurso_Click(object sender, EventArgs e)
         {
-            formPlantillaGestion.abrirFormulario(formConfigurarModulo);
+            //formPlantillaGestion.abrirFormulario(formConfigurarModulo);
         }
     }
 }
