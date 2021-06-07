@@ -212,7 +212,7 @@ namespace InterfazDATMA.plantilla
             this.pnlContenedor.Size = new System.Drawing.Size(1897, 1034);
             this.pnlContenedor.TabIndex = 2;
             // 
-            // Plantilla
+            // frmPlantillaV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,7 +222,7 @@ namespace InterfazDATMA.plantilla
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.aside);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Plantilla";
+            this.Name = "frmPlantillaV2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.aside.ResumeLayout(false);
