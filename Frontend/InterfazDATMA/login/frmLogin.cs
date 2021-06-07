@@ -61,7 +61,8 @@ namespace InterfaceDATMA
             //0->cuidador
             //1->psicologo
             //2->admin
-            abrirFormulario(new frmPlantillaGestion(2));
+            //abrirFormulario(new frmPlantillaGestion(2));
+            abrirFormulario(new frmPlantillaV2(2));
         }
 
         private void frmLogin_Load(object sender, EventArgs e)

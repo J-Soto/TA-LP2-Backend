@@ -13,16 +13,15 @@ namespace InterfazDATMA.Administrador
 {
     public partial class frmGestionarModuloAdmin : Form
     {
-        private frmPlantillaGestion plantillaGestion;
-        public frmGestionarModuloAdmin(frmPlantillaGestion plantilla)
+        //private frmPlantillaGestion plantillaGestion;
+        private frmPlantillaV2 plantillaGestion;
+        public frmGestionarModuloAdmin(frmPlantillaV2 plantilla)
         {
             InitializeComponent();
             dgvTutores.AutoGenerateColumns = false;
             dgvPsicologos.AutoGenerateColumns = false;
             plantillaGestion = plantilla;
         }
-
-
 
         private void btnOpPersona_Click(object sender, EventArgs e)
         {

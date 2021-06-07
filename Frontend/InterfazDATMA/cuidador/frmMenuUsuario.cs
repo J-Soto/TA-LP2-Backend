@@ -1,4 +1,6 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +15,12 @@ namespace InterfaceDATMA
     public partial class frmMenuUsuario : Form
     {
         private ImageList walkthrough = new ImageList();
-        public frmMenuUsuario()
+        //private frmPlantillaGestion plantillaGestion;
+        private frmPlantillaV2 plantillaGestion;
+        public frmMenuUsuario(frmPlantillaV2 plantilla)
         {
             InitializeComponent();
+            plantillaGestion = plantilla;
         }
 
         private void ayudaToolStripButton_Click(object sender, EventArgs e)
