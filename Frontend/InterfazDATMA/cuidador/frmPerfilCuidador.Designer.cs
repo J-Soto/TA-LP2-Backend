@@ -29,8 +29,6 @@ namespace InterfazDATMA.cuidador
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.Periodo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -62,24 +60,12 @@ namespace InterfazDATMA.cuidador
             this.Genero = new System.Windows.Forms.Label();
             this.FechaNacimiento = new System.Windows.Forms.Label();
             this.Permisos = new System.Windows.Forms.Label();
+            this.txtPermiso = new System.Windows.Forms.Label();
+            this.txtPeriodo = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(1731, 69);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 31);
-            this.textBox14.TabIndex = 68;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(1222, 69);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 31);
-            this.textBox4.TabIndex = 67;
             // 
             // Periodo
             // 
@@ -402,11 +388,35 @@ namespace InterfazDATMA.cuidador
             this.Permisos.BackColor = System.Drawing.Color.Transparent;
             this.Permisos.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Permisos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Permisos.Location = new System.Drawing.Point(1426, 39);
+            this.Permisos.Location = new System.Drawing.Point(1455, 48);
             this.Permisos.Name = "Permisos";
             this.Permisos.Size = new System.Drawing.Size(190, 49);
             this.Permisos.TabIndex = 63;
             this.Permisos.Text = "Permisos";
+            // 
+            // txtPermiso
+            // 
+            this.txtPermiso.AutoSize = true;
+            this.txtPermiso.BackColor = System.Drawing.Color.Transparent;
+            this.txtPermiso.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.txtPermiso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.txtPermiso.Location = new System.Drawing.Point(1712, 48);
+            this.txtPermiso.Name = "txtPermiso";
+            this.txtPermiso.Size = new System.Drawing.Size(114, 49);
+            this.txtPermiso.TabIndex = 68;
+            this.txtPermiso.Text = "Tutor";
+            // 
+            // txtPeriodo
+            // 
+            this.txtPeriodo.AutoSize = true;
+            this.txtPeriodo.BackColor = System.Drawing.Color.Transparent;
+            this.txtPeriodo.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.txtPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.txtPeriodo.Location = new System.Drawing.Point(1213, 48);
+            this.txtPeriodo.Name = "txtPeriodo";
+            this.txtPeriodo.Size = new System.Drawing.Size(101, 49);
+            this.txtPeriodo.TabIndex = 69;
+            this.txtPeriodo.Text = "21-1";
             // 
             // frmPerfilCuidador
             // 
@@ -414,8 +424,8 @@ namespace InterfazDATMA.cuidador
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(72)))));
             this.ClientSize = new System.Drawing.Size(1871, 963);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPeriodo);
+            this.Controls.Add(this.txtPermiso);
             this.Controls.Add(this.Periodo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -435,9 +445,6 @@ namespace InterfazDATMA.cuidador
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label Periodo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -469,5 +476,7 @@ namespace InterfazDATMA.cuidador
         private System.Windows.Forms.Label Genero;
         private System.Windows.Forms.Label FechaNacimiento;
         private System.Windows.Forms.Label Permisos;
+        private System.Windows.Forms.Label txtPermiso;
+        private System.Windows.Forms.Label txtPeriodo;
     }
 }

@@ -29,8 +29,6 @@ namespace InterfazDATMA.psicologo
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.Periodo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -58,24 +56,12 @@ namespace InterfazDATMA.psicologo
             this.Genero = new System.Windows.Forms.Label();
             this.FechaNacimiento = new System.Windows.Forms.Label();
             this.Permisos = new System.Windows.Forms.Label();
+            this.txtPermiso = new System.Windows.Forms.Label();
+            this.txtPeriodo = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(1731, 69);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 31);
-            this.textBox14.TabIndex = 74;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(1222, 69);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 31);
-            this.textBox4.TabIndex = 73;
             // 
             // Periodo
             // 
@@ -362,14 +348,38 @@ namespace InterfazDATMA.psicologo
             this.Permisos.TabIndex = 69;
             this.Permisos.Text = "Permisos";
             // 
+            // txtPermiso
+            // 
+            this.txtPermiso.AutoSize = true;
+            this.txtPermiso.BackColor = System.Drawing.Color.Transparent;
+            this.txtPermiso.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.txtPermiso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.txtPermiso.Location = new System.Drawing.Point(1648, 39);
+            this.txtPermiso.Name = "txtPermiso";
+            this.txtPermiso.Size = new System.Drawing.Size(211, 49);
+            this.txtPermiso.TabIndex = 74;
+            this.txtPermiso.Text = "Psicologo";
+            // 
+            // txtPeriodo
+            // 
+            this.txtPeriodo.AutoSize = true;
+            this.txtPeriodo.BackColor = System.Drawing.Color.Transparent;
+            this.txtPeriodo.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.txtPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.txtPeriodo.Location = new System.Drawing.Point(1200, 48);
+            this.txtPeriodo.Name = "txtPeriodo";
+            this.txtPeriodo.Size = new System.Drawing.Size(101, 49);
+            this.txtPeriodo.TabIndex = 75;
+            this.txtPeriodo.Text = "21-1";
+            // 
             // frmPerfiPsicologo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(72)))));
             this.ClientSize = new System.Drawing.Size(1871, 963);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPeriodo);
+            this.Controls.Add(this.txtPermiso);
             this.Controls.Add(this.Periodo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -389,9 +399,6 @@ namespace InterfazDATMA.psicologo
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label Periodo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -419,5 +426,7 @@ namespace InterfazDATMA.psicologo
         private System.Windows.Forms.Label Genero;
         private System.Windows.Forms.Label FechaNacimiento;
         private System.Windows.Forms.Label Permisos;
+        private System.Windows.Forms.Label txtPermiso;
+        private System.Windows.Forms.Label txtPeriodo;
     }
 }

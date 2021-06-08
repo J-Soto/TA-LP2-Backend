@@ -21,5 +21,10 @@ namespace InterfazDATMA.cuidador
         {
 
         }
+
+        private void txtPermiso_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
