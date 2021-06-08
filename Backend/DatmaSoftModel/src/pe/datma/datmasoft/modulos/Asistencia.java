@@ -5,30 +5,33 @@
  */
 package pe.datma.datmasoft.modulos;
 
+import pe.datma.datmasoft.rrhh.Usuario;
+
 /**
  *
  * @author maldo
  */
 public class Asistencia {
-    private int idAsistencia;
-    private int tipoAsistencia; //1->Asistio, 2->Tardanza, 3->No asistio
+    private int id;
+    private int tipo;  //1->Asistio, 2->Tardanza, 3->No asistio
     private String descripcion;
     private Actividad actividad;
+    private Usuario usuario;
 
-    public int getIdAsistencia() {
-        return idAsistencia;
+    public int getId() {
+        return id;
     }
 
-    public void setIdAsistencia(int idAsistencia) {
-        this.idAsistencia = idAsistencia;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getTipoAsistencia() {
-        return tipoAsistencia;
+    public int getTipo() {
+        return tipo;
     }
 
-    public void setTipoAsistencia(int tipoAsistencia) {
-        this.tipoAsistencia = tipoAsistencia;
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
 
     public String getDescripcion() {
@@ -46,6 +49,12 @@ public class Asistencia {
     public void setActividad(Actividad actividad) {
         this.actividad = actividad;
     }
-    
-    
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
 }
