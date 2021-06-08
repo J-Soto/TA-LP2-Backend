@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace InterfazDATMA.Administrador
 {
-    public partial class frmListaPsicologos : Form
+    public partial class Header : Form
     {
-        public frmListaPsicologos()
+        public Header()
         {
             InitializeComponent();
         }

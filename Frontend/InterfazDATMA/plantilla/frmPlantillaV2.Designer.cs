@@ -30,6 +30,7 @@ namespace InterfazDATMA.plantilla
         private void InitializeComponent()
         {
             this.aside = new System.Windows.Forms.Panel();
+            this.ImagenDATMA = new System.Windows.Forms.PictureBox();
             this.Salir = new System.Windows.Forms.Button();
             this.Perfil = new System.Windows.Forms.Button();
             this.home = new System.Windows.Forms.Button();
@@ -37,18 +38,17 @@ namespace InterfazDATMA.plantilla
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.TipoUsuario = new System.Windows.Forms.Label();
-            this.pnlContenedor = new System.Windows.Forms.Panel();
             this.ImagenPerfil = new System.Windows.Forms.PictureBox();
-            this.ImagenDATMA = new System.Windows.Forms.PictureBox();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
             this.aside.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenDATMA)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenDATMA)).BeginInit();
             this.SuspendLayout();
             // 
             // aside
             // 
-            this.aside.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.aside.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.aside.Controls.Add(this.ImagenDATMA);
             this.aside.Controls.Add(this.Salir);
             this.aside.Controls.Add(this.Perfil);
@@ -58,6 +58,17 @@ namespace InterfazDATMA.plantilla
             this.aside.Name = "aside";
             this.aside.Size = new System.Drawing.Size(281, 1217);
             this.aside.TabIndex = 0;
+            // 
+            // ImagenDATMA
+            // 
+            this.ImagenDATMA.BackColor = System.Drawing.Color.White;
+            this.ImagenDATMA.Image = global::InterfazDATMA.Properties.Resources.DATMA_logo;
+            this.ImagenDATMA.Location = new System.Drawing.Point(12, 13);
+            this.ImagenDATMA.Name = "ImagenDATMA";
+            this.ImagenDATMA.Size = new System.Drawing.Size(256, 326);
+            this.ImagenDATMA.TabIndex = 3;
+            this.ImagenDATMA.TabStop = false;
+            this.ImagenDATMA.Click += new System.EventHandler(this.ImagenDATMA_Click);
             // 
             // Salir
             // 
@@ -119,7 +130,7 @@ namespace InterfazDATMA.plantilla
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.TipoUsuario);
             this.panel1.Controls.Add(this.ImagenPerfil);
@@ -150,14 +161,6 @@ namespace InterfazDATMA.plantilla
             this.TipoUsuario.TabIndex = 2;
             this.TipoUsuario.Text = "TipoUsuario";
             // 
-            // pnlContenedor
-            // 
-            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenedor.Location = new System.Drawing.Point(281, 183);
-            this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(1897, 1034);
-            this.pnlContenedor.TabIndex = 2;
-            // 
             // ImagenPerfil
             // 
             this.ImagenPerfil.BackColor = System.Drawing.Color.White;
@@ -168,16 +171,14 @@ namespace InterfazDATMA.plantilla
             this.ImagenPerfil.TabStop = false;
             this.ImagenPerfil.Click += new System.EventHandler(this.ImagenPerfil_Click);
             // 
-            // ImagenDATMA
+            // pnlContenedor
             // 
-            this.ImagenDATMA.BackColor = System.Drawing.Color.White;
-            this.ImagenDATMA.Image = global::InterfazDATMA.Properties.Resources.DATMA_logo;
-            this.ImagenDATMA.Location = new System.Drawing.Point(12, 13);
-            this.ImagenDATMA.Name = "ImagenDATMA";
-            this.ImagenDATMA.Size = new System.Drawing.Size(256, 326);
-            this.ImagenDATMA.TabIndex = 3;
-            this.ImagenDATMA.TabStop = false;
-            this.ImagenDATMA.Click += new System.EventHandler(this.ImagenDATMA_Click);
+            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(72)))));
+            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedor.Location = new System.Drawing.Point(281, 183);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(1897, 1034);
+            this.pnlContenedor.TabIndex = 2;
             // 
             // frmPlantillaV2
             // 
@@ -193,10 +194,10 @@ namespace InterfazDATMA.plantilla
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.aside.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenDATMA)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenDATMA)).EndInit();
             this.ResumeLayout(false);
 
         }
