@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -270,6 +271,15 @@
     <EmbeddedResource Include="Administrador\frmInsertarTutor.resx">
       <DependentUpon>frmInsertarTutor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmListaPersonas.resx">
+      <DependentUpon>frmListaPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmListaPsicologos.resx">
+      <DependentUpon>frmListaPsicologos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmListaTotal.resx">
+      <DependentUpon>frmListaTotal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmListaTutores.resx">
       <DependentUpon>frmListaTutores.cs</DependentUpon>
     </EmbeddedResource>
@@ -281,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmOperacionesPersona.resx">
       <DependentUpon>frmOperacionesPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cuidador\frmPerfilCuidador.resx">
+      <DependentUpon>frmPerfilCuidador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="plantilla\frmPlantillaV2.resx">
       <DependentUpon>frmPlantillaV2.cs</DependentUpon>
@@ -338,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="plantilla\frmPlantillaGestion.resx">
       <DependentUpon>frmPlantillaGestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="psicologo\frmPerfiPsicologo.resx">
+      <DependentUpon>frmPerfiPsicologo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="psicologo\frmRegistrarAsistenciaCuidadores.resx">
       <DependentUpon>frmRegistrarAsistenciaCuidadores.cs</DependentUpon>

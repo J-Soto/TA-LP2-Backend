@@ -30,30 +30,26 @@ namespace InterfazDATMA.plantilla
         private void InitializeComponent()
         {
             this.aside = new System.Windows.Forms.Panel();
-            this.Ayuda = new System.Windows.Forms.Button();
-            this.Calendar = new System.Windows.Forms.Button();
-            this.ImagenDATMA = new System.Windows.Forms.PictureBox();
             this.Salir = new System.Windows.Forms.Button();
             this.Perfil = new System.Windows.Forms.Button();
             this.home = new System.Windows.Forms.Button();
             this.UserName = new System.Windows.Forms.Label();
-            this.ImagenPerfil = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.TipoUsuario = new System.Windows.Forms.Label();
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.ImagenPerfil = new System.Windows.Forms.PictureBox();
+            this.ImagenDATMA = new System.Windows.Forms.PictureBox();
             this.aside.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenDATMA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenDATMA)).BeginInit();
             this.SuspendLayout();
             // 
             // aside
             // 
             this.aside.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
             this.aside.Controls.Add(this.ImagenDATMA);
-            this.aside.Controls.Add(this.Ayuda);
-            this.aside.Controls.Add(this.Calendar);
             this.aside.Controls.Add(this.Salir);
             this.aside.Controls.Add(this.Perfil);
             this.aside.Controls.Add(this.home);
@@ -62,47 +58,6 @@ namespace InterfazDATMA.plantilla
             this.aside.Name = "aside";
             this.aside.Size = new System.Drawing.Size(281, 1217);
             this.aside.TabIndex = 0;
-            // 
-            // Ayuda
-            // 
-            this.Ayuda.FlatAppearance.BorderSize = 0;
-            this.Ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Ayuda.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ayuda.ForeColor = System.Drawing.Color.White;
-            this.Ayuda.Location = new System.Drawing.Point(4, 766);
-            this.Ayuda.Margin = new System.Windows.Forms.Padding(0);
-            this.Ayuda.Name = "Ayuda";
-            this.Ayuda.Size = new System.Drawing.Size(277, 60);
-            this.Ayuda.TabIndex = 5;
-            this.Ayuda.Text = "Ayuda";
-            this.Ayuda.UseVisualStyleBackColor = true;
-            this.Ayuda.Click += new System.EventHandler(this.Ayuda_Click);
-            // 
-            // Calendar
-            // 
-            this.Calendar.FlatAppearance.BorderSize = 0;
-            this.Calendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Calendar.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calendar.ForeColor = System.Drawing.Color.White;
-            this.Calendar.Location = new System.Drawing.Point(4, 653);
-            this.Calendar.Margin = new System.Windows.Forms.Padding(0);
-            this.Calendar.Name = "Calendar";
-            this.Calendar.Size = new System.Drawing.Size(277, 60);
-            this.Calendar.TabIndex = 4;
-            this.Calendar.Text = "Calendario";
-            this.Calendar.UseVisualStyleBackColor = true;
-            this.Calendar.Click += new System.EventHandler(this.Calendar_Click);
-            // 
-            // ImagenDATMA
-            // 
-            this.ImagenDATMA.BackColor = System.Drawing.Color.White;
-            this.ImagenDATMA.Image = global::InterfazDATMA.Properties.Resources.DATMA_logo;
-            this.ImagenDATMA.Location = new System.Drawing.Point(12, 12);
-            this.ImagenDATMA.Name = "ImagenDATMA";
-            this.ImagenDATMA.Size = new System.Drawing.Size(256, 326);
-            this.ImagenDATMA.TabIndex = 3;
-            this.ImagenDATMA.TabStop = false;
-            this.ImagenDATMA.Click += new System.EventHandler(this.ImagenDATMA_Click);
             // 
             // Salir
             // 
@@ -162,16 +117,6 @@ namespace InterfazDATMA.plantilla
             this.UserName.Text = "Nombre Usuario";
             this.UserName.Click += new System.EventHandler(this.UserName_Click);
             // 
-            // ImagenPerfil
-            // 
-            this.ImagenPerfil.BackColor = System.Drawing.Color.White;
-            this.ImagenPerfil.Location = new System.Drawing.Point(1416, 71);
-            this.ImagenPerfil.Name = "ImagenPerfil";
-            this.ImagenPerfil.Size = new System.Drawing.Size(104, 84);
-            this.ImagenPerfil.TabIndex = 1;
-            this.ImagenPerfil.TabStop = false;
-            this.ImagenPerfil.Click += new System.EventHandler(this.ImagenPerfil_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
@@ -213,6 +158,27 @@ namespace InterfazDATMA.plantilla
             this.pnlContenedor.Size = new System.Drawing.Size(1897, 1034);
             this.pnlContenedor.TabIndex = 2;
             // 
+            // ImagenPerfil
+            // 
+            this.ImagenPerfil.BackColor = System.Drawing.Color.White;
+            this.ImagenPerfil.Location = new System.Drawing.Point(1416, 71);
+            this.ImagenPerfil.Name = "ImagenPerfil";
+            this.ImagenPerfil.Size = new System.Drawing.Size(104, 84);
+            this.ImagenPerfil.TabIndex = 1;
+            this.ImagenPerfil.TabStop = false;
+            this.ImagenPerfil.Click += new System.EventHandler(this.ImagenPerfil_Click);
+            // 
+            // ImagenDATMA
+            // 
+            this.ImagenDATMA.BackColor = System.Drawing.Color.White;
+            this.ImagenDATMA.Image = global::InterfazDATMA.Properties.Resources.DATMA_logo;
+            this.ImagenDATMA.Location = new System.Drawing.Point(12, 13);
+            this.ImagenDATMA.Name = "ImagenDATMA";
+            this.ImagenDATMA.Size = new System.Drawing.Size(256, 326);
+            this.ImagenDATMA.TabIndex = 3;
+            this.ImagenDATMA.TabStop = false;
+            this.ImagenDATMA.Click += new System.EventHandler(this.ImagenDATMA_Click);
+            // 
             // frmPlantillaV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -227,10 +193,10 @@ namespace InterfazDATMA.plantilla
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.aside.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenDATMA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenDATMA)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -245,8 +211,6 @@ namespace InterfazDATMA.plantilla
         private System.Windows.Forms.Label UserName;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label TipoUsuario;
-        private System.Windows.Forms.Button Ayuda;
-        private System.Windows.Forms.Button Calendar;
         private System.Windows.Forms.PictureBox ImagenDATMA;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel pnlContenedor;

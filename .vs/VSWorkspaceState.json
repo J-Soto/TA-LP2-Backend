@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Backend\\DatmaSoftModel",
+    "\\Backend\\DatmaSoftModel\\src",
+    "\\Backend\\DatmaSoftModel\\src\\pe",
+    "\\Backend\\DatmaSoftModel\\src\\pe\\datma",
+    "\\Backend\\DatmaSoftModel\\src\\pe\\datma\\datmasoft",
+    "\\Backend\\DatmaSoftModel\\src\\pe\\datma\\datmasoft\\familias",
     "\\Frontend",
     "\\Frontend\\InterfazDATMA"
   ],
