@@ -13,9 +13,11 @@ namespace InterfazDATMA.Administrador
 {
     public partial class frmOperacionesPersona : Form
     {
-        private frmPlantillaGestion formPlantilla;
+        //private frmPlantillaGestion formPlantilla;
+        private frmPlantillaV2 formPlantilla;
         private frmGestionarModuloAdmin formGestionarModulos;
-        public frmOperacionesPersona(frmGestionarModuloAdmin formGestionarModulos, frmPlantillaGestion formPlantilla)
+
+        public frmOperacionesPersona(frmGestionarModuloAdmin formGestionarModulos, frmPlantillaV2 formPlantilla)
         {
             InitializeComponent();
             this.formPlantilla = formPlantilla;

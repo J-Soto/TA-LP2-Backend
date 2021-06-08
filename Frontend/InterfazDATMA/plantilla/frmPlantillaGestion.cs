@@ -23,14 +23,14 @@ namespace InterfazDATMA.plantilla
             //Psicologo
             if(tipoUser == 1)
             {
-                formInicial = new frmGestionarModulosPsicologo(this);
-                abrirFormulario(formInicial);
+                //formInicial = new frmGestionarModulosPsicologo(this);
+                //abrirFormulario(formInicial);
             }
             //Administrador
             else if (tipoUser == 2)
             {
-                formInicial = new frmGestionarModuloAdmin(this);
-                abrirFormulario(formInicial);
+                //formInicial = new frmGestionarModuloAdmin(this);
+                //abrirFormulario(formInicial);
             }
             //Tutor
             else
@@ -42,7 +42,7 @@ namespace InterfazDATMA.plantilla
 
         }
 
-
+        /*
         public void abrirFormulario(Form formularioAbrir)
         {
             if (formularioActivo != null) formularioActivo.Hide();
@@ -63,7 +63,7 @@ namespace InterfazDATMA.plantilla
                 throw new Exception(ex.Message);
             }
         }
-
+        */
         private void frmPlantillaGestion_Load(object sender, EventArgs e)
         {
 
@@ -71,7 +71,7 @@ namespace InterfazDATMA.plantilla
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            abrirFormulario(formInicial);
+            //abrirFormulario(formInicial);
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
