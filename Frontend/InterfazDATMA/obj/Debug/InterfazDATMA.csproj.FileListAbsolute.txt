@@ -106,3 +106,17 @@ C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\Interfaz
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmModificarPreferencias.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmInsertarDistrito.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe.config
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.pdb
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csprojAssemblyReference.cache
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmInsertarDistrito.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaPersonas.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.Header.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaTotal.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaTutores.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmModificarPreferencias.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.cuidador.frmPerfilCuidador.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.psicologo.frmPerfiPsicologo.resources
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.exe
+C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
