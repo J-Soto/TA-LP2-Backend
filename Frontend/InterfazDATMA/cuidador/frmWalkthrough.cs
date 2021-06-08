@@ -43,8 +43,8 @@ namespace InterfaceDATMA
 
         private void btnFinalizar_Click_1(object sender, EventArgs e)
         {
-            Form formularioMostrar = new frmMenuUsuario();
-            formularioMostrar.Show();
+            //Form formularioMostrar = new frmMenuUsuario();
+            //formularioMostrar.Show();
             this.Hide();
         }
 

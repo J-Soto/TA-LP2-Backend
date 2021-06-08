@@ -27,10 +27,10 @@ namespace InterfaceDATMA
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
-        {
+        {/*
             Form formularioMostrar = new frmMenuUsuario();
             formularioMostrar.Show();
-            this.Hide();
+            this.Hide();*/
         }
 
         private void frmInformacionCurso_Load(object sender, EventArgs e)

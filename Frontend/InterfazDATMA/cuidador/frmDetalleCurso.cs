@@ -28,10 +28,10 @@ namespace InterfaceDATMA
 
 
         private void btnInicio_Click(object sender, EventArgs e)
-        {
+        {/*
             Form formularioMostrar = new frmMenuUsuario();
             formularioMostrar.Show();
-            this.Hide();
+            this.Hide();*/
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

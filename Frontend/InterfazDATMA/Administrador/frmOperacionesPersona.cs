@@ -13,11 +13,10 @@ namespace InterfazDATMA.Administrador
 {
     public partial class frmOperacionesPersona : Form
     {
-        //private frmPlantillaGestion formPlantilla;
-        private frmPlantillaV2 formPlantilla;
+        private frmPlantillaGestion formPlantilla;
         private frmGestionarModuloAdmin formGestionarModulos;
 
-        public frmOperacionesPersona(frmGestionarModuloAdmin formGestionarModulos, frmPlantillaV2 formPlantilla)
+        public frmOperacionesPersona(frmGestionarModuloAdmin formGestionarModulos, frmPlantillaGestion formPlantilla)
         {
             InitializeComponent();
             this.formPlantilla = formPlantilla;
@@ -27,6 +26,21 @@ namespace InterfazDATMA.Administrador
         private void btnInsertarTutor_Click(object sender, EventArgs e)
         {
             formPlantilla.abrirFormulario(new frmInsertarTutor(this, formPlantilla));
+        }
+
+        private void btnInsertarPsi_Click(object sender, EventArgs e)
+        {
+            formPlantilla.abrirFormulario(new frmInsertarPsicologo(this, formPlantilla));
+        }
+
+        private void btnModificarPsi_Click(object sender, EventArgs e)
+        {
+            formPlantilla.abrirFormulario(new frmModificarPsicologo(this, formPlantilla));
+        }
+
+        private void btnModificarTutor_Click(object sender, EventArgs e)
+        {
+            formPlantilla.abrirFormulario(new frmModificarTutor(this, formPlantilla));
         }
     }
 }

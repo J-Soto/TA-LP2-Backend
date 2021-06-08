@@ -83,6 +83,7 @@ namespace InterfazDATMA.Administrador
             this.btnInsertarPsi.TabIndex = 12;
             this.btnInsertarPsi.Text = "Insertar Psicólogo";
             this.btnInsertarPsi.UseVisualStyleBackColor = false;
+            this.btnInsertarPsi.Click += new System.EventHandler(this.btnInsertarPsi_Click);
             // 
             // btnInsertarTutor
             // 
@@ -138,6 +139,7 @@ namespace InterfazDATMA.Administrador
             this.btnModificarTutor.TabIndex = 17;
             this.btnModificarTutor.Text = "Modificar Tutor";
             this.btnModificarTutor.UseVisualStyleBackColor = false;
+            this.btnModificarTutor.Click += new System.EventHandler(this.btnModificarTutor_Click);
             // 
             // btnModificarPsi
             // 
@@ -153,6 +155,7 @@ namespace InterfazDATMA.Administrador
             this.btnModificarPsi.TabIndex = 16;
             this.btnModificarPsi.Text = "Modificar Psicólogo";
             this.btnModificarPsi.UseVisualStyleBackColor = false;
+            this.btnModificarPsi.Click += new System.EventHandler(this.btnModificarPsi_Click);
             // 
             // frmOperacionesPersona
             // 

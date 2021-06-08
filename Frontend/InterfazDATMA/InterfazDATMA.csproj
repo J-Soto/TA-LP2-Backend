@@ -95,6 +95,12 @@
     <Compile Include="Administrador\frmListaTutores.Designer.cs">
       <DependentUpon>frmListaTutores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrador\frmModificarPreferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmModificarPreferencias.Designer.cs">
+      <DependentUpon>frmModificarPreferencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrador\frmModificarPsicologo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmListaTutores.resx">
       <DependentUpon>frmListaTutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmModificarPreferencias.resx">
+      <DependentUpon>frmModificarPreferencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmModificarPsicologo.resx">
       <DependentUpon>frmModificarPsicologo.cs</DependentUpon>

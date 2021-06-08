@@ -23,13 +23,13 @@ namespace InterfazDATMA.plantilla
             //Psicologo
             if (tipoUser == 1)
             {
-                formInicial = new frmGestionarModulosPsicologo(this);
+                //formInicial = new frmGestionarModulosPsicologo(this);
                 abrirFormulario(formInicial);
             }
             //Administrador
             else if (tipoUser == 2)
             {
-                formInicial = new frmGestionarModuloAdmin(this);
+                //formInicial = new frmGestionarModuloAdmin(this);
                 abrirFormulario(formInicial);
             }
             //Tutor

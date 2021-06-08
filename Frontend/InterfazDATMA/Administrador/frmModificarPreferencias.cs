@@ -11,15 +11,15 @@ using System.Windows.Forms;
 
 namespace InterfazDATMA.Administrador
 {
-    public partial class frmInsertarPreferencias : Form
+    public partial class frmModificarPreferencias : Form
     {
         private frmPlantillaGestion formPlantilla;
-        private frmInsertarTutor formAnterior;
-        public frmInsertarPreferencias(frmInsertarTutor formAnterior, frmPlantillaGestion formPlantilla)
+        public frmModificarTutor formAnterior;
+        public frmModificarPreferencias(frmModificarTutor formModificarTutor, frmPlantillaGestion formPlantilla)
         {
             InitializeComponent();
             this.formPlantilla = formPlantilla;
-            this.formAnterior = formAnterior;
+            this.formAnterior = formModificarTutor;
 
             chblDias.CheckOnClick = true;
             chblDispositivos.CheckOnClick = true;
@@ -28,14 +28,14 @@ namespace InterfazDATMA.Administrador
             chblRedes.CheckOnClick = true;
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            formPlantilla.abrirFormulario(formAnterior.formOperacionPersona);
-        }
-
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             formPlantilla.abrirFormulario(formAnterior);
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            formPlantilla.abrirFormulario(formAnterior.formOperacionPersona);
         }
     }
 }

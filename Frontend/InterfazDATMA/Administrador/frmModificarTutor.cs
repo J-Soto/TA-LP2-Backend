@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,23 @@ namespace InterfazDATMA.Administrador
 {
     public partial class frmModificarTutor : Form
     {
-        public frmModificarTutor()
+        private frmPlantillaGestion formPlantilla;
+        public frmOperacionesPersona formOperacionPersona;
+        public frmModificarTutor(frmOperacionesPersona formOperacionPersona, frmPlantillaGestion formPlantilla)
         {
             InitializeComponent();
+            this.formPlantilla = formPlantilla;
+            this.formOperacionPersona = formOperacionPersona;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            formPlantilla.abrirFormulario(formOperacionPersona);
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            formPlantilla.abrirFormulario(new frmModificarPreferencias(this,formPlantilla));
         }
     }
 }

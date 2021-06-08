@@ -13,10 +13,9 @@ namespace InterfaceDATMA
 {
     public partial class frmGestionarModulosPsicologo : Form
     {
-        //private frmPlantillaGestion plantillaGestion;
-        private frmPlantillaV2 plantillaGestion;
+        private frmPlantillaGestion plantillaGestion;
 
-        public frmGestionarModulosPsicologo(frmPlantillaV2 plantilla)
+        public frmGestionarModulosPsicologo(frmPlantillaGestion plantilla)
         {
             InitializeComponent();
             plantillaGestion = plantilla;
