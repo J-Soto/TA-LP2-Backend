@@ -103,5 +103,25 @@ public class CursoTemaMySQL implements CursoTemaDAO {
         }
         return arr;
     }
+
+    @Override
+    public int eliminar(int idCursoTema) {
+        int resultado = 0;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String query = "{call ELIMINAR_CURSOTEMA(?)}";
+            cst = con.prepareCall(query);
+            cst.setInt("_id_cursotema", idCursoTema);
+            cst.executeUpdate();
+            resultado = 1;
+        } catch(ClassNotFoundException | SQLException ex){
+            System.out.println(ex.getMessage());
+        } finally{
+            try{ cst.close(); }catch(SQLException ex){}
+            try{ con.close(); }catch(SQLException ex){}
+        }
+        return resultado;
+    }
     
 }

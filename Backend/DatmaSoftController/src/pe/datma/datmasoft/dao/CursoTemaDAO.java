@@ -7,4 +7,5 @@ public interface CursoTemaDAO {
     int insertar(CursoTema ct);
     int modificar(CursoTema ct);
     ArrayList<CursoTema> listar();
+    int eliminar(int idCursoTema);
 }
