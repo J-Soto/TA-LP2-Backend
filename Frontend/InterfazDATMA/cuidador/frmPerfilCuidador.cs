@@ -16,10 +16,5 @@ namespace InterfazDATMA.cuidador
         {
             InitializeComponent();
         }
-
-        private void frmPerfilCuidador_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
