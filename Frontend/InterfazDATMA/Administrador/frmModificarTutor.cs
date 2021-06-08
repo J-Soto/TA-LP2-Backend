@@ -31,5 +31,14 @@ namespace InterfazDATMA.Administrador
         {
             formPlantilla.abrirFormulario(new frmModificarPreferencias(this,formPlantilla));
         }
+
+        private void btnNuevoDistrito_Click(object sender, EventArgs e)
+        {
+            frmInsertarDistrito frmDistrito = new frmInsertarDistrito();
+            if (frmDistrito.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
     }
 }

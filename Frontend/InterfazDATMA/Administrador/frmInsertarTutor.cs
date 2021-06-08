@@ -45,5 +45,119 @@ namespace InterfazDATMA.Administrador
         {
             formPlantilla.abrirFormulario(formOperacionPersona);
         }
+
+        private void btnNuevoDistrito_Click(object sender, EventArgs e)
+        {
+            frmInsertarDistrito frmDistrito = new frmInsertarDistrito();
+            if (frmDistrito.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
+
+        private void lblGenero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboDistrito_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpFechaNacimiento_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtnHombre_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtnMujer_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblApMat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCorreo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDni_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDistrito_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCelular_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblApPat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFechaNacimiento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTelefono_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTutores_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

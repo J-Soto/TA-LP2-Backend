@@ -43,5 +43,14 @@ namespace InterfazDATMA.Administrador
             rbtnMujer.Checked = false;
             rbtnHombre.Checked = true;
         }
+
+        private void btnNuevoDistrito_Click(object sender, EventArgs e)
+        {
+            frmInsertarDistrito frmDistrito = new frmInsertarDistrito();
+            if (frmDistrito.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
     }
 }

@@ -53,6 +53,12 @@
     <Compile Include="Administrador\frmGestionarModuloAdmin.Designer.cs">
       <DependentUpon>frmGestionarModuloAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrador\frmInsertarDistrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmInsertarDistrito.Designer.cs">
+      <DependentUpon>frmInsertarDistrito.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrador\frmInsertarPreferencias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +273,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrador\frmGestionarModuloAdmin.resx">
       <DependentUpon>frmGestionarModuloAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmInsertarDistrito.resx">
+      <DependentUpon>frmInsertarDistrito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmInsertarPreferencias.resx">
       <DependentUpon>frmInsertarPreferencias.cs</DependentUpon>

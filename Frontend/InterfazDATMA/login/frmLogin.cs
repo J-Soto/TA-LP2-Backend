@@ -23,12 +23,14 @@ namespace InterfaceDATMA
 
         private void clickUsuario(object sender, MouseEventArgs e)
         {
-            txtUsuario.Text = "";
+            if(txtUsuario.Text=="Usuario")
+                txtUsuario.Text = "";
         }
 
         private void ClickContraseña(object sender, MouseEventArgs e)
         {
-            txtContraseña.Text = "";
+            if (txtContraseña.Text == "Contraseña")
+                txtContraseña.Text = "";
         }
 
         public void abrirFormulario(Form formularioMostrar)

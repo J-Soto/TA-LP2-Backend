@@ -18,7 +18,9 @@ namespace InterfazDATMA.Administrador
         {
             InitializeComponent();
             dgvTutores.AutoGenerateColumns = false;
+            dgvTutores.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvPsicologos.AutoGenerateColumns = false;
+            dgvPsicologos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             plantillaGestion = plantilla;
         }
 

@@ -67,6 +67,7 @@ namespace InterfazDATMA.Administrador
             this.lblTutores.Size = new System.Drawing.Size(65, 17);
             this.lblTutores.TabIndex = 15;
             this.lblTutores.Text = "Nombres";
+            this.lblTutores.Click += new System.EventHandler(this.lblTutores_Click);
             // 
             // lblTelefono
             // 
@@ -79,6 +80,7 @@ namespace InterfazDATMA.Administrador
             this.lblTelefono.Size = new System.Drawing.Size(64, 17);
             this.lblTelefono.TabIndex = 16;
             this.lblTelefono.Text = "Teléfono";
+            this.lblTelefono.Click += new System.EventHandler(this.lblTelefono_Click);
             // 
             // lblFechaNacimiento
             // 
@@ -91,6 +93,7 @@ namespace InterfazDATMA.Administrador
             this.lblFechaNacimiento.Size = new System.Drawing.Size(141, 17);
             this.lblFechaNacimiento.TabIndex = 17;
             this.lblFechaNacimiento.Text = "Fecha de Nacimiento";
+            this.lblFechaNacimiento.Click += new System.EventHandler(this.lblFechaNacimiento_Click);
             // 
             // lblApPat
             // 
@@ -103,6 +106,7 @@ namespace InterfazDATMA.Administrador
             this.lblApPat.Size = new System.Drawing.Size(112, 17);
             this.lblApPat.TabIndex = 18;
             this.lblApPat.Text = "Apellido Paterno";
+            this.lblApPat.Click += new System.EventHandler(this.lblApPat_Click);
             // 
             // lblCelular
             // 
@@ -115,6 +119,7 @@ namespace InterfazDATMA.Administrador
             this.lblCelular.Size = new System.Drawing.Size(52, 17);
             this.lblCelular.TabIndex = 19;
             this.lblCelular.Text = "Celular";
+            this.lblCelular.Click += new System.EventHandler(this.lblCelular_Click);
             // 
             // lblDistrito
             // 
@@ -127,6 +132,7 @@ namespace InterfazDATMA.Administrador
             this.lblDistrito.Size = new System.Drawing.Size(52, 17);
             this.lblDistrito.TabIndex = 20;
             this.lblDistrito.Text = "Distrito";
+            this.lblDistrito.Click += new System.EventHandler(this.lblDistrito_Click);
             // 
             // lblDni
             // 
@@ -139,6 +145,7 @@ namespace InterfazDATMA.Administrador
             this.lblDni.Size = new System.Drawing.Size(29, 17);
             this.lblDni.TabIndex = 21;
             this.lblDni.Text = "Dni";
+            this.lblDni.Click += new System.EventHandler(this.lblDni_Click);
             // 
             // lblCorreo
             // 
@@ -151,6 +158,7 @@ namespace InterfazDATMA.Administrador
             this.lblCorreo.Size = new System.Drawing.Size(51, 17);
             this.lblCorreo.TabIndex = 22;
             this.lblCorreo.Text = "Correo";
+            this.lblCorreo.Click += new System.EventHandler(this.lblCorreo_Click);
             // 
             // lblApMat
             // 
@@ -163,6 +171,7 @@ namespace InterfazDATMA.Administrador
             this.lblApMat.Size = new System.Drawing.Size(114, 17);
             this.lblApMat.TabIndex = 23;
             this.lblApMat.Text = "Apellido Materno";
+            this.lblApMat.Click += new System.EventHandler(this.lblApMat_Click);
             // 
             // textBox1
             // 
@@ -170,6 +179,7 @@ namespace InterfazDATMA.Administrador
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(279, 20);
             this.textBox1.TabIndex = 24;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // rbtnMujer
             // 
@@ -182,6 +192,7 @@ namespace InterfazDATMA.Administrador
             this.rbtnMujer.TabStop = true;
             this.rbtnMujer.Text = "Femenino";
             this.rbtnMujer.UseVisualStyleBackColor = true;
+            this.rbtnMujer.CheckedChanged += new System.EventHandler(this.rbtnMujer_CheckedChanged);
             this.rbtnMujer.Click += new System.EventHandler(this.rbtnMujer_Click);
             // 
             // rbtnHombre
@@ -195,6 +206,7 @@ namespace InterfazDATMA.Administrador
             this.rbtnHombre.TabStop = true;
             this.rbtnHombre.Text = "Masculino";
             this.rbtnHombre.UseVisualStyleBackColor = true;
+            this.rbtnHombre.CheckedChanged += new System.EventHandler(this.rbtnHombre_CheckedChanged);
             this.rbtnHombre.Click += new System.EventHandler(this.rbtnHombre_Click);
             // 
             // dtpFechaNacimiento
@@ -205,6 +217,7 @@ namespace InterfazDATMA.Administrador
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(279, 20);
             this.dtpFechaNacimiento.TabIndex = 27;
+            this.dtpFechaNacimiento.ValueChanged += new System.EventHandler(this.dtpFechaNacimiento_ValueChanged);
             // 
             // textBox2
             // 
@@ -212,6 +225,7 @@ namespace InterfazDATMA.Administrador
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(167, 20);
             this.textBox2.TabIndex = 28;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -219,6 +233,7 @@ namespace InterfazDATMA.Administrador
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(167, 20);
             this.textBox3.TabIndex = 29;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // cboDistrito
             // 
@@ -227,6 +242,7 @@ namespace InterfazDATMA.Administrador
             this.cboDistrito.Name = "cboDistrito";
             this.cboDistrito.Size = new System.Drawing.Size(167, 21);
             this.cboDistrito.TabIndex = 30;
+            this.cboDistrito.SelectedIndexChanged += new System.EventHandler(this.cboDistrito_SelectedIndexChanged);
             // 
             // textBox4
             // 
@@ -234,6 +250,7 @@ namespace InterfazDATMA.Administrador
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(279, 20);
             this.textBox4.TabIndex = 31;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -241,6 +258,7 @@ namespace InterfazDATMA.Administrador
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(167, 20);
             this.textBox5.TabIndex = 32;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox6
             // 
@@ -248,6 +266,7 @@ namespace InterfazDATMA.Administrador
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(167, 20);
             this.textBox6.TabIndex = 33;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
@@ -255,6 +274,7 @@ namespace InterfazDATMA.Administrador
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(167, 20);
             this.textBox7.TabIndex = 34;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // lblGenero
             // 
@@ -267,6 +287,7 @@ namespace InterfazDATMA.Administrador
             this.lblGenero.Size = new System.Drawing.Size(56, 17);
             this.lblGenero.TabIndex = 35;
             this.lblGenero.Text = "Genero";
+            this.lblGenero.Click += new System.EventHandler(this.lblGenero_Click);
             // 
             // btnNuevoDistrito
             // 
@@ -282,6 +303,7 @@ namespace InterfazDATMA.Administrador
             this.btnNuevoDistrito.TabIndex = 36;
             this.btnNuevoDistrito.Text = "Nuevo Distrito";
             this.btnNuevoDistrito.UseVisualStyleBackColor = false;
+            this.btnNuevoDistrito.Click += new System.EventHandler(this.btnNuevoDistrito_Click);
             // 
             // btnSiguiente
             // 

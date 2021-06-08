@@ -111,6 +111,7 @@ namespace InterfazDATMA.Administrador
             this.btnNuevoDistrito.TabIndex = 60;
             this.btnNuevoDistrito.Text = "Nuevo Distrito";
             this.btnNuevoDistrito.UseVisualStyleBackColor = false;
+            this.btnNuevoDistrito.Click += new System.EventHandler(this.btnNuevoDistrito_Click);
             // 
             // lblGenero
             // 

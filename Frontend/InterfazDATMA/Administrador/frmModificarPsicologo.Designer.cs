@@ -30,7 +30,6 @@ namespace InterfazDATMA.Administrador
         private void InitializeComponent()
         {
             this.btnSubirFoto = new System.Windows.Forms.Button();
-            this.pbFoto = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtConfirmarPass = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -62,6 +61,7 @@ namespace InterfazDATMA.Administrador
             this.lblFechaNacimiento = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.pbFoto = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,17 +73,6 @@ namespace InterfazDATMA.Administrador
             this.btnSubirFoto.TabIndex = 104;
             this.btnSubirFoto.Text = "...";
             this.btnSubirFoto.UseVisualStyleBackColor = true;
-            // 
-            // pbFoto
-            // 
-            this.pbFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbFoto.Image = global::InterfazDATMA.Properties.Resources.avatarPsicologa;
-            this.pbFoto.Location = new System.Drawing.Point(607, 178);
-            this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(111, 126);
-            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFoto.TabIndex = 103;
-            this.pbFoto.TabStop = false;
             // 
             // label1
             // 
@@ -200,6 +189,7 @@ namespace InterfazDATMA.Administrador
             this.btnNuevoDistrito.TabIndex = 93;
             this.btnNuevoDistrito.Text = "Nuevo Distrito";
             this.btnNuevoDistrito.UseVisualStyleBackColor = false;
+            this.btnNuevoDistrito.Click += new System.EventHandler(this.btnNuevoDistrito_Click);
             // 
             // lblGenero
             // 
@@ -412,6 +402,17 @@ namespace InterfazDATMA.Administrador
             this.lblNombre.Size = new System.Drawing.Size(65, 17);
             this.lblNombre.TabIndex = 72;
             this.lblNombre.Text = "Nombres";
+            // 
+            // pbFoto
+            // 
+            this.pbFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbFoto.Image = global::InterfazDATMA.Properties.Resources.avatarPsicologa;
+            this.pbFoto.Location = new System.Drawing.Point(607, 178);
+            this.pbFoto.Name = "pbFoto";
+            this.pbFoto.Size = new System.Drawing.Size(111, 126);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFoto.TabIndex = 103;
+            this.pbFoto.TabStop = false;
             // 
             // frmModificarPsicologo
             // 

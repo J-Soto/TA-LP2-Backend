@@ -21,6 +21,9 @@ namespace InterfazDATMA.Administrador
             InitializeComponent();
             this.formPlantilla = formPlantilla;
             this.formGestionarModulos = formGestionarModulos;
+
+            dgvTutores.AutoGenerateColumns = false;
+            dgvPsicologos.AutoGenerateColumns = false;
         }
 
         private void btnInsertarTutor_Click(object sender, EventArgs e)
@@ -41,6 +44,18 @@ namespace InterfazDATMA.Administrador
         private void btnModificarTutor_Click(object sender, EventArgs e)
         {
             formPlantilla.abrirFormulario(new frmModificarTutor(this, formPlantilla));
+        }
+
+        private void txtBusqTutor_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(txtBusqTutor.Text=="Nombres y Apellidos")
+                txtBusqTutor.Text = "";
+        }
+
+        private void txtBusqPsi_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (txtBusqPsi.Text == "Nombres y Apellidos")
+                txtBusqPsi.Text = "";
         }
     }
 }
