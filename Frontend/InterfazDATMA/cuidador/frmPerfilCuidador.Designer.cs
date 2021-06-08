@@ -29,10 +29,19 @@ namespace InterfazDATMA.cuidador
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmPerfilCuidador
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
+            this.ClientSize = new System.Drawing.Size(1871, 963);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmPerfilCuidador";
             this.Text = "frmPerfilCuidador";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

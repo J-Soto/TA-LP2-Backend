@@ -40,6 +40,7 @@ namespace InterfazDATMA.Administrador
             this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gestante = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BajosRecursos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Buscar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,11 +78,11 @@ namespace InterfazDATMA.Administrador
             this.Gestante,
             this.BajosRecursos});
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(86, 155);
+            this.dataGridView1.Location = new System.Drawing.Point(86, 316);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1688, 853);
+            this.dataGridView1.Size = new System.Drawing.Size(1688, 692);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -149,12 +150,23 @@ namespace InterfazDATMA.Administrador
             this.BajosRecursos.ReadOnly = true;
             this.BajosRecursos.Width = 200;
             // 
+            // Buscar
+            // 
+            this.Buscar.AutoSize = true;
+            this.Buscar.BackColor = System.Drawing.Color.White;
+            this.Buscar.Location = new System.Drawing.Point(453, 198);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(79, 25);
+            this.Buscar.TabIndex = 2;
+            this.Buscar.Text = "Buscar";
+            // 
             // frmListaTutores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(1897, 1034);
+            this.Controls.Add(this.Buscar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -178,5 +190,6 @@ namespace InterfazDATMA.Administrador
         private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gestante;
         private System.Windows.Forms.DataGridViewTextBoxColumn BajosRecursos;
+        private System.Windows.Forms.Label Buscar;
     }
 }
