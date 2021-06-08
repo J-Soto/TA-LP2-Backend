@@ -5,8 +5,9 @@ import java.util.ArrayList;
 import pe.datma.datmasoft.modulos.Curso;
 
 public interface CursoDAO {
-    int insertar(Curso modulo);
-    int modificar(Curso modulo);
-    int eliminar(int idModulo);
-    ArrayList<Curso> listar(int idModulo);
+    int insertarCurso(Curso modulo);
+    int modificarCurso(Curso modulo);
+    int eliminarCurso(int idModulo);
+    int insertarRequerimiento(int idCursoDep,int idCursoReq,String descripcion);
+    ArrayList<Curso> listarCurso(int idModulo);
 }
