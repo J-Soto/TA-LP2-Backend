@@ -40,7 +40,7 @@ namespace InterfazDATMA.Administrador
             this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gestante = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BajosRecursos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Buscar = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,15 +150,12 @@ namespace InterfazDATMA.Administrador
             this.BajosRecursos.ReadOnly = true;
             this.BajosRecursos.Width = 200;
             // 
-            // Buscar
+            // textBox1
             // 
-            this.Buscar.AutoSize = true;
-            this.Buscar.BackColor = System.Drawing.Color.White;
-            this.Buscar.Location = new System.Drawing.Point(453, 198);
-            this.Buscar.Name = "Buscar";
-            this.Buscar.Size = new System.Drawing.Size(79, 25);
-            this.Buscar.TabIndex = 2;
-            this.Buscar.Text = "Buscar";
+            this.textBox1.Location = new System.Drawing.Point(655, 178);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(492, 31);
+            this.textBox1.TabIndex = 2;
             // 
             // frmListaTutores
             // 
@@ -166,7 +163,7 @@ namespace InterfazDATMA.Administrador
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(72)))));
             this.ClientSize = new System.Drawing.Size(1897, 1034);
-            this.Controls.Add(this.Buscar);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -190,6 +187,6 @@ namespace InterfazDATMA.Administrador
         private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gestante;
         private System.Windows.Forms.DataGridViewTextBoxColumn BajosRecursos;
-        private System.Windows.Forms.Label Buscar;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
