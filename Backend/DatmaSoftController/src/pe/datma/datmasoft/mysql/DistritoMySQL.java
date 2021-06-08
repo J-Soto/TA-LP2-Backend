@@ -13,7 +13,7 @@ import pe.datma.datmasoft.rrhh.Distrito;
 public class DistritoMySQL implements DistritoDAO{
 
     Connection con;
-    CallableStatement cst;
+    CallableStatement cs;
     ResultSet rs;
     
     
@@ -25,8 +25,8 @@ public class DistritoMySQL implements DistritoDAO{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
             String instruccion = "{call LISTAR_DISTRITOS()}";
-            cst = con.prepareCall(instruccion);
-            rs = cst.executeQuery();
+            cs = con.prepareCall(instruccion);
+            rs = cs.executeQuery();
             
             while(rs.next()){
                 Distrito distrito = new Distrito();
@@ -37,7 +37,7 @@ public class DistritoMySQL implements DistritoDAO{
             }
             
             rs.close();
-            cst.close();
+            cs.close();
             con.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -45,5 +45,47 @@ public class DistritoMySQL implements DistritoDAO{
         
         return distritos;
     }
+
+    @Override
+    public int insertarDistrito(Distrito distrito) {
+        int resultado = 0;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            cs = con.prepareCall("{CALL INSERTAR_DISTRITO(?,?)}");
+            cs.registerOutParameter("_id_distrito", java.sql.Types.INTEGER);
+            cs.setString("_nombre",distrito.getNombre());
+            cs.executeUpdate();
+            distrito.setIdDistrito(cs.getInt("_id_distrito"));
+            resultado = distrito.getIdDistrito();
+            cs.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+        }
+        return resultado;
+    }
+
+    @Override
+    public int modificarDistrito(Distrito distrito) {
+        int resultado = 0;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            cs = con.prepareCall("{call MODIFICAR_DISTRITO(?,?)}");
+            cs.setInt("_id_distrito", distrito.getIdDistrito());
+            cs.setString("_nombre", distrito.getNombre());
+            cs.executeUpdate();
+            resultado = 1;
+            cs.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());};
+        }
+        return resultado;
+    }
+    
     
 }
