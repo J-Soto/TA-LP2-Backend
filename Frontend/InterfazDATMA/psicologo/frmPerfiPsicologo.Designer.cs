@@ -29,6 +29,8 @@ namespace InterfazDATMA.psicologo
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.Periodo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,23 +58,35 @@ namespace InterfazDATMA.psicologo
             this.Genero = new System.Windows.Forms.Label();
             this.FechaNacimiento = new System.Windows.Forms.Label();
             this.Permisos = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(1731, 69);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 31);
+            this.textBox14.TabIndex = 74;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(1222, 69);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 31);
+            this.textBox4.TabIndex = 73;
+            // 
             // Periodo
             // 
             this.Periodo.AutoSize = true;
             this.Periodo.BackColor = System.Drawing.Color.Transparent;
-            this.Periodo.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Periodo.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Periodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Periodo.Location = new System.Drawing.Point(981, 44);
+            this.Periodo.Location = new System.Drawing.Point(981, 48);
             this.Periodo.Name = "Periodo";
-            this.Periodo.Size = new System.Drawing.Size(229, 65);
-            this.Periodo.TabIndex = 60;
+            this.Periodo.Size = new System.Drawing.Size(172, 49);
+            this.Periodo.TabIndex = 72;
             this.Periodo.Text = "Periodo";
             // 
             // panel2
@@ -85,16 +99,16 @@ namespace InterfazDATMA.psicologo
             this.panel2.Controls.Add(this.Cursos);
             this.panel2.Controls.Add(this.Contrasena);
             this.panel2.Controls.Add(this.textBox12);
-            this.panel2.Location = new System.Drawing.Point(29, 44);
+            this.panel2.Location = new System.Drawing.Point(29, 48);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(647, 875);
-            this.panel2.TabIndex = 59;
+            this.panel2.TabIndex = 71;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(37, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(177, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 138);
+            this.pictureBox1.Size = new System.Drawing.Size(323, 178);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
@@ -102,11 +116,11 @@ namespace InterfazDATMA.psicologo
             // 
             this.Usuario.AutoSize = true;
             this.Usuario.BackColor = System.Drawing.Color.Transparent;
-            this.Usuario.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Usuario.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Usuario.Location = new System.Drawing.Point(32, 210);
+            this.Usuario.Location = new System.Drawing.Point(32, 254);
             this.Usuario.Name = "Usuario";
-            this.Usuario.Size = new System.Drawing.Size(217, 65);
+            this.Usuario.Size = new System.Drawing.Size(163, 49);
             this.Usuario.TabIndex = 24;
             this.Usuario.Text = "Usuario";
             // 
@@ -115,7 +129,7 @@ namespace InterfazDATMA.psicologo
             this.Grupos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Grupos.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Grupos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(189)))), ((int)(((byte)(205)))));
-            this.Grupos.Location = new System.Drawing.Point(73, 624);
+            this.Grupos.Location = new System.Drawing.Point(139, 679);
             this.Grupos.Name = "Grupos";
             this.Grupos.Size = new System.Drawing.Size(319, 60);
             this.Grupos.TabIndex = 51;
@@ -124,7 +138,7 @@ namespace InterfazDATMA.psicologo
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(465, 240);
+            this.textBox1.Location = new System.Drawing.Point(465, 284);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 31);
             this.textBox1.TabIndex = 25;
@@ -134,7 +148,7 @@ namespace InterfazDATMA.psicologo
             this.Cursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cursos.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Cursos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(189)))), ((int)(((byte)(205)))));
-            this.Cursos.Location = new System.Drawing.Point(73, 741);
+            this.Cursos.Location = new System.Drawing.Point(139, 786);
             this.Cursos.Name = "Cursos";
             this.Cursos.Size = new System.Drawing.Size(319, 60);
             this.Cursos.TabIndex = 50;
@@ -145,17 +159,17 @@ namespace InterfazDATMA.psicologo
             // 
             this.Contrasena.AutoSize = true;
             this.Contrasena.BackColor = System.Drawing.Color.Transparent;
-            this.Contrasena.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Contrasena.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Contrasena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Contrasena.Location = new System.Drawing.Point(32, 303);
+            this.Contrasena.Location = new System.Drawing.Point(32, 355);
             this.Contrasena.Name = "Contrasena";
-            this.Contrasena.Size = new System.Drawing.Size(337, 65);
+            this.Contrasena.Size = new System.Drawing.Size(251, 49);
             this.Contrasena.TabIndex = 28;
             this.Contrasena.Text = "Contrasena";
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(465, 326);
+            this.textBox12.Location = new System.Drawing.Point(465, 376);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(100, 31);
             this.textBox12.TabIndex = 47;
@@ -179,21 +193,21 @@ namespace InterfazDATMA.psicologo
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.Genero);
             this.panel1.Controls.Add(this.FechaNacimiento);
-            this.panel1.Location = new System.Drawing.Point(751, 111);
+            this.panel1.Location = new System.Drawing.Point(751, 115);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1091, 808);
-            this.panel1.TabIndex = 58;
+            this.panel1.TabIndex = 70;
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(417, 636);
+            this.textBox11.Location = new System.Drawing.Point(471, 552);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(100, 31);
             this.textBox11.TabIndex = 45;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(673, 479);
+            this.textBox7.Location = new System.Drawing.Point(471, 735);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 31);
             this.textBox7.TabIndex = 37;
@@ -202,11 +216,11 @@ namespace InterfazDATMA.psicologo
             // 
             this.Celular.AutoSize = true;
             this.Celular.BackColor = System.Drawing.Color.Transparent;
-            this.Celular.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Celular.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Celular.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Celular.Location = new System.Drawing.Point(53, 602);
+            this.Celular.Location = new System.Drawing.Point(56, 613);
             this.Celular.Name = "Celular";
-            this.Celular.Size = new System.Drawing.Size(217, 65);
+            this.Celular.Size = new System.Drawing.Size(162, 49);
             this.Celular.TabIndex = 44;
             this.Celular.Text = "Celular";
             // 
@@ -214,24 +228,24 @@ namespace InterfazDATMA.psicologo
             // 
             this.Correo.AutoSize = true;
             this.Correo.BackColor = System.Drawing.Color.Transparent;
-            this.Correo.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Correo.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Correo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Correo.Location = new System.Drawing.Point(42, 685);
+            this.Correo.Location = new System.Drawing.Point(56, 430);
             this.Correo.Name = "Correo";
-            this.Correo.Size = new System.Drawing.Size(209, 65);
+            this.Correo.Size = new System.Drawing.Size(157, 49);
             this.Correo.TabIndex = 26;
             this.Correo.Text = "Correo";
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(417, 557);
+            this.textBox10.Location = new System.Drawing.Point(471, 448);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 31);
             this.textBox10.TabIndex = 43;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(417, 719);
+            this.textBox2.Location = new System.Drawing.Point(471, 631);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 31);
             this.textBox2.TabIndex = 27;
@@ -240,11 +254,11 @@ namespace InterfazDATMA.psicologo
             // 
             this.Telefono.AutoSize = true;
             this.Telefono.BackColor = System.Drawing.Color.Transparent;
-            this.Telefono.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Telefono.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Telefono.Location = new System.Drawing.Point(56, 525);
+            this.Telefono.Location = new System.Drawing.Point(56, 534);
             this.Telefono.Name = "Telefono";
-            this.Telefono.Size = new System.Drawing.Size(254, 65);
+            this.Telefono.Size = new System.Drawing.Size(188, 49);
             this.Telefono.TabIndex = 42;
             this.Telefono.Text = "Telefono";
             // 
@@ -252,24 +266,24 @@ namespace InterfazDATMA.psicologo
             // 
             this.dni.AutoSize = true;
             this.dni.BackColor = System.Drawing.Color.Transparent;
-            this.dni.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.dni.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.dni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.dni.Location = new System.Drawing.Point(47, 149);
+            this.dni.Location = new System.Drawing.Point(56, 130);
             this.dni.Name = "dni";
-            this.dni.Size = new System.Drawing.Size(112, 65);
+            this.dni.Size = new System.Drawing.Size(85, 49);
             this.dni.TabIndex = 32;
             this.dni.Text = "Dni";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(417, 236);
+            this.textBox9.Location = new System.Drawing.Point(471, 236);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 31);
             this.textBox9.TabIndex = 41;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(417, 173);
+            this.textBox5.Location = new System.Drawing.Point(471, 148);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 31);
             this.textBox5.TabIndex = 33;
@@ -278,11 +292,11 @@ namespace InterfazDATMA.psicologo
             // 
             this.Edad.AutoSize = true;
             this.Edad.BackColor = System.Drawing.Color.Transparent;
-            this.Edad.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Edad.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Edad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Edad.Location = new System.Drawing.Point(44, 236);
+            this.Edad.Location = new System.Drawing.Point(56, 218);
             this.Edad.Name = "Edad";
-            this.Edad.Size = new System.Drawing.Size(168, 65);
+            this.Edad.Size = new System.Drawing.Size(124, 49);
             this.Edad.TabIndex = 40;
             this.Edad.Text = "Edad";
             // 
@@ -290,24 +304,24 @@ namespace InterfazDATMA.psicologo
             // 
             this.Nombre.AutoSize = true;
             this.Nombre.BackColor = System.Drawing.Color.Transparent;
-            this.Nombre.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Nombre.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Nombre.Location = new System.Drawing.Point(47, 71);
+            this.Nombre.Location = new System.Drawing.Point(56, 37);
             this.Nombre.Name = "Nombre";
-            this.Nombre.Size = new System.Drawing.Size(243, 65);
+            this.Nombre.Size = new System.Drawing.Size(182, 49);
             this.Nombre.TabIndex = 34;
             this.Nombre.Text = "Nombre";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(417, 352);
+            this.textBox8.Location = new System.Drawing.Point(471, 337);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 31);
             this.textBox8.TabIndex = 39;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(417, 101);
+            this.textBox6.Location = new System.Drawing.Point(471, 55);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 31);
             this.textBox6.TabIndex = 35;
@@ -316,11 +330,11 @@ namespace InterfazDATMA.psicologo
             // 
             this.Genero.AutoSize = true;
             this.Genero.BackColor = System.Drawing.Color.Transparent;
-            this.Genero.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Genero.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Genero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Genero.Location = new System.Drawing.Point(44, 322);
+            this.Genero.Location = new System.Drawing.Point(56, 319);
             this.Genero.Name = "Genero";
-            this.Genero.Size = new System.Drawing.Size(229, 65);
+            this.Genero.Size = new System.Drawing.Size(171, 49);
             this.Genero.TabIndex = 38;
             this.Genero.Text = "Genero";
             // 
@@ -328,11 +342,11 @@ namespace InterfazDATMA.psicologo
             // 
             this.FechaNacimiento.AutoSize = true;
             this.FechaNacimiento.BackColor = System.Drawing.Color.Transparent;
-            this.FechaNacimiento.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.FechaNacimiento.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.FechaNacimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.FechaNacimiento.Location = new System.Drawing.Point(69, 449);
+            this.FechaNacimiento.Location = new System.Drawing.Point(56, 717);
             this.FechaNacimiento.Name = "FechaNacimiento";
-            this.FechaNacimiento.Size = new System.Drawing.Size(509, 65);
+            this.FechaNacimiento.Size = new System.Drawing.Size(379, 49);
             this.FechaNacimiento.TabIndex = 36;
             this.FechaNacimiento.Text = "Fecha nacimiento";
             // 
@@ -340,27 +354,13 @@ namespace InterfazDATMA.psicologo
             // 
             this.Permisos.AutoSize = true;
             this.Permisos.BackColor = System.Drawing.Color.Transparent;
-            this.Permisos.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.Permisos.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Permisos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Permisos.Location = new System.Drawing.Point(1426, 35);
+            this.Permisos.Location = new System.Drawing.Point(1426, 39);
             this.Permisos.Name = "Permisos";
-            this.Permisos.Size = new System.Drawing.Size(251, 65);
-            this.Permisos.TabIndex = 56;
+            this.Permisos.Size = new System.Drawing.Size(190, 49);
+            this.Permisos.TabIndex = 69;
             this.Permisos.Text = "Permisos";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(1222, 65);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 31);
-            this.textBox4.TabIndex = 61;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(1731, 65);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 31);
-            this.textBox14.TabIndex = 62;
             // 
             // frmPerfiPsicologo
             // 
@@ -389,6 +389,9 @@ namespace InterfazDATMA.psicologo
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label Periodo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -416,7 +419,5 @@ namespace InterfazDATMA.psicologo
         private System.Windows.Forms.Label Genero;
         private System.Windows.Forms.Label FechaNacimiento;
         private System.Windows.Forms.Label Permisos;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox14;
     }
 }
