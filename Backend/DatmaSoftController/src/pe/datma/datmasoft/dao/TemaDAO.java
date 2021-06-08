@@ -5,5 +5,6 @@ import pe.datma.datmasoft.modulos.Tema;
 
 public interface TemaDAO {
     ArrayList<Tema> listar();
-    ArrayList<Tema> listar(int idEje);
+    int insertar(Tema tema);
+    int modificar(Tema tema);
 }
