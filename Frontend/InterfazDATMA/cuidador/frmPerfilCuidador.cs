@@ -16,5 +16,15 @@ namespace InterfazDATMA.cuidador
         {
             InitializeComponent();
         }
+
+        private void frmPerfilCuidador_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPermiso_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
