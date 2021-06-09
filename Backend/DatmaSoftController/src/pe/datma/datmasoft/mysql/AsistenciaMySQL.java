@@ -27,7 +27,7 @@ public class AsistenciaMySQL implements AsistenciaDAO {
     ResultSet rs;
 
     @Override
-    public int insertar(Asistencia asistencia) {
+    public int insertarAsistencia(Asistencia asistencia) {
         int resultado = 0;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -54,7 +54,7 @@ public class AsistenciaMySQL implements AsistenciaDAO {
     }
 
     @Override
-    public int modificar(Asistencia asistencia) {
+    public int modificarAsistencia(Asistencia asistencia) {
         int resultado = 0;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -80,7 +80,7 @@ public class AsistenciaMySQL implements AsistenciaDAO {
     }
 
     @Override
-    public ArrayList<Asistencia> listar() {
+    public ArrayList<Asistencia> listarAsistencia() {
         ArrayList<Asistencia> arr = new ArrayList<>();
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
