@@ -54,7 +54,7 @@ public class PsicologoMySQL  implements PsicologoDAO{
             
             cst.close();
             con.close();       
-            resultado = 1;
+            resultado = cst.getInt("_id_psicologo");
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }finally{

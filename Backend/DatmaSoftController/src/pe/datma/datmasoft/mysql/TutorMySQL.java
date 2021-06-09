@@ -59,7 +59,7 @@ public class TutorMySQL implements TutorDAO {
             
             cst.close();
             con.close();       
-            resultado = 1;
+            resultado = cst.getInt("_id_tutor");
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }finally{

@@ -97,7 +97,7 @@ public class GrupoMySQL implements  GrupoDAO{
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
-            String instruccion = "{call LISTAR_GRUPO(?)}";
+            String instruccion = "{call LISTAR_GRUPO_POR_ID_CURSO(?)}";
             cst = con.prepareCall(instruccion);
             cst.setInt("_idcurso", idCurso);
             rs = cst.executeQuery();   
