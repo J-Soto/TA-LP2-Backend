@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://services.datmasoft.datma.pe/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="DistritoWS" targetNamespace="http://services.datmasoft.datma.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/DatmaSoftWebServices/DistritoWS?xsd=1" namespace="http://services.datmasoft.datma.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="insertarDistrito">
+    <part name="parameters" element="tns:insertarDistrito" />
+  </message>
+  <message name="insertarDistritoResponse">
+    <part name="parameters" element="tns:insertarDistritoResponse" />
+  </message>
+  <message name="listarDistritos">
+    <part name="parameters" element="tns:listarDistritos" />
+  </message>
+  <message name="listarDistritosResponse">
+    <part name="parameters" element="tns:listarDistritosResponse" />
+  </message>
+  <message name="modificarDistrito">
+    <part name="parameters" element="tns:modificarDistrito" />
+  </message>
+  <message name="modificarDistritoResponse">
+    <part name="parameters" element="tns:modificarDistritoResponse" />
+  </message>
+  <portType name="DistritoWS">
+    <operation name="insertarDistrito">
+      <input wsam:Action="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoRequest" message="tns:insertarDistrito" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoResponse" message="tns:insertarDistritoResponse" />
+    </operation>
+    <operation name="listarDistritos">
+      <input wsam:Action="http://services.datmasoft.datma.pe/DistritoWS/listarDistritosRequest" message="tns:listarDistritos" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/DistritoWS/listarDistritosResponse" message="tns:listarDistritosResponse" />
+    </operation>
+    <operation name="modificarDistrito">
+      <input wsam:Action="http://services.datmasoft.datma.pe/DistritoWS/modificarDistritoRequest" message="tns:modificarDistrito" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/DistritoWS/modificarDistritoResponse" message="tns:modificarDistritoResponse" />
+    </operation>
+  </portType>
+  <binding name="DistritoWSPortBinding" type="tns:DistritoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="insertarDistrito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarDistritos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarDistrito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="DistritoWS">
+    <port name="DistritoWSPort" binding="tns:DistritoWSPortBinding">
+      <soap:address location="http://localhost:8080/DatmaSoftWebServices/DistritoWS" />
+    </port>
+  </service>
+</definitions>

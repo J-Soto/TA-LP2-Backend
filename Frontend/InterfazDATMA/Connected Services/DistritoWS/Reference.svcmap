@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1468f36d-9bed-460a-8ae0-6e68b54a8603" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c3c4e47a-1895-4f80-b4f4-9415309c483e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/DatmaSoftWebServices/UsuarioWS?WSDL" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/DatmaSoftWebServices/DistritoWS?WSDL" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="203543a8-e908-4110-9e5a-ac9893c6da94" SourceId="1" SourceUrl="http://localhost:8080/DatmaSoftWebServices/UsuarioWS?xsd=1" />
-    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="7321f946-734f-44d8-9c09-545d5f9fc402" SourceId="1" SourceUrl="http://localhost:8080/DatmaSoftWebServices/UsuarioWS?WSDL" />
+    <MetadataFile FileName="DistritoWS.wsdl" MetadataType="Wsdl" ID="46d6181c-0429-4b3a-94e8-361bfa15c092" SourceId="1" SourceUrl="http://localhost:8080/DatmaSoftWebServices/DistritoWS?WSDL" />
+    <MetadataFile FileName="DistritoWS.xsd" MetadataType="Schema" ID="2c58ac4a-6aba-4dd7-8565-77428263d230" SourceId="1" SourceUrl="http://localhost:8080/DatmaSoftWebServices/DistritoWS?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

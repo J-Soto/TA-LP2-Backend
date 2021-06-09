@@ -76,7 +76,7 @@ namespace InterfaceDATMA
             {
                 abrirFormulario(new frmPlantillaGestion(tipo));
             }
-            else MessageBox.Show("Datos incorrectos");
+            else MessageBox.Show("Datos incorrectos","Mensaje de Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             //abrirFormulario(new frmWalkthrough());
             //0->cuidador
             //1->psicologo

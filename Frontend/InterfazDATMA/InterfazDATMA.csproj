@@ -127,6 +127,11 @@
     <Compile Include="Administrador\frmOperacionesPersona.Designer.cs">
       <DependentUpon>frmOperacionesPersona.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\DistritoWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\UsuarioWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -399,6 +404,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Connected Services\DistritoWS\DistritoWS.wsdl" />
+    <None Include="Connected Services\DistritoWS\DistritoWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\DistritoWS\InterfazDATMA.DistritoWS.distrito.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\DistritoWS\InterfazDATMA.DistritoWS.insertarDistritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\DistritoWS\InterfazDATMA.DistritoWS.listarDistritosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\DistritoWS\InterfazDATMA.DistritoWS.modificarDistritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\UsuarioWS\InterfazDATMA.UsuarioWS.insertarUsuarioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -459,7 +480,20 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\DistritoWS\" />
     <WCFMetadataStorage Include="Connected Services\UsuarioWS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\DistritoWS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\DistritoWS\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\DistritoWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\UsuarioWS\configuration91.svcinfo" />
