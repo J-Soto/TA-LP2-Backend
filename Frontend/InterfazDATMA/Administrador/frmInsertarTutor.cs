@@ -16,11 +16,16 @@ namespace InterfazDATMA.Administrador
         private frmPlantillaGestion formPlantilla;
         public frmOperacionesPersona formOperacionPersona;
 
+        private TutorWS.TutorWSClient daoTutor;
+        public TutorWS.tutor tutor;
+
         public frmInsertarTutor(frmOperacionesPersona formOperacionPersona, frmPlantillaGestion formPlantilla)
         {
             InitializeComponent();
             this.formPlantilla = formPlantilla;
             this.formOperacionPersona = formOperacionPersona;
+            daoTutor = new TutorWS.TutorWSClient();
+            tutor = new TutorWS.tutor();
         }
 
 
@@ -36,9 +41,27 @@ namespace InterfazDATMA.Administrador
             rbtnHombre.Checked = true;
         }
 
+        private int verificarDNI(String dni, String nom, String apPat, String apMat)
+        {
+            nom = nom.ToUpper();
+            apPat = apPat.ToUpper();
+            apMat = apMat.ToUpper();
+
+            
+        }
+
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            formPlantilla.abrirFormulario(new frmInsertarPreferencias(this, formPlantilla));
+            if (verificarDNI(txtDni.Text,txtNombre.Text,txtApPat.Text,txtApMat.Text)==1)
+            {
+
+                formPlantilla.abrirFormulario(new frmInsertarPreferencias(this, formPlantilla));
+            }
+            else
+            {
+                MessageBox.Show("Los nombres no corresponden al dni", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -51,7 +74,7 @@ namespace InterfazDATMA.Administrador
             frmInsertarDistrito frmDistrito = new frmInsertarDistrito();
             if (frmDistrito.ShowDialog() == DialogResult.OK)
             {
-
+                
             }
         }
 

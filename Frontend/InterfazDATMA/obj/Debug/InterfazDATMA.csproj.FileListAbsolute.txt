@@ -85,7 +85,6 @@ C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\Interfac
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmInscripcionHecha.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmListaCuidadoresDePsicologo.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmListaCursoInscritos.resources
-C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmLogin.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmMenuUsuario.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmModificarPrograma.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmNotificacionActiva.resources
@@ -120,3 +119,4 @@ C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\Inte
 C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.Header.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.psicologo.frmPerfilPsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.frmLogin.resources

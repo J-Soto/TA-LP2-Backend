@@ -34,15 +34,6 @@ namespace InterfazDATMA.DistritoWS {
         System.Threading.Tasks.Task<InterfazDATMA.DistritoWS.modificarDistritoResponse> modificarDistritoAsync(InterfazDATMA.DistritoWS.modificarDistritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoRequest", ReplyAction="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        InterfazDATMA.DistritoWS.insertarDistritoResponse insertarDistrito(InterfazDATMA.DistritoWS.insertarDistritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoRequest", ReplyAction="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoResponse")]
-        System.Threading.Tasks.Task<InterfazDATMA.DistritoWS.insertarDistritoResponse> insertarDistritoAsync(InterfazDATMA.DistritoWS.insertarDistritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.datmasoft.datma.pe/DistritoWS/listarDistritosRequest", ReplyAction="http://services.datmasoft.datma.pe/DistritoWS/listarDistritosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -50,6 +41,15 @@ namespace InterfazDATMA.DistritoWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://services.datmasoft.datma.pe/DistritoWS/listarDistritosRequest", ReplyAction="http://services.datmasoft.datma.pe/DistritoWS/listarDistritosResponse")]
         System.Threading.Tasks.Task<InterfazDATMA.DistritoWS.listarDistritosResponse> listarDistritosAsync(InterfazDATMA.DistritoWS.listarDistritosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoRequest", ReplyAction="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        InterfazDATMA.DistritoWS.insertarDistritoResponse insertarDistrito(InterfazDATMA.DistritoWS.insertarDistritoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoRequest", ReplyAction="http://services.datmasoft.datma.pe/DistritoWS/insertarDistritoResponse")]
+        System.Threading.Tasks.Task<InterfazDATMA.DistritoWS.insertarDistritoResponse> insertarDistritoAsync(InterfazDATMA.DistritoWS.insertarDistritoRequest request);
     }
     
     /// <remarks/>
@@ -165,42 +165,6 @@ namespace InterfazDATMA.DistritoWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDistrito", WrapperNamespace="http://services.datmasoft.datma.pe/", IsWrapped=true)]
-    public partial class insertarDistritoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.datmasoft.datma.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public InterfazDATMA.DistritoWS.distrito name;
-        
-        public insertarDistritoRequest() {
-        }
-        
-        public insertarDistritoRequest(InterfazDATMA.DistritoWS.distrito name) {
-            this.name = name;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDistritoResponse", WrapperNamespace="http://services.datmasoft.datma.pe/", IsWrapped=true)]
-    public partial class insertarDistritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.datmasoft.datma.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarDistritoResponse() {
-        }
-        
-        public insertarDistritoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="listarDistritos", WrapperNamespace="http://services.datmasoft.datma.pe/", IsWrapped=true)]
     public partial class listarDistritosRequest {
         
@@ -230,6 +194,42 @@ namespace InterfazDATMA.DistritoWS {
         }
         
         public listarDistritosResponse(InterfazDATMA.DistritoWS.distrito[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDistrito", WrapperNamespace="http://services.datmasoft.datma.pe/", IsWrapped=true)]
+    public partial class insertarDistritoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.datmasoft.datma.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public InterfazDATMA.DistritoWS.distrito name;
+        
+        public insertarDistritoRequest() {
+        }
+        
+        public insertarDistritoRequest(InterfazDATMA.DistritoWS.distrito name) {
+            this.name = name;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDistritoResponse", WrapperNamespace="http://services.datmasoft.datma.pe/", IsWrapped=true)]
+    public partial class insertarDistritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.datmasoft.datma.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarDistritoResponse() {
+        }
+        
+        public insertarDistritoResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -306,29 +306,6 @@ namespace InterfazDATMA.DistritoWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InterfazDATMA.DistritoWS.insertarDistritoResponse InterfazDATMA.DistritoWS.DistritoWS.insertarDistrito(InterfazDATMA.DistritoWS.insertarDistritoRequest request) {
-            return base.Channel.insertarDistrito(request);
-        }
-        
-        public int insertarDistrito(InterfazDATMA.DistritoWS.distrito name) {
-            InterfazDATMA.DistritoWS.insertarDistritoRequest inValue = new InterfazDATMA.DistritoWS.insertarDistritoRequest();
-            inValue.name = name;
-            InterfazDATMA.DistritoWS.insertarDistritoResponse retVal = ((InterfazDATMA.DistritoWS.DistritoWS)(this)).insertarDistrito(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<InterfazDATMA.DistritoWS.insertarDistritoResponse> InterfazDATMA.DistritoWS.DistritoWS.insertarDistritoAsync(InterfazDATMA.DistritoWS.insertarDistritoRequest request) {
-            return base.Channel.insertarDistritoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<InterfazDATMA.DistritoWS.insertarDistritoResponse> insertarDistritoAsync(InterfazDATMA.DistritoWS.distrito name) {
-            InterfazDATMA.DistritoWS.insertarDistritoRequest inValue = new InterfazDATMA.DistritoWS.insertarDistritoRequest();
-            inValue.name = name;
-            return ((InterfazDATMA.DistritoWS.DistritoWS)(this)).insertarDistritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         InterfazDATMA.DistritoWS.listarDistritosResponse InterfazDATMA.DistritoWS.DistritoWS.listarDistritos(InterfazDATMA.DistritoWS.listarDistritosRequest request) {
             return base.Channel.listarDistritos(request);
         }
@@ -349,6 +326,29 @@ namespace InterfazDATMA.DistritoWS {
             InterfazDATMA.DistritoWS.listarDistritosRequest inValue = new InterfazDATMA.DistritoWS.listarDistritosRequest();
             inValue.name = name;
             return ((InterfazDATMA.DistritoWS.DistritoWS)(this)).listarDistritosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        InterfazDATMA.DistritoWS.insertarDistritoResponse InterfazDATMA.DistritoWS.DistritoWS.insertarDistrito(InterfazDATMA.DistritoWS.insertarDistritoRequest request) {
+            return base.Channel.insertarDistrito(request);
+        }
+        
+        public int insertarDistrito(InterfazDATMA.DistritoWS.distrito name) {
+            InterfazDATMA.DistritoWS.insertarDistritoRequest inValue = new InterfazDATMA.DistritoWS.insertarDistritoRequest();
+            inValue.name = name;
+            InterfazDATMA.DistritoWS.insertarDistritoResponse retVal = ((InterfazDATMA.DistritoWS.DistritoWS)(this)).insertarDistrito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<InterfazDATMA.DistritoWS.insertarDistritoResponse> InterfazDATMA.DistritoWS.DistritoWS.insertarDistritoAsync(InterfazDATMA.DistritoWS.insertarDistritoRequest request) {
+            return base.Channel.insertarDistritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<InterfazDATMA.DistritoWS.insertarDistritoResponse> insertarDistritoAsync(InterfazDATMA.DistritoWS.distrito name) {
+            InterfazDATMA.DistritoWS.insertarDistritoRequest inValue = new InterfazDATMA.DistritoWS.insertarDistritoRequest();
+            inValue.name = name;
+            return ((InterfazDATMA.DistritoWS.DistritoWS)(this)).insertarDistritoAsync(inValue);
         }
     }
 }
