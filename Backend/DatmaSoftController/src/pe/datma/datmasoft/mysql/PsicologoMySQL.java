@@ -183,4 +183,57 @@ public class PsicologoMySQL  implements PsicologoDAO{
         return psicologos;
     }
 
+    @Override
+    public ArrayList<Psicologo> listarTodosPsicologos() {
+         ArrayList<Psicologo> psicologos = new ArrayList<>();
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String instruccion = "{call LISTAR_TODOS_PSICOLOGOS()}";
+            cst = con.prepareCall(instruccion);
+            rs = cst.executeQuery();
+            
+            while(rs.next()){
+                Psicologo psicologo = new Psicologo();
+                psicologo.setIdPersona(rs.getInt("idpersona"));
+                psicologo.setDNI(rs.getString("dni"));
+                psicologo.setNombre(rs.getString("nombre"));
+                psicologo.setApellidoPaterno(rs.getString("apellidopaterno"));
+                psicologo.setApellidoMaterno(rs.getString("apellidomaterno"));
+                psicologo.setFechaNacimiento(rs.getDate("fechanacimiento"));
+                psicologo.setGenero(rs.getString("genero").charAt(0));
+                psicologo.setEdad(rs.getInt("edad"));
+                psicologo.setTelefono(rs.getString("telefono"));
+                psicologo.setCelular(rs.getString("celular"));
+                psicologo.setCorreo(rs.getString("correo"));
+                psicologo.setDistrito(new Distrito());
+                psicologo.getDistrito().setIdDistrito(rs.getInt("iddistrito"));
+                psicologo.getDistrito().setNombre(rs.getString("nombre_distrito"));
+                psicologo.setIdUsuario(rs.getInt("idusuario"));
+                psicologo.setUser(rs.getString("user"));
+                psicologo.setPassword(rs.getString("password"));
+                psicologo.setTipo(rs.getInt("tipo"));
+                psicologo.setFotoPerfil(rs.getBytes("foto"));
+               
+                psicologo.setActivo(1);
+                psicologo.setActivoPsicologo(1);
+                psicologos.add(psicologo);
+            }
+           
+            
+            cst.close();
+            con.close();       
+            
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{ con.close(); }catch(Exception ex){}
+        }
+        
+        return psicologos;
+    }
+    
+    
+
 }

@@ -9,4 +9,5 @@ public interface DistritoDAO {
     ArrayList<Distrito> listarDistritos(String nombre);
     int insertarDistrito(Distrito distrito);
     int modificarDistrito(Distrito distrito);
+    ArrayList<Distrito> lisrarTodosDistritos();
 }

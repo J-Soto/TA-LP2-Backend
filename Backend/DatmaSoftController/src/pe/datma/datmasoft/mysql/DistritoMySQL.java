@@ -87,6 +87,35 @@ public class DistritoMySQL implements DistritoDAO{
         }
         return resultado;
     }
+
+    @Override
+    public ArrayList<Distrito> lisrarTodosDistritos() {
+        ArrayList<Distrito> distritos = new ArrayList<>();
+           
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String instruccion = "{call LISTAR_TODOS_DISTRITOS()}";
+            cs = con.prepareCall(instruccion);
+            rs = cs.executeQuery();
+            
+            while(rs.next()){
+                Distrito distrito = new Distrito();
+                distrito.setIdDistrito(rs.getInt("iddistrito"));
+                distrito.setNombre(rs.getString("nombre"));
+              
+                distritos.add(distrito);
+            }
+            
+            rs.close();
+            cs.close();
+            con.close();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        
+        return distritos;
+    }
     
     
 }

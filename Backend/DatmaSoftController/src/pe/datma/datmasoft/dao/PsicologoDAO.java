@@ -9,5 +9,6 @@ public interface PsicologoDAO {
      int insertarPsicologo(Psicologo psicologo);
      int modificarPsicologo(Psicologo psicologo);
      int eliminarPsicologo(int idPsicologo, int idUsuario);
+     ArrayList<Psicologo> listarTodosPsicologos();
 }
 
