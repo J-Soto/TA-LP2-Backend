@@ -49,11 +49,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\frmBuscarPsicologoGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmBuscarPsicologoGrupo.Designer.cs">
+      <DependentUpon>frmBuscarPsicologoGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmCrearGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmCrearGrupo.Designer.cs">
+      <DependentUpon>frmCrearGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmCrearTemaDeCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmCrearTemaDeCurso.Designer.cs">
+      <DependentUpon>frmCrearTemaDeCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrador\frmGestionarModuloAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Administrador\frmGestionarModuloAdmin.Designer.cs">
       <DependentUpon>frmGestionarModuloAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmInsertarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmInsertarCurso.Designer.cs">
+      <DependentUpon>frmInsertarCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="Administrador\frmInsertarDistrito.cs">
       <SubType>Form</SubType>
@@ -121,11 +145,29 @@
     <Compile Include="Administrador\frmModificarTutor.Designer.cs">
       <DependentUpon>frmModificarTutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrador\frmOperacionesCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmOperacionesCursos.Designer.cs">
+      <DependentUpon>frmOperacionesCursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrador\frmOperacionesPersona.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Administrador\frmOperacionesPersona.Designer.cs">
       <DependentUpon>frmOperacionesPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmSeleccionarTemasDeCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmSeleccionarTemasDeCurso.Designer.cs">
+      <DependentUpon>frmSeleccionarTemasDeCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmVerGruposCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmVerGruposCurso.Designer.cs">
+      <DependentUpon>frmVerGruposCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\ActividadWS\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -323,8 +365,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrador\frmBuscarPsicologoGrupo.resx">
+      <DependentUpon>frmBuscarPsicologoGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmCrearGrupo.resx">
+      <DependentUpon>frmCrearGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmCrearTemaDeCurso.resx">
+      <DependentUpon>frmCrearTemaDeCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmGestionarModuloAdmin.resx">
       <DependentUpon>frmGestionarModuloAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmInsertarCurso.resx">
+      <DependentUpon>frmInsertarCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmInsertarDistrito.resx">
       <DependentUpon>frmInsertarDistrito.cs</DependentUpon>
@@ -359,8 +413,17 @@
     <EmbeddedResource Include="Administrador\frmModificarTutor.resx">
       <DependentUpon>frmModificarTutor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmOperacionesCursos.resx">
+      <DependentUpon>frmOperacionesCursos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmOperacionesPersona.resx">
       <DependentUpon>frmOperacionesPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmSeleccionarTemasDeCurso.resx">
+      <DependentUpon>frmSeleccionarTemasDeCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frmVerGruposCurso.resx">
+      <DependentUpon>frmVerGruposCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cuidador\frmPerfilCuidador.resx">
       <DependentUpon>frmPerfilCuidador.cs</DependentUpon>
@@ -681,8 +744,8 @@
     <None Include="Connected Services\UsuarioWS\InterfazDATMA.UsuarioWS.usuario.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\UsuarioWS\UsuarioWS.wsdl" />
-    <None Include="Connected Services\UsuarioWS\UsuarioWS.xsd">
+    <None Include="Connected Services\UsuarioWS\UsuarioWS1.wsdl" />
+    <None Include="Connected Services\UsuarioWS\UsuarioWS1.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
