@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/DatmaSoftWebServices/DistritoWS?WSDL" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://54.157.215.104:8080/DatmaSoftWebServices/DistritoWS?WSDL" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="DistritoWS.wsdl" MetadataType="Wsdl" ID="46d6181c-0429-4b3a-94e8-361bfa15c092" SourceId="1" SourceUrl="http://localhost:8080/DatmaSoftWebServices/DistritoWS?WSDL" />
-    <MetadataFile FileName="DistritoWS.xsd" MetadataType="Schema" ID="2c58ac4a-6aba-4dd7-8565-77428263d230" SourceId="1" SourceUrl="http://localhost:8080/DatmaSoftWebServices/DistritoWS?xsd=1" />
+    <MetadataFile FileName="DistritoWS1.wsdl" MetadataType="Wsdl" ID="6ca64744-67cc-4a84-b1e2-24854cc03c0e" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/DistritoWS?WSDL" />
+    <MetadataFile FileName="DistritoWS1.xsd" MetadataType="Schema" ID="337406dc-7784-4fd0-a035-c401a0e03fe6" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/DistritoWS?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

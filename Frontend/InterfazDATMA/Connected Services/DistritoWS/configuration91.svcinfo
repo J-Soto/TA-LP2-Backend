@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="ovrWmy64hTwUpZoK1J4bao6JU6Gh7ey6mQxtsZ6iebc=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="8sq2RRLs65KdTHTmVSc8txG/dFn82OiV3TybMj/mXaI=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="DistritoWSPortBinding">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="DistritoWSPort" contract="DistritoWS.DistritoWS" bindingType="basicHttpBinding" address="http://localhost:8080/DatmaSoftWebServices/DistritoWS" bindingConfiguration="DistritoWSPortBinding">
+    <endpoint name="DistritoWSPort" contract="DistritoWS.DistritoWS" bindingType="basicHttpBinding" address="http://54.157.215.104:8080/DatmaSoftWebServices/DistritoWS" bindingConfiguration="DistritoWSPortBinding">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:8080/DatmaSoftWebServices/DistritoWS</serializedValue>
+          <serializedValue>http://54.157.215.104:8080/DatmaSoftWebServices/DistritoWS</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
