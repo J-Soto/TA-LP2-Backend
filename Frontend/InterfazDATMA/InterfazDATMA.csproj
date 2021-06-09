@@ -252,11 +252,11 @@
     <Compile Include="plantilla\frmPlantillaGestion.designer.cs">
       <DependentUpon>frmPlantillaGestion.cs</DependentUpon>
     </Compile>
-    <Compile Include="psicologo\frmPerfiPsicologo.cs">
+    <Compile Include="psicologo\frmPerfilPsicologo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="psicologo\frmPerfiPsicologo.Designer.cs">
-      <DependentUpon>frmPerfiPsicologo.cs</DependentUpon>
+    <Compile Include="psicologo\frmPerfilPsicologo.Designer.cs">
+      <DependentUpon>frmPerfilPsicologo.cs</DependentUpon>
     </Compile>
     <Compile Include="psicologo\frmRegistrarAsistenciaCuidadores.cs">
       <SubType>Form</SubType>
@@ -377,8 +377,8 @@
     <EmbeddedResource Include="plantilla\frmPlantillaGestion.resx">
       <DependentUpon>frmPlantillaGestion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="psicologo\frmPerfiPsicologo.resx">
-      <DependentUpon>frmPerfiPsicologo.cs</DependentUpon>
+    <EmbeddedResource Include="psicologo\frmPerfilPsicologo.resx">
+      <DependentUpon>frmPerfilPsicologo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="psicologo\frmRegistrarAsistenciaCuidadores.resx">
       <DependentUpon>frmRegistrarAsistenciaCuidadores.cs</DependentUpon>

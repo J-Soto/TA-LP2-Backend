@@ -1,7 +1,7 @@
 ﻿
 namespace InterfazDATMA.psicologo
 {
-    partial class frmPerfiPsicologo
+    partial class frmPerfilPsicologo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,20 @@ namespace InterfazDATMA.psicologo
         /// </summary>
         private void InitializeComponent()
         {
+            this.txtPeriodo = new System.Windows.Forms.Label();
+            this.txtPermiso = new System.Windows.Forms.Label();
             this.Periodo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Usuario = new System.Windows.Forms.Label();
             this.Grupos = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Cursos = new System.Windows.Forms.Button();
             this.Contrasena = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.BajosRecursos = new System.Windows.Forms.Label();
+            this.Gestante = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -55,13 +62,34 @@ namespace InterfazDATMA.psicologo
             this.Genero = new System.Windows.Forms.Label();
             this.FechaNacimiento = new System.Windows.Forms.Label();
             this.Permisos = new System.Windows.Forms.Label();
-            this.txtPermiso = new System.Windows.Forms.Label();
-            this.txtPeriodo = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // txtPeriodo
+            // 
+            this.txtPeriodo.AutoSize = true;
+            this.txtPeriodo.BackColor = System.Drawing.Color.Transparent;
+            this.txtPeriodo.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.txtPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.txtPeriodo.Location = new System.Drawing.Point(1208, 54);
+            this.txtPeriodo.Name = "txtPeriodo";
+            this.txtPeriodo.Size = new System.Drawing.Size(101, 49);
+            this.txtPeriodo.TabIndex = 75;
+            this.txtPeriodo.Text = "21-1";
+            // 
+            // txtPermiso
+            // 
+            this.txtPermiso.AutoSize = true;
+            this.txtPermiso.BackColor = System.Drawing.Color.Transparent;
+            this.txtPermiso.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.txtPermiso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.txtPermiso.Location = new System.Drawing.Point(1707, 54);
+            this.txtPermiso.Name = "txtPermiso";
+            this.txtPermiso.Size = new System.Drawing.Size(114, 49);
+            this.txtPermiso.TabIndex = 74;
+            this.txtPermiso.Text = "Tutor";
             // 
             // Periodo
             // 
@@ -69,10 +97,10 @@ namespace InterfazDATMA.psicologo
             this.Periodo.BackColor = System.Drawing.Color.Transparent;
             this.Periodo.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Periodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Periodo.Location = new System.Drawing.Point(981, 48);
+            this.Periodo.Location = new System.Drawing.Point(976, 54);
             this.Periodo.Name = "Periodo";
             this.Periodo.Size = new System.Drawing.Size(172, 49);
-            this.Periodo.TabIndex = 72;
+            this.Periodo.TabIndex = 73;
             this.Periodo.Text = "Periodo";
             // 
             // panel2
@@ -84,11 +112,23 @@ namespace InterfazDATMA.psicologo
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.Cursos);
             this.panel2.Controls.Add(this.Contrasena);
+            this.panel2.Controls.Add(this.textBox13);
+            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.BajosRecursos);
+            this.panel2.Controls.Add(this.Gestante);
             this.panel2.Controls.Add(this.textBox12);
-            this.panel2.Location = new System.Drawing.Point(29, 48);
+            this.panel2.Location = new System.Drawing.Point(24, 54);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(647, 875);
-            this.panel2.TabIndex = 71;
+            this.panel2.TabIndex = 72;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(177, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(323, 178);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
             // 
             // Usuario
             // 
@@ -145,6 +185,44 @@ namespace InterfazDATMA.psicologo
             this.Contrasena.TabIndex = 28;
             this.Contrasena.Text = "Contrasena";
             // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(465, 497);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(100, 31);
+            this.textBox13.TabIndex = 49;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(465, 592);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 31);
+            this.textBox3.TabIndex = 29;
+            // 
+            // BajosRecursos
+            // 
+            this.BajosRecursos.AutoSize = true;
+            this.BajosRecursos.BackColor = System.Drawing.Color.Transparent;
+            this.BajosRecursos.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.BajosRecursos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.BajosRecursos.Location = new System.Drawing.Point(32, 575);
+            this.BajosRecursos.Name = "BajosRecursos";
+            this.BajosRecursos.Size = new System.Drawing.Size(304, 49);
+            this.BajosRecursos.TabIndex = 48;
+            this.BajosRecursos.Text = "Bajos Recursos";
+            // 
+            // Gestante
+            // 
+            this.Gestante.AutoSize = true;
+            this.Gestante.BackColor = System.Drawing.Color.Transparent;
+            this.Gestante.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.Gestante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Gestante.Location = new System.Drawing.Point(32, 463);
+            this.Gestante.Name = "Gestante";
+            this.Gestante.Size = new System.Drawing.Size(204, 49);
+            this.Gestante.TabIndex = 46;
+            this.Gestante.Text = "Gestante";
+            // 
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(465, 376);
@@ -171,10 +249,10 @@ namespace InterfazDATMA.psicologo
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.Genero);
             this.panel1.Controls.Add(this.FechaNacimiento);
-            this.panel1.Location = new System.Drawing.Point(751, 115);
+            this.panel1.Location = new System.Drawing.Point(746, 121);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1091, 808);
-            this.panel1.TabIndex = 70;
+            this.panel1.TabIndex = 71;
             // 
             // textBox11
             // 
@@ -334,45 +412,13 @@ namespace InterfazDATMA.psicologo
             this.Permisos.BackColor = System.Drawing.Color.Transparent;
             this.Permisos.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Permisos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.Permisos.Location = new System.Drawing.Point(1407, 48);
+            this.Permisos.Location = new System.Drawing.Point(1450, 54);
             this.Permisos.Name = "Permisos";
             this.Permisos.Size = new System.Drawing.Size(190, 49);
-            this.Permisos.TabIndex = 69;
+            this.Permisos.TabIndex = 70;
             this.Permisos.Text = "Permisos";
             // 
-            // txtPermiso
-            // 
-            this.txtPermiso.AutoSize = true;
-            this.txtPermiso.BackColor = System.Drawing.Color.Transparent;
-            this.txtPermiso.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.txtPermiso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.txtPermiso.Location = new System.Drawing.Point(1648, 48);
-            this.txtPermiso.Name = "txtPermiso";
-            this.txtPermiso.Size = new System.Drawing.Size(211, 49);
-            this.txtPermiso.TabIndex = 74;
-            this.txtPermiso.Text = "Psicologo";
-            // 
-            // txtPeriodo
-            // 
-            this.txtPeriodo.AutoSize = true;
-            this.txtPeriodo.BackColor = System.Drawing.Color.Transparent;
-            this.txtPeriodo.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.txtPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
-            this.txtPeriodo.Location = new System.Drawing.Point(1200, 48);
-            this.txtPeriodo.Name = "txtPeriodo";
-            this.txtPeriodo.Size = new System.Drawing.Size(101, 49);
-            this.txtPeriodo.TabIndex = 75;
-            this.txtPeriodo.Text = "21-1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(177, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(323, 178);
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
-            // 
-            // frmPerfiPsicologo
+            // frmPerfilPsicologo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -385,20 +431,22 @@ namespace InterfazDATMA.psicologo
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Permisos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmPerfiPsicologo";
-            this.Text = "frmPerfiPsicologo";
-            this.Load += new System.EventHandler(this.frmPerfiPsicologo_Load);
+            this.Name = "frmPerfilPsicologo";
+            this.Text = "frmPerfilPsicologo";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label txtPeriodo;
+        private System.Windows.Forms.Label txtPermiso;
         private System.Windows.Forms.Label Periodo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -407,6 +455,10 @@ namespace InterfazDATMA.psicologo
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button Cursos;
         private System.Windows.Forms.Label Contrasena;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label BajosRecursos;
+        private System.Windows.Forms.Label Gestante;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox11;
@@ -426,7 +478,5 @@ namespace InterfazDATMA.psicologo
         private System.Windows.Forms.Label Genero;
         private System.Windows.Forms.Label FechaNacimiento;
         private System.Windows.Forms.Label Permisos;
-        private System.Windows.Forms.Label txtPermiso;
-        private System.Windows.Forms.Label txtPeriodo;
     }
 }
