@@ -27,10 +27,10 @@ public class TutorWS {
     }
     
     @WebMethod(operationName = "listarTutor")
-    public ArrayList<Tutor> listarTutor() {
+    public ArrayList<Tutor> listarTutor(@WebParam(name = "name") String nombre) {
         ArrayList<Tutor> tutores =new ArrayList<Tutor>();
         try {
-            tutores=daoTutor.listarTutores();
+            tutores=daoTutor.listarTutores(nombre);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }

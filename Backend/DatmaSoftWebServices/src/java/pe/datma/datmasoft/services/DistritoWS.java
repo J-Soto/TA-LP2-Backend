@@ -30,8 +30,8 @@ public class DistritoWS {
      * This is a sample web service operation
      */
     @WebMethod(operationName = "listarDistritos")
-    public ArrayList<Distrito> listarDistritos() {
-        return daoDistrito.listarDistritos();
+    public ArrayList<Distrito> listarDistritos(@WebParam(name = "name") String nombre) {
+        return daoDistrito.listarDistritos(nombre);
     }
     
     @WebMethod(operationName = "insertarDistrito")

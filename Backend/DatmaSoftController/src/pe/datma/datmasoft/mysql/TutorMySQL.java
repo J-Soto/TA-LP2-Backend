@@ -144,14 +144,15 @@ public class TutorMySQL implements TutorDAO {
     }
 
     @Override
-    public ArrayList<Tutor> listarTutores() {
+    public ArrayList<Tutor> listarTutores(String nombre) {
         ArrayList<Tutor> tutores = new ArrayList<>();
         
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
-            String instruccion = "{call LISTAR_TUTORES()}";
+            String instruccion = "{call LISTAR_TUTORES(?)}";
             cst = con.prepareCall(instruccion);
+            cst.setString("_nombre", nombre);
             rs = cst.executeQuery();
             
             while(rs.next()){

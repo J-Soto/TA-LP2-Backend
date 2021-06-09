@@ -6,7 +6,7 @@ import pe.datma.datmasoft.rrhh.Distrito;
 
 public interface DistritoDAO {
     
-    ArrayList<Distrito> listarDistritos();
+    ArrayList<Distrito> listarDistritos(String nombre);
     int insertarDistrito(Distrito distrito);
     int modificarDistrito(Distrito distrito);
 }

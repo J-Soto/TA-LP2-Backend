@@ -18,14 +18,15 @@ public class DistritoMySQL implements DistritoDAO{
     
     
     @Override
-    public ArrayList<Distrito> listarDistritos() {
+    public ArrayList<Distrito> listarDistritos(String nombre) {
         ArrayList<Distrito> distritos = new ArrayList<>();
            
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
-            String instruccion = "{call LISTAR_DISTRITOS()}";
+            String instruccion = "{call LISTAR_DISTRITOS(?)}";
             cs = con.prepareCall(instruccion);
+            cs.setString("_nombre", nombre);
             rs = cs.executeQuery();
             
             while(rs.next()){
