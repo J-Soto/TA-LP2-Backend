@@ -31,3 +31,6 @@ hs_err_pid*
 /Backend/DatmaSoftController/build/
 /Backend/DatmaSoftModel/dist/
 /Backend/DatmaSoftModel/build/
+/Backend/DatmaSoftWebServices/build/
+/Backend/DatmaSoftController/dist/
+/Backend/DatmaSoftWebServices/dist/
