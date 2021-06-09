@@ -25,6 +25,9 @@
     <service name="MaterialWS">
       <implementation-class>pe.datma.datmasoft.services.MaterialWS</implementation-class>
     </service>
+    <service name="AsistenciaWS">
+      <implementation-class>pe.datma.datmasoft.services.AsistenciaWS</implementation-class>
+    </service>
   </services>
   <clients/>
 </jax-ws>
