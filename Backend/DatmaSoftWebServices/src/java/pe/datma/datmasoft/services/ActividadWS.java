@@ -31,23 +31,46 @@ public class ActividadWS {
      */
     @WebMethod(operationName = "listarActividad")
     public ArrayList<Actividad> listarActividad() {
-        return daoActividad.listarActividad();
+        ArrayList<Actividad> actividades=new ArrayList<Actividad>();
+        try {
+            actividades=daoActividad.listarActividad();
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return actividades;
     }
     
     @WebMethod(operationName = "eliminarActividad")
     public int eliminarActividad(@WebParam(name = "idActividad") int idActividad) {
-        return daoActividad.eliminarActividad(idActividad);
+        int resultado=0;
+        try {
+            resultado=daoActividad.eliminarActividad(idActividad);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
     }
     
     @WebMethod(operationName = "insertarActividad")
     public int insertarActividad(@WebParam(name = "actividad") Actividad actividad,
             @WebParam(name = "idSemana") int idsemana) {
-        
-        return daoActividad.insertarActividad(actividad, idsemana);
+        int resultado=0;
+        try {
+            resultado=daoActividad.insertarActividad(actividad, idsemana);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
     }
     
     @WebMethod(operationName = "modificarActividad")
     public int modificarActividad(@WebParam(name = "actividad") Actividad actividad) {
-        return daoActividad.modificarActividad(actividad);
+        int resultado=0;
+        try {
+            resultado=daoActividad.modificarActividad(actividad);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
     }
 }
