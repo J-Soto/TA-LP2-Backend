@@ -31,17 +31,35 @@ public class DistritoWS {
      */
     @WebMethod(operationName = "listarDistritos")
     public ArrayList<Distrito> listarDistritos(@WebParam(name = "name") String nombre) {
-        return daoDistrito.listarDistritos(nombre);
+        ArrayList<Distrito> distritos=new ArrayList<Distrito>();
+        try {
+            distritos=daoDistrito.listarDistritos(nombre);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return distritos;
     }
     
     @WebMethod(operationName = "insertarDistrito")
     public int insertarDistrito(@WebParam(name = "name") Distrito distrito) {
-        return daoDistrito.insertarDistrito(distrito);
+        int resultado=0;
+        try {
+            resultado=daoDistrito.insertarDistrito(distrito);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
     }
     
     @WebMethod(operationName = "modificarDistrito")
     public int modificarDistrito(@WebParam(name = "name") Distrito distrito) {
-        return daoDistrito.modificarDistrito(distrito);
+        int resultado=0;
+        try {
+            resultado=daoDistrito.modificarDistrito(distrito);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
     }
     
     @WebMethod(operationName = "lisrarTodosDistritos")
