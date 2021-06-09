@@ -22,7 +22,7 @@ import pe.datma.datmasoft.mysql.AsistenciaMySQL;
 public class AsistenciaWS {
     private AsistenciaDAO daoAsistencia;
 
-    public AsistenciaWS(AsistenciaDAO daoAsistencia) {
+    public AsistenciaWS() {
         this.daoAsistencia = new AsistenciaMySQL();
     }
     

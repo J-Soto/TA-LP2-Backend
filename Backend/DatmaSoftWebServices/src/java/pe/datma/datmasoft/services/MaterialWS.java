@@ -23,7 +23,7 @@ import pe.datma.datmasoft.mysql.MaterialMySQL;
 public class MaterialWS {
     private MaterialDAO daoMaterial;
 
-    public MaterialWS(MaterialDAO daoMaterial) {
+    public MaterialWS() {
         this.daoMaterial = new MaterialMySQL();
     }
     

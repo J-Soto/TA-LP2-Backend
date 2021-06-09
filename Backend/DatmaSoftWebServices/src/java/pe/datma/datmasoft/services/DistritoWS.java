@@ -21,7 +21,7 @@ import pe.datma.datmasoft.rrhh.Distrito;
 public class DistritoWS {
     private DistritoDAO daoDistrito;
 
-    public DistritoWS(DistritoDAO daoDistrito) {
+    public DistritoWS() {
         this.daoDistrito = new DistritoMySQL();
     }
 

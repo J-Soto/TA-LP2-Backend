@@ -21,7 +21,7 @@ import pe.datma.datmasoft.mysql.ActividadMySQL;
 public class ActividadWS {
     private ActividadDAO daoActividad;
 
-    public ActividadWS(ActividadDAO daoActividad) {
+    public ActividadWS() {
         this.daoActividad = new ActividadMySQL();
     }
     

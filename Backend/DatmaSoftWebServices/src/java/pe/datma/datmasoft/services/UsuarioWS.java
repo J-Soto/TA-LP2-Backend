@@ -25,7 +25,7 @@ public class UsuarioWS {
      */
     private UsuarioDAO daoUsuario;
 
-    public UsuarioWS(UsuarioDAO daoUsuario) {
+    public UsuarioWS() {
         this.daoUsuario = new UsuarioMySQL();
     }
     

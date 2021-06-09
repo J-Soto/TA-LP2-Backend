@@ -22,7 +22,7 @@ import pe.datma.datmasoft.rrhh.Tutor;
 public class TutorWS {
     private TutorDAO daoTutor;
     
-    public TutorWS(TutorDAO daoTutor) {
+    public TutorWS() {
         this.daoTutor = new TutorMySQL();
     }
     
