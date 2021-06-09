@@ -3,6 +3,7 @@ package pe.datma.datmasoft.modulos;
 
 public class Requerimiento {
     private int idRequerimiento;
+    private int idCursoReq;
     private String descripcion;
 
     public int getIdRequerimiento() {
@@ -20,5 +21,12 @@ public class Requerimiento {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    
+
+    public int getIdCursoReq() {
+        return idCursoReq;
+    }
+
+    public void setIdCursoReq(int idCursoReq) {
+        this.idCursoReq = idCursoReq;
+    }
 }

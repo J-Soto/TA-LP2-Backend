@@ -10,6 +10,7 @@ public class Curso {
     private int estado; //0->En proceso, 1->Finalizado
     private Date fechaInicio;
     private Date fechaFin;
+    private Date fechaInscripcion;
     private int cantSemanas;
     private ArrayList<Grupo> grupos;
     private ArrayList<Requerimiento> requerimientos;
@@ -97,4 +98,13 @@ public class Curso {
     public void setRequerimientos(ArrayList<Requerimiento> requerimientos) {
         this.requerimientos = requerimientos;
     }
+
+    public Date getFechaInscripcion() {
+        return fechaInscripcion;
+    }
+
+    public void setFechaInscripcion(Date fechaInscripcion) {
+        this.fechaInscripcion = fechaInscripcion;
+    }
+    
 }

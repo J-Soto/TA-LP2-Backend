@@ -5,6 +5,8 @@
  */
 package pe.datma.datmasoft.modulos;
 
+import java.util.Date;
+
 /**
  *
  * @author maldo
@@ -13,7 +15,9 @@ public class Tema {
     private int id;
     private String nombre;
     private String descripcion;
-
+    private Date fechaInicio;
+    private Date fechaFin;
+    
     public String getNombre() {
         return nombre;
     }
@@ -37,4 +41,21 @@ public class Tema {
     public void setId(int id) {
         this.id = id;
     }
+
+    public Date getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public Date getFechaFin() {
+        return fechaFin;
+    }
+
+    public void setFechaFin(Date fechaFin) {
+        this.fechaFin = fechaFin;
+    }
+    
 }
