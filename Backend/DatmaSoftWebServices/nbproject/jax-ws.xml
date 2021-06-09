@@ -13,6 +13,9 @@
     <service name="UsuarioWS">
       <implementation-class>pe.datma.datmasoft.services.UsuarioWS</implementation-class>
     </service>
+    <service name="TemaWS">
+      <implementation-class>pe.datma.datmasoft.services.TemaWS</implementation-class>
+    </service>
   </services>
   <clients/>
 </jax-ws>
