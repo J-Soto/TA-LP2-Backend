@@ -106,4 +106,22 @@ public class AsistenciaMySQL implements AsistenciaDAO {
         return arr;
     }
     
+    @Override
+    public int eliminarAsistencia(int idAsistencia) {
+        int resultado = 0;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            cst = con.prepareCall("{call ELIMINAR_ASISTENCIA(?)}");
+            cst.setInt("_id_asistencia", idAsistencia);
+            cst.executeUpdate();
+            resultado = 1;
+            cst.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());};
+        }
+        return resultado;
+    }
 }
