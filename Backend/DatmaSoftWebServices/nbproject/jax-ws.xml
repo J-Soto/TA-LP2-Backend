@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services>
-    <service name="CursoWS">
-      <implementation-class>pe.datma.datmasoft.services.CursoWS</implementation-class>
-    </service>
     <service name="UsuarioWS">
       <implementation-class>pe.datma.datmasoft.services.UsuarioWS</implementation-class>
     </service>
-    <service name="TutorWS">
-      <implementation-class>pe.datma.datmasoft.services.TutorWS</implementation-class>
+    <service name="ActividadWS">
+      <implementation-class>pe.datma.datmasoft.services.ActividadWS</implementation-class>
+    </service>
+    <service name="TemaWS">
+      <implementation-class>pe.datma.datmasoft.services.TemaWS</implementation-class>
     </service>
     <service name="PsicologoWS">
       <implementation-class>pe.datma.datmasoft.services.PsicologoWS</implementation-class>
     </service>
-    <service name="ActividadWS">
-      <implementation-class>pe.datma.datmasoft.services.ActividadWS</implementation-class>
+    <service name="CursoWS">
+      <implementation-class>pe.datma.datmasoft.services.CursoWS</implementation-class>
     </service>
-    <service name="ActividadWS">
-      <implementation-class>pe.datma.datmasoft.services.ActividadWS</implementation-class>
+    <service name="TutorWS">
+      <implementation-class>pe.datma.datmasoft.services.TutorWS</implementation-class>
     </service>
     <service name="DistritoWS">
       <implementation-class>pe.datma.datmasoft.services.DistritoWS</implementation-class>
@@ -25,15 +25,6 @@
     <service name="MaterialWS">
       <implementation-class>pe.datma.datmasoft.services.MaterialWS</implementation-class>
     </service>
-<<<<<<< HEAD
-    <service name="ActividadWS">
-      <implementation-class>pe.datma.datmasoft.services.ActividadWS</implementation-class>
-    </service>
-    <service name="TemaWS">
-      <implementation-class>pe.datma.datmasoft.services.TemaWS</implementation-class>
-    </service>
-=======
->>>>>>> 90ecd599c40415f70436733fb48db96dc4002fdf
   </services>
   <clients/>
 </jax-ws>
