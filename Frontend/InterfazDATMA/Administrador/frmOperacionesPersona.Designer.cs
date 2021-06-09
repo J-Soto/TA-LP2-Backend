@@ -53,6 +53,8 @@ namespace InterfazDATMA.Administrador
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtBusqTutor = new System.Windows.Forms.TextBox();
             this.txtBusqPsi = new System.Windows.Forms.TextBox();
+            this.btnBuscarTutor = new System.Windows.Forms.Button();
+            this.btnBuscarPsi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTutores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPsicologos)).BeginInit();
             this.SuspendLayout();
@@ -319,12 +321,44 @@ namespace InterfazDATMA.Administrador
             this.txtBusqPsi.Text = "Nombres y Apellidos";
             this.txtBusqPsi.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtBusqPsi_MouseClick);
             // 
+            // btnBuscarTutor
+            // 
+            this.btnBuscarTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(154)))), ((int)(((byte)(100)))));
+            this.btnBuscarTutor.FlatAppearance.BorderSize = 0;
+            this.btnBuscarTutor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnBuscarTutor.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarTutor.Location = new System.Drawing.Point(657, 25);
+            this.btnBuscarTutor.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscarTutor.Name = "btnBuscarTutor";
+            this.btnBuscarTutor.Size = new System.Drawing.Size(117, 20);
+            this.btnBuscarTutor.TabIndex = 23;
+            this.btnBuscarTutor.Text = "Buscar";
+            this.btnBuscarTutor.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscarPsi
+            // 
+            this.btnBuscarPsi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(154)))), ((int)(((byte)(100)))));
+            this.btnBuscarPsi.FlatAppearance.BorderSize = 0;
+            this.btnBuscarPsi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarPsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnBuscarPsi.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarPsi.Location = new System.Drawing.Point(657, 220);
+            this.btnBuscarPsi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscarPsi.Name = "btnBuscarPsi";
+            this.btnBuscarPsi.Size = new System.Drawing.Size(117, 20);
+            this.btnBuscarPsi.TabIndex = 24;
+            this.btnBuscarPsi.Text = "Buscar";
+            this.btnBuscarPsi.UseVisualStyleBackColor = false;
+            // 
             // frmOperacionesPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBuscarPsi);
+            this.Controls.Add(this.btnBuscarTutor);
             this.Controls.Add(this.txtBusqPsi);
             this.Controls.Add(this.txtBusqTutor);
             this.Controls.Add(this.dgvPsicologos);
@@ -366,5 +400,7 @@ namespace InterfazDATMA.Administrador
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.TextBox txtBusqTutor;
         private System.Windows.Forms.TextBox txtBusqPsi;
+        private System.Windows.Forms.Button btnBuscarTutor;
+        private System.Windows.Forms.Button btnBuscarPsi;
     }
 }
