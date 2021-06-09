@@ -79,7 +79,7 @@ namespace InterfazDATMA.Administrador
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(90, 130);
+            this.label1.Location = new System.Drawing.Point(90, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 29);
             this.label1.TabIndex = 14;
@@ -90,7 +90,7 @@ namespace InterfazDATMA.Administrador
             this.dtpFechaFin.CalendarMonthBackground = System.Drawing.SystemColors.MenuHighlight;
             this.dtpFechaFin.CustomFormat = "\"dd/MM/yyyy\"";
             this.dtpFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaFin.Location = new System.Drawing.Point(266, 133);
+            this.dtpFechaFin.Location = new System.Drawing.Point(266, 140);
             this.dtpFechaFin.Name = "dtpFechaFin";
             this.dtpFechaFin.Size = new System.Drawing.Size(310, 26);
             this.dtpFechaFin.TabIndex = 15;
@@ -100,7 +100,7 @@ namespace InterfazDATMA.Administrador
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(168, 184);
+            this.label2.Location = new System.Drawing.Point(168, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 29);
             this.label2.TabIndex = 16;
@@ -109,7 +109,7 @@ namespace InterfazDATMA.Administrador
             // cbTema
             // 
             this.cbTema.FormattingEnabled = true;
-            this.cbTema.Location = new System.Drawing.Point(265, 188);
+            this.cbTema.Location = new System.Drawing.Point(266, 212);
             this.cbTema.Name = "cbTema";
             this.cbTema.Size = new System.Drawing.Size(363, 28);
             this.cbTema.TabIndex = 17;
@@ -137,7 +137,7 @@ namespace InterfazDATMA.Administrador
             this.FechaFin});
             this.dgvTemas.EnableHeadersVisualStyles = false;
             this.dgvTemas.GridColor = System.Drawing.Color.SteelBlue;
-            this.dgvTemas.Location = new System.Drawing.Point(95, 239);
+            this.dgvTemas.Location = new System.Drawing.Point(95, 325);
             this.dgvTemas.Name = "dgvTemas";
             this.dgvTemas.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -156,7 +156,7 @@ namespace InterfazDATMA.Administrador
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
             this.dgvTemas.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvTemas.RowTemplate.Height = 28;
-            this.dgvTemas.Size = new System.Drawing.Size(770, 339);
+            this.dgvTemas.Size = new System.Drawing.Size(831, 359);
             this.dgvTemas.TabIndex = 18;
             // 
             // NombreCompleto
@@ -204,7 +204,7 @@ namespace InterfazDATMA.Administrador
             this.btnAgregarTema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarTema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnAgregarTema.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarTema.Location = new System.Drawing.Point(889, 239);
+            this.btnAgregarTema.Location = new System.Drawing.Point(967, 325);
             this.btnAgregarTema.Name = "btnAgregarTema";
             this.btnAgregarTema.Size = new System.Drawing.Size(50, 45);
             this.btnAgregarTema.TabIndex = 19;
@@ -218,7 +218,7 @@ namespace InterfazDATMA.Administrador
             this.btnQuitarTema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuitarTema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnQuitarTema.ForeColor = System.Drawing.Color.White;
-            this.btnQuitarTema.Location = new System.Drawing.Point(889, 302);
+            this.btnQuitarTema.Location = new System.Drawing.Point(967, 409);
             this.btnQuitarTema.Name = "btnQuitarTema";
             this.btnQuitarTema.Size = new System.Drawing.Size(50, 45);
             this.btnQuitarTema.TabIndex = 20;
@@ -232,12 +232,13 @@ namespace InterfazDATMA.Administrador
             this.btnCrearTema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearTema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnCrearTema.ForeColor = System.Drawing.Color.White;
-            this.btnCrearTema.Location = new System.Drawing.Point(662, 184);
+            this.btnCrearTema.Location = new System.Drawing.Point(685, 208);
             this.btnCrearTema.Name = "btnCrearTema";
-            this.btnCrearTema.Size = new System.Drawing.Size(161, 32);
+            this.btnCrearTema.Size = new System.Drawing.Size(161, 42);
             this.btnCrearTema.TabIndex = 21;
             this.btnCrearTema.Text = "Crear Tema";
             this.btnCrearTema.UseVisualStyleBackColor = false;
+            this.btnCrearTema.Click += new System.EventHandler(this.btnCrearTema_Click);
             // 
             // btnRegresar
             // 
@@ -246,19 +247,20 @@ namespace InterfazDATMA.Administrador
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(867, 584);
+            this.btnRegresar.Location = new System.Drawing.Point(1021, 741);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(161, 39);
+            this.btnRegresar.Size = new System.Drawing.Size(161, 50);
             this.btnRegresar.TabIndex = 22;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // frmSeleccionarTemasDeCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(1054, 644);
+            this.ClientSize = new System.Drawing.Size(1236, 845);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnCrearTema);
             this.Controls.Add(this.btnQuitarTema);

@@ -83,7 +83,7 @@ namespace InterfazDATMA.Administrador
             this.btnGuardarTema.ForeColor = System.Drawing.Color.White;
             this.btnGuardarTema.Location = new System.Drawing.Point(213, 317);
             this.btnGuardarTema.Name = "btnGuardarTema";
-            this.btnGuardarTema.Size = new System.Drawing.Size(161, 32);
+            this.btnGuardarTema.Size = new System.Drawing.Size(161, 46);
             this.btnGuardarTema.TabIndex = 22;
             this.btnGuardarTema.Text = "Guardar";
             this.btnGuardarTema.UseVisualStyleBackColor = false;
@@ -97,17 +97,18 @@ namespace InterfazDATMA.Administrador
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Location = new System.Drawing.Point(437, 317);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(161, 32);
+            this.btnCancelar.Size = new System.Drawing.Size(161, 46);
             this.btnCancelar.TabIndex = 23;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmCrearTemaDeCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(107)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(803, 385);
+            this.ClientSize = new System.Drawing.Size(856, 422);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardarTema);
             this.Controls.Add(this.txtDescripcionTema);
