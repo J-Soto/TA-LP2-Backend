@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using InterfazDATMA.plantilla;
+using InterfazDATMA;
+using InterfazDATMA.UsuarioWS;
 
 namespace InterfaceDATMA
 {
@@ -16,9 +18,13 @@ namespace InterfaceDATMA
         private string _user = null;
         private string _password = null;
         private Form formularioActivo = null;
+
+        private UsuarioWSClient daoUsuario;
         public frmLogin()
         {
             InitializeComponent();
+
+            daoUsuario = new UsuarioWSClient();
         }
 
         private void clickUsuario(object sender, MouseEventArgs e)
@@ -53,22 +59,29 @@ namespace InterfaceDATMA
 
         private int verificarLogin(string user,string password)
         {
-            return 1;
+            BindingList<usuario> usuarios = new BindingList<usuario>(
+                daoUsuario.listarUsuarios().ToList());
+            foreach (usuario item in usuarios)
+            {
+                if (item.user == user && item.password == password)
+                    return item.tipo;
+            }
+            return -1;
         }
 
         private void btnIngresar_Click_1(object sender, EventArgs e)
         {
-            //if (verificarLogin(txtUsuario.Text, txtContraseña.Text) > 0)
+            int tipo = verificarLogin(txtUsuario.Text, txtContraseña.Text);
+            if (tipo >= 0)
+            {
+                abrirFormulario(new frmPlantillaGestion(tipo));
+            }
+            else MessageBox.Show("Datos incorrectos");
             //abrirFormulario(new frmWalkthrough());
             //0->cuidador
             //1->psicologo
             //2->admin
-            abrirFormulario(new frmPlantillaGestion(2));
-        }
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
+            
         }
     }
 }

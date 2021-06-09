@@ -33,7 +33,7 @@ namespace InterfazDATMA.plantilla
                 abrirFormulario(formInicial);
             }
             //Tutor
-            else
+            else if (tipoUser == 0)
             {
 
             }

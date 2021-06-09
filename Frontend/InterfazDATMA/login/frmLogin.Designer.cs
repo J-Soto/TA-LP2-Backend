@@ -128,7 +128,6 @@
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmLogin";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

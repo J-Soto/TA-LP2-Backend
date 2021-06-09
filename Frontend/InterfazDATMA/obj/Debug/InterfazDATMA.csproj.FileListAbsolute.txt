@@ -65,7 +65,6 @@ C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\Interfaz
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmInsertarPsicologo.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmInsertarTutor.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaPersonas.resources
-C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaPsicologos.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaTotal.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaTutores.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmModificarPsicologo.resources
@@ -120,3 +119,4 @@ C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\Inte
 C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.psicologo.frmPerfiPsicologo.resources
 C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.exe
 C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.Header.resources
