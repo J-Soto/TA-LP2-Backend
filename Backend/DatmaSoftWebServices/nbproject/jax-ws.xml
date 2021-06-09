@@ -16,18 +16,24 @@
     <service name="ActividadWS">
       <implementation-class>pe.datma.datmasoft.services.ActividadWS</implementation-class>
     </service>
+    <service name="ActividadWS">
+      <implementation-class>pe.datma.datmasoft.services.ActividadWS</implementation-class>
+    </service>
     <service name="DistritoWS">
       <implementation-class>pe.datma.datmasoft.services.DistritoWS</implementation-class>
     </service>
     <service name="MaterialWS">
       <implementation-class>pe.datma.datmasoft.services.MaterialWS</implementation-class>
     </service>
+<<<<<<< HEAD
     <service name="ActividadWS">
       <implementation-class>pe.datma.datmasoft.services.ActividadWS</implementation-class>
     </service>
     <service name="TemaWS">
       <implementation-class>pe.datma.datmasoft.services.TemaWS</implementation-class>
     </service>
+=======
+>>>>>>> 90ecd599c40415f70436733fb48db96dc4002fdf
   </services>
   <clients/>
 </jax-ws>
