@@ -16,14 +16,14 @@
     <service name="TemaWS">
       <implementation-class>pe.datma.datmasoft.services.TemaWS</implementation-class>
     </service>
+    <service name="ActividadWS">
+      <implementation-class>pe.datma.datmasoft.services.ActividadWS</implementation-class>
+    </service>
     <service name="DistritoWS">
       <implementation-class>pe.datma.datmasoft.services.DistritoWS</implementation-class>
     </service>
     <service name="MaterialWS">
       <implementation-class>pe.datma.datmasoft.services.MaterialWS</implementation-class>
-    </service>
-    <service name="ActividadWS">
-      <implementation-class>pe.datma.datmasoft.services.ActividadWS</implementation-class>
     </service>
   </services>
   <clients/>
