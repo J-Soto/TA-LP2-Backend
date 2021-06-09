@@ -43,4 +43,18 @@ public class DistritoWS {
     public int modificarDistrito(@WebParam(name = "name") Distrito distrito) {
         return daoDistrito.modificarDistrito(distrito);
     }
+    
+    @WebMethod(operationName = "lisrarTodosDistritos")
+    public ArrayList<Distrito> lisrarTodosDistritos(){
+        ArrayList<Distrito> distritos = new ArrayList<>();
+        
+        try {
+            distritos = daoDistrito.lisrarTodosDistritos();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        
+        return distritos;
+    }
+    
 }

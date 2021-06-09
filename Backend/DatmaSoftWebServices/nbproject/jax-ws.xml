@@ -28,6 +28,9 @@
     <service name="AsistenciaWS">
       <implementation-class>pe.datma.datmasoft.services.AsistenciaWS</implementation-class>
     </service>
+    <service name="SemanaWS">
+      <implementation-class>pe.datma.datmasoft.services.SemanaWS</implementation-class>
+    </service>
   </services>
   <clients/>
 </jax-ws>
