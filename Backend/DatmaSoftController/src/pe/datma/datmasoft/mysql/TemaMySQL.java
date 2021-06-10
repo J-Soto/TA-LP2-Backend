@@ -56,8 +56,8 @@ public class TemaMySQL implements TemaDAO {
             cst.setString("_descripcion", tema.getDescripcion());
            
             cst.executeUpdate();
-            tema.setId(cst.getInt("_idtema"));
             resultado = cst.getInt("_idtema");
+            tema.setId(cst.getInt("_idtema"));
         }catch(ClassNotFoundException | SQLException ex){
             System.out.println(ex.getMessage());
         }finally{

@@ -10,6 +10,8 @@
   <xs:element name="listarTodosPsicologosResponse" type="tns:listarTodosPsicologosResponse" />
   <xs:element name="modificarPsicologo" type="tns:modificarPsicologo" />
   <xs:element name="modificarPsicologoResponse" type="tns:modificarPsicologoResponse" />
+  <xs:element name="verificarDNI" type="tns:verificarDNI" />
+  <xs:element name="verificarDNIResponse" type="tns:verificarDNIResponse" />
   <xs:complexType name="listarPsicologosPorNombre">
     <xs:sequence>
       <xs:element minOccurs="0" name="nombrePsico" type="xs:string" />
@@ -141,6 +143,19 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="insertarPsicologoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="verificarDNI">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="nom" type="xs:string" />
+      <xs:element minOccurs="0" name="apPat" type="xs:string" />
+      <xs:element minOccurs="0" name="apMat" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="verificarDNIResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
     </xs:sequence>

@@ -52,9 +52,9 @@ public class PsicologoMySQL  implements PsicologoDAO{
             psicologo.setActivo(1);
             psicologo.setActivoPsicologo(1);
             
+            resultado = cst.getInt("_id_psicologo");
             cst.close();
             con.close();       
-            resultado = cst.getInt("_id_psicologo");
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }finally{
