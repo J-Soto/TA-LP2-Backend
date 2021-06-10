@@ -50,7 +50,7 @@ namespace InterfazDATMA.Administrador
             {
                 psicologos = new BindingList<PsicologoWS.psicologo>();
             }
-            dgvTutores.DataSource = psicologos;
+            dgvPsicologos.DataSource = psicologos;
 
             inicializarTablas();
         }
@@ -159,6 +159,14 @@ namespace InterfazDATMA.Administrador
         private void btnListarTut_Click(object sender, EventArgs e)
         {
             formPlantilla.abrirFormulario(new frmListaTutores());
+        }
+
+        private void dgvTutores_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            TutorWS.tutor tutor = (TutorWS.tutor)dgvTutores.Rows[e.RowIndex].DataBoundItem;
+            dgvTutores.Rows[e.RowIndex].Cells["NombreCompleto"].Value = tutor.nombre + " " + tutor.apellidoPaterno + " " + tutor.apellidoMaterno;
+
+            dgvTutores.Rows[e.RowIndex].Cells["Activo"].Value = 1;
         }
     }
 }

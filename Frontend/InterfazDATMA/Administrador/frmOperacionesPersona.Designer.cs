@@ -224,6 +224,7 @@ namespace InterfazDATMA.Administrador
             this.dgvTutores.RowTemplate.Height = 28;
             this.dgvTutores.Size = new System.Drawing.Size(623, 138);
             this.dgvTutores.TabIndex = 19;
+            this.dgvTutores.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvTutores_CellFormatting);
             // 
             // dataGridViewTextBoxColumn1
             // 
