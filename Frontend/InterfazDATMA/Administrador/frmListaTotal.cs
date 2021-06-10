@@ -12,17 +12,32 @@ namespace InterfazDATMA.Administrador
 {
     public partial class frmListaTotal : Form
     {
+        private UsuarioWS.UsuarioWSClient daoUsuario;
         public frmListaTotal()
         {
             InitializeComponent();
+            daoUsuario = new UsuarioWS.UsuarioWSClient();
+        }
+
+        private static bool pertenece(UsuarioWS.persona persona, string key)
+        {
+            int res = string.Compare(persona.nombre, key);
+            if (res > 0) return true;
+            else return false;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            BindingList<UsuarioWS.persona> personas = new BindingList<UsuarioWS.persona>(); 
-
-                    
-            //dgvLista.DataSource = 
+            UsuarioWS.persona temp = new UsuarioWS.persona();
+            BindingList<UsuarioWS.usuario> usuarios = new BindingList<UsuarioWS.usuario>(daoUsuario.listarUsuarios().ToList());
+            /*
+            foreach (var item in usuarios)
+            {   
+                
+            }
+            BindingList<UsuarioWS.persona> personas;
+            */
+            dgvLista.DataSource = usuarios;
         }
     }
 }
