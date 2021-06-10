@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,11 +16,23 @@ namespace InterfazDATMA.Administrador
     {
         private frmPlantillaGestion formPlantilla;
         public frmOperacionesPersona formOperacionPersona;
+
+        private PsicologoWS.PsicologoWSClient daoPsicologo;
+        private string rutaFoto = "";
+
         public frmInsertarPsicologo(frmOperacionesPersona formOperacionPersona, frmPlantillaGestion formPlantilla)
         {
             InitializeComponent();
             this.formPlantilla = formPlantilla;
             this.formOperacionPersona = formOperacionPersona;
+            daoPsicologo = new PsicologoWS.PsicologoWSClient();
+
+
+            //Inicializar el combo box para distrito
+            DistritoWS.DistritoWSClient daoDistrito = new DistritoWS.DistritoWSClient();
+            BindingList<DistritoWS.distrito> distritos = new BindingList<DistritoWS.distrito>(daoDistrito.lisrarTodosDistritos().ToList());
+            cboDistrito.DataSource = distritos;
+            cboDistrito.DisplayMember = "nombre";
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -29,7 +42,37 @@ namespace InterfazDATMA.Administrador
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            formPlantilla.abrirFormulario(formOperacionPersona);
+            PsicologoWS.psicologo psicologo = new PsicologoWS.psicologo();
+
+            psicologo.nombre = txtNombre.Text;
+            psicologo.apellidoPaterno = txtApellidoPat.Text;
+            psicologo.fechaNacimiento = dtpFechaNacimiento.Value;
+            psicologo.distrito = new PsicologoWS.distrito();
+            DistritoWS.distrito distritoSelected = cboDistrito.SelectedItem as DistritoWS.distrito;
+            psicologo.distrito = new PsicologoWS.distrito();
+            psicologo.distrito.idDistrito = distritoSelected.idDistrito;
+            psicologo.correo = txtCorreo.Text;
+
+            psicologo.DNI = txtDni.Text;
+
+            psicologo.telefono = txtTelf.Text;
+            psicologo.celular = txtCelular.Text;
+            if (rbtnHombre.Checked == true) psicologo.genero = 'M';
+            else psicologo.genero = 'F';
+
+
+            //Foto es opcional:
+            if (rutaFoto.Equals("") != true)
+            {
+                FileStream fs = new FileStream(rutaFoto, FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(fs);
+                psicologo.fotoPerfil = br.ReadBytes((int)fs.Length);
+            }
+
+            
+
+            
+
         }
 
         private void rbtnHombre_Click(object sender, EventArgs e)
@@ -51,6 +94,29 @@ namespace InterfazDATMA.Administrador
             {
 
             }
+        }
+
+        private void btnSubirFoto_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(ofdSubirFoto.ShowDialog() == DialogResult.OK)
+                {
+                    rutaFoto = ofdSubirFoto.FileName;
+                    pbFoto.Image = Image.FromFile(rutaFoto);
+                }
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Seleccionar una imagen valida", "Mensaje de Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void cboDistrito_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
