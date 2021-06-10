@@ -31,8 +31,8 @@ public class SemanaMySQL implements SemanaDAO {
             cst.setDate("_fechainicio", new java.sql.Date(semana.getFechaInicio().getTime()));
            
             cst.executeUpdate();
-            semana.setId(cst.getInt("_idsemana"));
             resultado = cst.getInt("_idsemana");
+            semana.setId(cst.getInt("_idsemana"));
         }catch(ClassNotFoundException | SQLException ex){
             System.out.println(ex.getMessage());
         }finally{

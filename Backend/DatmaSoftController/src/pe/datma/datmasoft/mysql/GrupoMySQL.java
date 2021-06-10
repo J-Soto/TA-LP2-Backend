@@ -33,9 +33,9 @@ public class GrupoMySQL implements  GrupoDAO{
             
             grupo.setIdGrupo(cst.getInt("_idgrupo"));
             
+            resultado = cst.getInt("_idgrupo");
             cst.close();
             con.close();       
-            resultado = cst.getInt("_idgrupo");
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }finally{

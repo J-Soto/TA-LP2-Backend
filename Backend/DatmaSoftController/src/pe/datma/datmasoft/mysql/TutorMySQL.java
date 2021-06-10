@@ -57,9 +57,10 @@ public class TutorMySQL implements TutorDAO {
             tutor.setActivo(1);
             tutor.setActivoTutor(1);
             
+            
+            resultado = cst.getInt("_id_tutor");
             cst.close();
             con.close();       
-            resultado = cst.getInt("_id_tutor");
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }finally{
