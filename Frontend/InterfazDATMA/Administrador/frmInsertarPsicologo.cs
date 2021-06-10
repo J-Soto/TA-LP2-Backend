@@ -59,6 +59,7 @@ namespace InterfazDATMA.Administrador
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             inicializarComponentes();
+            formOperacionPersona.inicializarTablas();
             formPlantilla.abrirFormulario(formOperacionPersona);
         }
 
