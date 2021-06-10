@@ -17,26 +17,21 @@ namespace InterfazDATMA.Administrador
         {
             InitializeComponent();
             daoUsuario = new UsuarioWS.UsuarioWSClient();
-        }
-
-        private static bool pertenece(UsuarioWS.persona persona, string key)
-        {
-            int res = string.Compare(persona.nombre, key);
-            if (res > 0) return true;
-            else return false;
+            dgvLista.AutoGenerateColumns = false;
+            dgvLista.DataSource = new BindingList<UsuarioWS.usuario>(daoUsuario.listarUsuarios().ToList());
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            UsuarioWS.persona temp = new UsuarioWS.persona();
             BindingList<UsuarioWS.usuario> usuarios = new BindingList<UsuarioWS.usuario>(daoUsuario.listarUsuarios().ToList());
-            /*
-            foreach (var item in usuarios)
-            {   
-                
+            for (int i = 0; i < usuarios.Count; i++)
+            {
+                if (!usuarios[i].nombre.Contains(txtBuscar.Text))
+                {
+                    usuarios.RemoveAt(i);
+                    i--;
+                }
             }
-            BindingList<UsuarioWS.persona> personas;
-            */
             dgvLista.DataSource = usuarios;
         }
     }
