@@ -27,8 +27,9 @@ namespace InterfazDATMA.Administrador
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            dgvDistrito.DataSource = new BindingList<DistritoWS.distrito>(
+            BindingList<DistritoWS.distrito> distritos = new BindingList<DistritoWS.distrito>(
                 daoDistrito.listarDistritos(txtBuscar.Text).ToList());
+            dgvDistrito.DataSource = distritos;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

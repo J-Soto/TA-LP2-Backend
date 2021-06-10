@@ -16,14 +16,23 @@ namespace InterfazDATMA.Administrador
         private frmPlantillaGestion formPlantilla;
         private frmGestionarModuloAdmin formGestionarModulos;
 
+        private TutorWS.TutorWSClient daoTutor;
+        private PsicologoWS.PsicologoWSClient daoPsicologo;
+
         public frmOperacionesPersona(frmGestionarModuloAdmin formGestionarModulos, frmPlantillaGestion formPlantilla)
         {
             InitializeComponent();
+            daoTutor = new TutorWS.TutorWSClient();
+            daoPsicologo = new PsicologoWS.PsicologoWSClient();
             this.formPlantilla = formPlantilla;
             this.formGestionarModulos = formGestionarModulos;
 
             dgvTutores.AutoGenerateColumns = false;
+            //dgvTutores.DataSource = new BindingList<TutorWS.tutor>(
+            //    daoTutor.listarTutoresPorNombre("").ToList());
             dgvPsicologos.AutoGenerateColumns = false;
+            //dgvPsicologos.DataSource = new BindingList<PsicologoWS.psicologo>(
+            //    daoPsicologo.listarPsicologosPorNombre("").ToList());
         }
 
         private void btnInsertarTutor_Click(object sender, EventArgs e)
@@ -56,6 +65,18 @@ namespace InterfazDATMA.Administrador
         {
             if (txtBusqPsi.Text == "Nombres y Apellidos")
                 txtBusqPsi.Text = "";
+        }
+
+        private void btnBuscarTutor_Click(object sender, EventArgs e)
+        {/*
+            dgvTutores.DataSource = new BindingList<TutorWS.tutor>(
+                daoTutor.listarTutoresPorNombre(txtBusqTutor.Text).ToList());*/
+        }
+
+        private void btnBuscarPsi_Click(object sender, EventArgs e)
+        {/*
+            dgvPsicologos.DataSource = new BindingList<PsicologoWS.psicologo>(
+                daoPsicologo.listarPsicologosPorNombre(txtBusqPsi.Text).ToList());*/
         }
     }
 }

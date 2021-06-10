@@ -85,7 +85,6 @@ C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\Interfac
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmInscripcionHecha.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmListaCuidadoresDePsicologo.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmListaCursoInscritos.resources
-C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmLogin.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmMenuUsuario.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmModificarPrograma.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmNotificacionActiva.resources
@@ -120,6 +119,9 @@ C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\Inte
 C:\Users\DUXAT\Documents\Uni\2021-1\LP2\TA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.Header.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.psicologo.frmPerfilPsicologo.resources
+<<<<<<< HEAD
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.frmLogin.resources
+=======
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe.config
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.pdb
@@ -173,3 +175,4 @@ C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmOperacionesCursos.resources
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmSeleccionarTemasDeCurso.resources
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmVerGruposCurso.resources
+>>>>>>> 2737b8b9cb73c66c0f68c8538c2c50379384b7e0

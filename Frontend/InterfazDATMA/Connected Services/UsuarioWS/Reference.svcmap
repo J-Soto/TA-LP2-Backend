@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2951f13b-f0fe-4543-af96-d09f31f0e05b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a75c9761-4d12-42b9-a1f0-2b3c9f6b2937" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="http://54.157.215.104:8080/DatmaSoftWebServices/UsuarioWS?WSDL" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="a5083eaf-369d-465e-9d57-01ab0e559ff4" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/UsuarioWS?WSDL" />
-    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="2603782e-1a16-43cf-a0da-b8a0ed087fe0" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/UsuarioWS?xsd=1" />
+    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="395bfbee-abb0-4137-861e-f9884512b15f" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/UsuarioWS?WSDL" />
+    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="b3785ba5-eff5-449e-9a09-d9633750bf98" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/UsuarioWS?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
