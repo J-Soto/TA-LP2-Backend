@@ -11,7 +11,6 @@ using InterfazDATMA.plantilla;
 using InterfazDATMA;
 using System.ServiceModel;
 
-//using InterfazDATMA.UsuarioWS;
 
 namespace InterfazDATMA
 {
@@ -69,10 +68,10 @@ namespace InterfazDATMA
             
             foreach (UsuarioWS.usuario item in usuarios)
             {
-                if (item.user == user && item.password == password)
+                if (item.user.Contains(user) && item.password.Contains(password))
                     return item.tipo;
             }
-            return 1;
+            return -1;
         }
 
         private void btnIngresar_Click_1(object sender, EventArgs e)
