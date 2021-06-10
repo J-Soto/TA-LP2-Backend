@@ -31,7 +31,6 @@ namespace InterfazDATMA.Administrador
         {
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnNuevoDistrito = new System.Windows.Forms.Button();
             this.lblGenero = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtTelf = new System.Windows.Forms.TextBox();
@@ -96,21 +95,6 @@ namespace InterfazDATMA.Administrador
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnNuevoDistrito
-            // 
-            this.btnNuevoDistrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(154)))), ((int)(((byte)(100)))));
-            this.btnNuevoDistrito.FlatAppearance.BorderSize = 0;
-            this.btnNuevoDistrito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoDistrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btnNuevoDistrito.ForeColor = System.Drawing.Color.White;
-            this.btnNuevoDistrito.Location = new System.Drawing.Point(540, 283);
-            this.btnNuevoDistrito.Name = "btnNuevoDistrito";
-            this.btnNuevoDistrito.Size = new System.Drawing.Size(160, 32);
-            this.btnNuevoDistrito.TabIndex = 60;
-            this.btnNuevoDistrito.Text = "Nuevo Distrito";
-            this.btnNuevoDistrito.UseVisualStyleBackColor = false;
-            this.btnNuevoDistrito.Click += new System.EventHandler(this.btnNuevoDistrito_Click);
-            // 
             // lblGenero
             // 
             this.lblGenero.AutoSize = true;
@@ -129,6 +113,7 @@ namespace InterfazDATMA.Administrador
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(248, 26);
             this.txtCelular.TabIndex = 58;
+            this.txtCelular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCelular_KeyPress);
             // 
             // txtTelf
             // 
@@ -137,6 +122,7 @@ namespace InterfazDATMA.Administrador
             this.txtTelf.Name = "txtTelf";
             this.txtTelf.Size = new System.Drawing.Size(248, 26);
             this.txtTelf.TabIndex = 57;
+            this.txtTelf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelf_KeyPress);
             // 
             // txtDni
             // 
@@ -183,7 +169,6 @@ namespace InterfazDATMA.Administrador
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Enabled = false;
             this.dtpFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaNacimiento.Location = new System.Drawing.Point(282, 231);
             this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -434,7 +419,6 @@ namespace InterfazDATMA.Administrador
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.btnNuevoDistrito);
             this.Controls.Add(this.lblGenero);
             this.Controls.Add(this.txtCelular);
             this.Controls.Add(this.txtTelf);
@@ -469,7 +453,6 @@ namespace InterfazDATMA.Administrador
 
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnNuevoDistrito;
         private System.Windows.Forms.Label lblGenero;
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.TextBox txtTelf;

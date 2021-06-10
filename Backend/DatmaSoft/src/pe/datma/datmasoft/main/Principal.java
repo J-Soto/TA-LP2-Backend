@@ -61,24 +61,24 @@ public class Principal {
 
 
         
-//        Psicologo psicologo = new Psicologo();
-//        PsicologoDAO daoPsicologo = new PsicologoMySQL();
-//        psicologo.setDistrito(new Distrito());
-//        psicologo.getDistrito().setIdDistrito(2);
-//        psicologo.setDNI("77894564");
-//        psicologo.setNombre("Jorge");
-//        psicologo.setApellidoPaterno("Uriol");
-//        psicologo.setApellidoMaterno("Perez");
-//        psicologo.setFechaNacimiento(new Date());
-//        psicologo.setGenero('M');
-//        psicologo.setEdad(70);
-//        psicologo.setCelular("998123123");
-//        psicologo.setTelefono("35373283");
-//        psicologo.setCorreo("psico1@hotmail.com");
-//        psicologo.setUser("psico123");
-//        psicologo.setPassword("12345");
-//        psicologo.setFotoPerfil(null);
-//        daoPsicologo.insertarPsicologo(psicologo);
+        Psicologo psicologo = new Psicologo();
+        PsicologoDAO daoPsicologo = new PsicologoMySQL();
+        psicologo.setDistrito(new Distrito());
+        psicologo.getDistrito().setIdDistrito(3);
+        psicologo.setDNI("88998899");
+        psicologo.setNombre("Jorge");
+        psicologo.setApellidoPaterno("Perez");
+        psicologo.setApellidoMaterno("Lazo");
+        psicologo.setFechaNacimiento(new Date());
+        psicologo.setGenero('M');
+        psicologo.setEdad(30);
+        psicologo.setCelular("998123123");
+        psicologo.setTelefono("35373283");
+        psicologo.setCorreo("psiconew1@hotmail.com");
+        psicologo.setUser("josex12345");
+        psicologo.setPassword("12345");
+        psicologo.setFotoPerfil(null);
+        daoPsicologo.insertarPsicologo(psicologo);
 
        GrupoDAO daoGrupo = new GrupoMySQL();
        //daoGrupo.eliminarGrupoPsicologo(9, 2);

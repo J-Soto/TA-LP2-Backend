@@ -22,8 +22,8 @@
     <MetadataSource Address="http://54.157.215.104:8080/DatmaSoftWebServices/PsicologoWS?WSDL" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="PsicologoWS.xsd" MetadataType="Schema" ID="38b4c7d1-3bdd-45c8-944a-f7f088479652" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/PsicologoWS?xsd=1" />
-    <MetadataFile FileName="PsicologoWS.wsdl" MetadataType="Wsdl" ID="d704df07-2945-4168-ad55-45c43ba21485" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/PsicologoWS?WSDL" />
+    <MetadataFile FileName="PsicologoWS.xsd" MetadataType="Schema" ID="9d8f574a-7541-4048-b380-4e1ae4b43246" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/PsicologoWS?xsd=1" />
+    <MetadataFile FileName="PsicologoWS.wsdl" MetadataType="Wsdl" ID="22219da0-7304-483f-b858-d8074eb2d7f8" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/PsicologoWS?WSDL" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

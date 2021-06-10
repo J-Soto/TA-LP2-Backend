@@ -28,16 +28,38 @@ namespace InterfazDATMA.Administrador
             this.formOperacionPersona = formOperacionPersona;
             daoPsicologo = new PsicologoWS.PsicologoWSClient();
 
+            inicializarComponentes();
+            
+        }
 
+        private void inicializarComponentes()
+        {
             //Inicializar el combo box para distrito
             DistritoWS.DistritoWSClient daoDistrito = new DistritoWS.DistritoWSClient();
             BindingList<DistritoWS.distrito> distritos = new BindingList<DistritoWS.distrito>(daoDistrito.lisrarTodosDistritos().ToList());
             cboDistrito.DataSource = distritos;
             cboDistrito.DisplayMember = "nombre";
+
+            txtNombre.Text = "";
+            txtApellidoPat.Text = "";
+            txtApellidoMat.Text = "";
+            txtCorreo.Text = "";
+            txtUser.Text = "";
+            txtPass.Text = "";
+            txtConfirmarPass.Text = "";
+            txtDni.Text = "";
+            txtTelf.Text = "";
+            txtCelular.Text = "";
+            rbtnHombre.Checked = false;
+            rbtnMujer.Checked = false;
+            pbFoto.Image = null;
         }
+
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            inicializarComponentes();
+            formOperacionPersona.inicializarTablas();
             formPlantilla.abrirFormulario(formOperacionPersona);
         }
 
@@ -45,21 +67,33 @@ namespace InterfazDATMA.Administrador
         {
             PsicologoWS.psicologo psicologo = new PsicologoWS.psicologo();
 
-            psicologo.nombre = txtNombre.Text.Trim();
-            psicologo.apellidoPaterno = txtApellidoPat.Text.Trim();
+            psicologo.nombre = txtNombre.Text;
+            psicologo.apellidoPaterno = txtApellidoPat.Text;
+            psicologo.apellidoMaterno = txtApellidoMat.Text;
             psicologo.fechaNacimiento = dtpFechaNacimiento.Value;
+            psicologo.fechaNacimientoSpecified = true;
             psicologo.distrito = new PsicologoWS.distrito();
             DistritoWS.distrito distritoSelected = cboDistrito.SelectedItem as DistritoWS.distrito;
             psicologo.distrito = new PsicologoWS.distrito();
             psicologo.distrito.idDistrito = distritoSelected.idDistrito;
-            psicologo.correo = txtCorreo.Text.Trim();
+            psicologo.correo = txtCorreo.Text;
 
-            psicologo.DNI = txtDni.Text.Trim();
+            psicologo.DNI = txtDni.Text;
 
-            psicologo.telefono = txtTelf.Text.Trim();
-            psicologo.celular = txtCelular.Text.Trim();
-            if (rbtnHombre.Checked == true) psicologo.genero = 'M';
-            else psicologo.genero = 'F';
+            //Por defecto
+            psicologo.tipo = 0;
+            
+
+            psicologo.telefono = txtTelf.Text;
+            psicologo.celular = txtCelular.Text;
+            if (rbtnHombre.Checked == true)
+            {
+                psicologo.genero = 'M';
+            }
+            else
+            {
+                psicologo.genero = 'F';
+            }
 
 
             //Foto es opcional:
@@ -69,7 +103,12 @@ namespace InterfazDATMA.Administrador
                 BinaryReader br = new BinaryReader(fs);
                 psicologo.fotoPerfil = br.ReadBytes((int)fs.Length);
             }
+            else
+            {
+                psicologo.fotoPerfil = null;
+            }
 
+            psicologo.user = txtUser.Text;
             psicologo.password = txtPass.Text;
 
             //Validaciones:
@@ -80,19 +119,16 @@ namespace InterfazDATMA.Administrador
             else if (psicologo.password != txtConfirmarPass.Text)
             {
                 MessageBox.Show("Las contraseñas deben coincidir", "Mensaje de Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (psicologo.correo.Contains("@") != true)
+            }else if (psicologo.correo.Contains("@") != true)
             {
-                MessageBox.Show("Correo no valido", "Mensaje de Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Correo invalido", "Mensaje de Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 try
                 {
-                    
                     int idPsicologo = daoPsicologo.insertarPsicologo(psicologo);
-                    MessageBox.Show(idPsicologo.ToString());
-                    if (idPsicologo != 0)
+                    if (idPsicologo == 0)
                     {
                         MessageBox.Show("Se ha registrado con exito", "Mensaje de Confirmacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         psicologo.idPersona = idPsicologo;
@@ -104,6 +140,7 @@ namespace InterfazDATMA.Administrador
                     throw new Exception();
                 }
             }
+
 
         }
 
@@ -152,6 +189,16 @@ namespace InterfazDATMA.Administrador
         }
 
         private void txtDni_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.SoloNumeros(e);
+        }
+
+        private void txtTelf_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.SoloNumeros(e);
+        }
+
+        private void txtCelular_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validar.SoloNumeros(e);
         }

@@ -30,9 +30,20 @@ namespace InterfazDATMA.Administrador
             dgvTutores.AutoGenerateColumns = false;
             //dgvTutores.DataSource = new BindingList<TutorWS.tutor>(
             //    daoTutor.listarTutoresPorNombre("").ToList());
+
+            
             dgvPsicologos.AutoGenerateColumns = false;
             //dgvPsicologos.DataSource = new BindingList<PsicologoWS.psicologo>(
             //    daoPsicologo.listarPsicologosPorNombre("").ToList());
+
+            inicializarTablas();
+        }
+
+        public void inicializarTablas()
+        {
+            BindingList<PsicologoWS.psicologo> psicologos = new BindingList<PsicologoWS.psicologo>(daoPsicologo.listarTodosPsicologos().ToList());
+
+            dgvPsicologos.DataSource = psicologos;
         }
 
         private void btnInsertarTutor_Click(object sender, EventArgs e)
@@ -47,7 +58,16 @@ namespace InterfazDATMA.Administrador
 
         private void btnModificarPsi_Click(object sender, EventArgs e)
         {
-            formPlantilla.abrirFormulario(new frmModificarPsicologo(this, formPlantilla));
+
+            if (dgvPsicologos.RowCount != 0)
+            {
+                PsicologoWS.psicologo psicologo = (PsicologoWS.psicologo)dgvPsicologos.CurrentRow.DataBoundItem;
+                frmModificarPsicologo formModificarPsicologo = new frmModificarPsicologo(this, formPlantilla,psicologo);
+            
+                formPlantilla.abrirFormulario(formModificarPsicologo);
+            }
+
+            
         }
 
         private void btnModificarTutor_Click(object sender, EventArgs e)
@@ -77,6 +97,14 @@ namespace InterfazDATMA.Administrador
         {/*
             dgvPsicologos.DataSource = new BindingList<PsicologoWS.psicologo>(
                 daoPsicologo.listarPsicologosPorNombre(txtBusqPsi.Text).ToList());*/
+        }
+
+        private void dgvPsicologos_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            PsicologoWS.psicologo psicologo = (PsicologoWS.psicologo)dgvPsicologos.Rows[e.RowIndex].DataBoundItem;
+            dgvPsicologos.Rows[e.RowIndex].Cells["NombreCompleto"].Value = psicologo.nombre + " " + psicologo.apellidoPaterno + " "+ psicologo.apellidoMaterno;
+
+            dgvPsicologos.Rows[e.RowIndex].Cells["Activo"].Value = 1;
         }
     }
 }
