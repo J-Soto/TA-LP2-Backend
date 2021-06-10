@@ -41,7 +41,13 @@ namespace InterfazDATMA.Administrador
 
         private void FetchCursos()
         {
-            cursos = new BindingList<CursoWS.curso>(daoCurso.listarCursos().ToList());
+            try
+            {
+                cursos = new BindingList<CursoWS.curso>(daoCurso.listarCursos().ToList());
+            } catch (ArgumentNullException ex)
+            {
+                cursos = new BindingList<CursoWS.curso>();
+            }
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
