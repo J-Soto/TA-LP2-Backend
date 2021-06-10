@@ -33,7 +33,6 @@ namespace InterfazDATMA.psicologo
             this.txtPermiso = new System.Windows.Forms.Label();
             this.Periodo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Usuario = new System.Windows.Forms.Label();
             this.Grupos = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -62,9 +61,10 @@ namespace InterfazDATMA.psicologo
             this.Genero = new System.Windows.Forms.Label();
             this.FechaNacimiento = new System.Windows.Forms.Label();
             this.Permisos = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPeriodo
@@ -122,20 +122,12 @@ namespace InterfazDATMA.psicologo
             this.panel2.Size = new System.Drawing.Size(647, 875);
             this.panel2.TabIndex = 72;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(177, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(323, 178);
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
-            // 
             // Usuario
             // 
             this.Usuario.AutoSize = true;
             this.Usuario.BackColor = System.Drawing.Color.Transparent;
             this.Usuario.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.Usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.Usuario.Location = new System.Drawing.Point(32, 254);
             this.Usuario.Name = "Usuario";
             this.Usuario.Size = new System.Drawing.Size(163, 49);
@@ -144,6 +136,7 @@ namespace InterfazDATMA.psicologo
             // 
             // Grupos
             // 
+            this.Grupos.FlatAppearance.BorderSize = 0;
             this.Grupos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Grupos.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Grupos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(189)))), ((int)(((byte)(205)))));
@@ -163,6 +156,7 @@ namespace InterfazDATMA.psicologo
             // 
             // Cursos
             // 
+            this.Cursos.FlatAppearance.BorderSize = 0;
             this.Cursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cursos.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.Cursos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(189)))), ((int)(((byte)(205)))));
@@ -178,7 +172,7 @@ namespace InterfazDATMA.psicologo
             this.Contrasena.AutoSize = true;
             this.Contrasena.BackColor = System.Drawing.Color.Transparent;
             this.Contrasena.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.Contrasena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Contrasena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.Contrasena.Location = new System.Drawing.Point(32, 355);
             this.Contrasena.Name = "Contrasena";
             this.Contrasena.Size = new System.Drawing.Size(251, 49);
@@ -204,7 +198,7 @@ namespace InterfazDATMA.psicologo
             this.BajosRecursos.AutoSize = true;
             this.BajosRecursos.BackColor = System.Drawing.Color.Transparent;
             this.BajosRecursos.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.BajosRecursos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.BajosRecursos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.BajosRecursos.Location = new System.Drawing.Point(32, 575);
             this.BajosRecursos.Name = "BajosRecursos";
             this.BajosRecursos.Size = new System.Drawing.Size(304, 49);
@@ -216,7 +210,7 @@ namespace InterfazDATMA.psicologo
             this.Gestante.AutoSize = true;
             this.Gestante.BackColor = System.Drawing.Color.Transparent;
             this.Gestante.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.Gestante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Gestante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.Gestante.Location = new System.Drawing.Point(32, 463);
             this.Gestante.Name = "Gestante";
             this.Gestante.Size = new System.Drawing.Size(204, 49);
@@ -273,7 +267,7 @@ namespace InterfazDATMA.psicologo
             this.Celular.AutoSize = true;
             this.Celular.BackColor = System.Drawing.Color.Transparent;
             this.Celular.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.Celular.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Celular.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.Celular.Location = new System.Drawing.Point(56, 613);
             this.Celular.Name = "Celular";
             this.Celular.Size = new System.Drawing.Size(162, 49);
@@ -285,7 +279,7 @@ namespace InterfazDATMA.psicologo
             this.Correo.AutoSize = true;
             this.Correo.BackColor = System.Drawing.Color.Transparent;
             this.Correo.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.Correo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Correo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.Correo.Location = new System.Drawing.Point(56, 430);
             this.Correo.Name = "Correo";
             this.Correo.Size = new System.Drawing.Size(157, 49);
@@ -311,7 +305,7 @@ namespace InterfazDATMA.psicologo
             this.Telefono.AutoSize = true;
             this.Telefono.BackColor = System.Drawing.Color.Transparent;
             this.Telefono.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.Telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.Telefono.Location = new System.Drawing.Point(56, 534);
             this.Telefono.Name = "Telefono";
             this.Telefono.Size = new System.Drawing.Size(188, 49);
@@ -323,7 +317,7 @@ namespace InterfazDATMA.psicologo
             this.dni.AutoSize = true;
             this.dni.BackColor = System.Drawing.Color.Transparent;
             this.dni.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.dni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.dni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.dni.Location = new System.Drawing.Point(56, 130);
             this.dni.Name = "dni";
             this.dni.Size = new System.Drawing.Size(85, 49);
@@ -349,7 +343,7 @@ namespace InterfazDATMA.psicologo
             this.Edad.AutoSize = true;
             this.Edad.BackColor = System.Drawing.Color.Transparent;
             this.Edad.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.Edad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Edad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.Edad.Location = new System.Drawing.Point(56, 218);
             this.Edad.Name = "Edad";
             this.Edad.Size = new System.Drawing.Size(124, 49);
@@ -361,7 +355,7 @@ namespace InterfazDATMA.psicologo
             this.Nombre.AutoSize = true;
             this.Nombre.BackColor = System.Drawing.Color.Transparent;
             this.Nombre.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.Nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.Nombre.Location = new System.Drawing.Point(56, 37);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(182, 49);
@@ -387,7 +381,7 @@ namespace InterfazDATMA.psicologo
             this.Genero.AutoSize = true;
             this.Genero.BackColor = System.Drawing.Color.Transparent;
             this.Genero.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.Genero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.Genero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.Genero.Location = new System.Drawing.Point(56, 319);
             this.Genero.Name = "Genero";
             this.Genero.Size = new System.Drawing.Size(171, 49);
@@ -399,7 +393,7 @@ namespace InterfazDATMA.psicologo
             this.FechaNacimiento.AutoSize = true;
             this.FechaNacimiento.BackColor = System.Drawing.Color.Transparent;
             this.FechaNacimiento.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.FechaNacimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(185)))), ((int)(((byte)(203)))));
+            this.FechaNacimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(129)))));
             this.FechaNacimiento.Location = new System.Drawing.Point(56, 717);
             this.FechaNacimiento.Name = "FechaNacimiento";
             this.FechaNacimiento.Size = new System.Drawing.Size(379, 49);
@@ -418,6 +412,14 @@ namespace InterfazDATMA.psicologo
             this.Permisos.TabIndex = 70;
             this.Permisos.Text = "Permisos";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(177, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(323, 178);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmPerfilPsicologo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -435,9 +437,9 @@ namespace InterfazDATMA.psicologo
             this.Text = "frmPerfilPsicologo";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
