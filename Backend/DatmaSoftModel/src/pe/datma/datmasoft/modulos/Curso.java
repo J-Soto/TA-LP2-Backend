@@ -40,7 +40,6 @@ public class Curso {
     public void setIdCurso(int idCurso) {
         this.idCurso = idCurso;
     }
-    
 
     public String getDescripcion() {
         return descripcion;
@@ -89,7 +88,6 @@ public class Curso {
     public void setGrupos(ArrayList<Grupo> grupos) {
         this.grupos = grupos;
     }
-
 
     public ArrayList<Requerimiento> getRequerimientos() {
         return requerimientos;

@@ -109,12 +109,17 @@ namespace InterfazDATMA.Administrador
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-
+            formPlantilla.abrirFormulario(new frmListaTotal());
         }
 
         private void btnListarPsi_Click(object sender, EventArgs e)
         {
-            formPlantilla.abrirFormulario(new frmListaPsicologos());
+            formPlantilla.abrirFormulario(new Header());
+        }
+
+        private void btnListarTut_Click(object sender, EventArgs e)
+        {
+            formPlantilla.abrirFormulario(new frmListaTutores());
         }
     }
 }

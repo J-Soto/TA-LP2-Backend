@@ -16,12 +16,15 @@ namespace InterfazDATMA.Administrador
         private frmPlantillaGestion formPlantillaGest;
         private frmOperacionesCursos formOperacionesCursos;
         private CursoWS.CursoWSClient daoCurso;
+        private CursoWS.curso curso;
 
         public frmInsertarCurso(frmOperacionesCursos formOperacionesCursos, frmPlantillaGestion formPlantillaGest)
         {
             this.formPlantillaGest = formPlantillaGest;
             this.formOperacionesCursos = formOperacionesCursos;
-            this.daoCurso = new CursoWS.CursoWSClient();
+
+            daoCurso = new CursoWS.CursoWSClient();
+            curso = new CursoWS.curso();
 
             InitializeComponent();
             dgvReq.AutoGenerateColumns = false;
@@ -47,17 +50,14 @@ namespace InterfazDATMA.Administrador
 
         private void btnGuardarCurso_Click(object sender, EventArgs e)
         {
-            var curso = new CursoWS.curso
-            {
-                descripcion = txtNombreCurso.Text,
-                fechaInicio = dtpFechaInicial.Value,
-                fechaInicioSpecified = true,
-                fechaFin = dtpFechaFin.Value,
-                fechaFinSpecified = true,
-                fechaInscripcion = dtpFechaInscrip.Value,
-                fechaInscripcionSpecified = true,
-                cantSemanas = Int32.Parse(textCantSemana.Text)
-            };
+            curso.descripcion = txtNombreCurso.Text;
+            curso.fechaInicio = dtpFechaInicial.Value;
+            curso.fechaInicioSpecified = true;
+            curso.fechaFin = dtpFechaFin.Value;
+            curso.fechaFinSpecified = true;
+            curso.fechaInscripcion = dtpFechaInscrip.Value;
+            curso.fechaInscripcionSpecified = true;
+            curso.cantSemanas = Int32.Parse(textCantSemana.Text);
             daoCurso.insertarCurso(curso);
         }
     }

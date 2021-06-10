@@ -69,7 +69,7 @@ namespace InterfazDATMA.Administrador
             this.btnDeshabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDeshabilitar.ForeColor = System.Drawing.Color.White;
             this.btnDeshabilitar.Location = new System.Drawing.Point(595, 398);
-            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeshabilitar.Name = "btnDeshabilitar";
             this.btnDeshabilitar.Size = new System.Drawing.Size(179, 29);
             this.btnDeshabilitar.TabIndex = 8;
@@ -84,7 +84,7 @@ namespace InterfazDATMA.Administrador
             this.btnListarUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnListarUsuarios.ForeColor = System.Drawing.Color.White;
             this.btnListarUsuarios.Location = new System.Drawing.Point(28, 398);
-            this.btnListarUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnListarUsuarios.Margin = new System.Windows.Forms.Padding(2);
             this.btnListarUsuarios.Name = "btnListarUsuarios";
             this.btnListarUsuarios.Size = new System.Drawing.Size(179, 29);
             this.btnListarUsuarios.TabIndex = 9;
@@ -100,7 +100,7 @@ namespace InterfazDATMA.Administrador
             this.btnInsertarPsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnInsertarPsi.ForeColor = System.Drawing.Color.White;
             this.btnInsertarPsi.Location = new System.Drawing.Point(657, 248);
-            this.btnInsertarPsi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInsertarPsi.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsertarPsi.Name = "btnInsertarPsi";
             this.btnInsertarPsi.Size = new System.Drawing.Size(117, 29);
             this.btnInsertarPsi.TabIndex = 12;
@@ -116,7 +116,7 @@ namespace InterfazDATMA.Administrador
             this.btnInsertarTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnInsertarTutor.ForeColor = System.Drawing.Color.White;
             this.btnInsertarTutor.Location = new System.Drawing.Point(657, 57);
-            this.btnInsertarTutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInsertarTutor.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsertarTutor.Name = "btnInsertarTutor";
             this.btnInsertarTutor.Size = new System.Drawing.Size(117, 29);
             this.btnInsertarTutor.TabIndex = 13;
@@ -156,7 +156,7 @@ namespace InterfazDATMA.Administrador
             this.btnModificarTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnModificarTutor.ForeColor = System.Drawing.Color.White;
             this.btnModificarTutor.Location = new System.Drawing.Point(657, 102);
-            this.btnModificarTutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificarTutor.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificarTutor.Name = "btnModificarTutor";
             this.btnModificarTutor.Size = new System.Drawing.Size(117, 29);
             this.btnModificarTutor.TabIndex = 17;
@@ -172,7 +172,7 @@ namespace InterfazDATMA.Administrador
             this.btnModificarPsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnModificarPsi.ForeColor = System.Drawing.Color.White;
             this.btnModificarPsi.Location = new System.Drawing.Point(657, 293);
-            this.btnModificarPsi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificarPsi.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificarPsi.Name = "btnModificarPsi";
             this.btnModificarPsi.Size = new System.Drawing.Size(117, 29);
             this.btnModificarPsi.TabIndex = 16;
@@ -203,7 +203,7 @@ namespace InterfazDATMA.Administrador
             this.dgvTutores.EnableHeadersVisualStyles = false;
             this.dgvTutores.GridColor = System.Drawing.Color.SteelBlue;
             this.dgvTutores.Location = new System.Drawing.Point(28, 57);
-            this.dgvTutores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvTutores.Margin = new System.Windows.Forms.Padding(2);
             this.dgvTutores.Name = "dgvTutores";
             this.dgvTutores.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -272,7 +272,7 @@ namespace InterfazDATMA.Administrador
             this.dgvPsicologos.EnableHeadersVisualStyles = false;
             this.dgvPsicologos.GridColor = System.Drawing.Color.SteelBlue;
             this.dgvPsicologos.Location = new System.Drawing.Point(28, 248);
-            this.dgvPsicologos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPsicologos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPsicologos.Name = "dgvPsicologos";
             this.dgvPsicologos.ReadOnly = true;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -345,7 +345,7 @@ namespace InterfazDATMA.Administrador
             this.btnBuscarTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnBuscarTutor.ForeColor = System.Drawing.Color.White;
             this.btnBuscarTutor.Location = new System.Drawing.Point(657, 25);
-            this.btnBuscarTutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarTutor.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarTutor.Name = "btnBuscarTutor";
             this.btnBuscarTutor.Size = new System.Drawing.Size(117, 20);
             this.btnBuscarTutor.TabIndex = 23;
@@ -361,7 +361,7 @@ namespace InterfazDATMA.Administrador
             this.btnBuscarPsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnBuscarPsi.ForeColor = System.Drawing.Color.White;
             this.btnBuscarPsi.Location = new System.Drawing.Point(657, 220);
-            this.btnBuscarPsi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarPsi.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarPsi.Name = "btnBuscarPsi";
             this.btnBuscarPsi.Size = new System.Drawing.Size(117, 20);
             this.btnBuscarPsi.TabIndex = 24;
@@ -383,6 +383,7 @@ namespace InterfazDATMA.Administrador
             this.btnListarTut.TabIndex = 25;
             this.btnListarTut.Text = "Listar Tutores";
             this.btnListarTut.UseVisualStyleBackColor = false;
+            this.btnListarTut.Click += new System.EventHandler(this.btnListarTut_Click);
             // 
             // btnListarPsi
             // 
