@@ -28,13 +28,29 @@ namespace InterfazDATMA.Administrador
             this.formGestionarModulos = formGestionarModulos;
 
             dgvTutores.AutoGenerateColumns = false;
-            //dgvTutores.DataSource = new BindingList<TutorWS.tutor>(
-            //    daoTutor.listarTutoresPorNombre("").ToList());
+            BindingList<TutorWS.tutor> tutores;
+            try
+            {
+                tutores = new BindingList<TutorWS.tutor>(daoTutor.listarTutoresPorNombre("").ToList());
+            }
+            catch (ArgumentNullException ex)
+            {
+                tutores = new BindingList<TutorWS.tutor>();
+            }
+            dgvTutores.DataSource = tutores;
 
-            
+
             dgvPsicologos.AutoGenerateColumns = false;
-            //dgvPsicologos.DataSource = new BindingList<PsicologoWS.psicologo>(
-            //    daoPsicologo.listarPsicologosPorNombre("").ToList());
+            BindingList<PsicologoWS.psicologo> psicologos;
+            try
+            {
+                psicologos = new BindingList<PsicologoWS.psicologo>(daoPsicologo.listarPsicologosPorNombre("").ToList());
+            }
+            catch (ArgumentNullException ex)
+            {
+                psicologos = new BindingList<PsicologoWS.psicologo>();
+            }
+            dgvTutores.DataSource = psicologos;
 
             inicializarTablas();
         }
@@ -95,15 +111,31 @@ namespace InterfazDATMA.Administrador
         }
 
         private void btnBuscarTutor_Click(object sender, EventArgs e)
-        {/*
-            dgvTutores.DataSource = new BindingList<TutorWS.tutor>(
-                daoTutor.listarTutoresPorNombre(txtBusqTutor.Text).ToList());*/
+        {
+            BindingList<TutorWS.tutor> tutores;
+            try
+            {
+                tutores = new BindingList<TutorWS.tutor>(daoTutor.listarTutoresPorNombre(txtBusqTutor.Text).ToList());
+            }
+            catch (ArgumentNullException ex)
+            {
+                tutores = new BindingList<TutorWS.tutor>();
+            }
+            dgvTutores.DataSource = tutores;
         }
 
         private void btnBuscarPsi_Click(object sender, EventArgs e)
-        {/*
-            dgvPsicologos.DataSource = new BindingList<PsicologoWS.psicologo>(
-                daoPsicologo.listarPsicologosPorNombre(txtBusqPsi.Text).ToList());*/
+        {
+            BindingList<PsicologoWS.psicologo> psicologos;
+            try
+            {
+                psicologos = new BindingList<PsicologoWS.psicologo>(daoPsicologo.listarPsicologosPorNombre(txtBusqPsi.Text).ToList());
+            }
+            catch (ArgumentNullException ex)
+            {
+                psicologos = new BindingList<PsicologoWS.psicologo>();
+            }
+            dgvPsicologos.DataSource = psicologos;
         }
 
         private void dgvPsicologos_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
