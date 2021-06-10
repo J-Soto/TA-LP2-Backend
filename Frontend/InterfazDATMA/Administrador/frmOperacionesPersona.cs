@@ -67,6 +67,17 @@ namespace InterfazDATMA.Administrador
                 psicologos = new BindingList<PsicologoWS.psicologo>();
             }
             dgvPsicologos.DataSource = psicologos;
+
+            BindingList<TutorWS.tutor> tutores;
+            try
+            {
+                tutores = new BindingList<TutorWS.tutor>(daoTutor.listarTutoresPorNombre("").ToList());
+            }
+            catch (ArgumentNullException ex)
+            {
+                tutores = new BindingList<TutorWS.tutor>();
+            }
+            dgvTutores.DataSource = tutores;
         }
 
         private void btnInsertarTutor_Click(object sender, EventArgs e)
