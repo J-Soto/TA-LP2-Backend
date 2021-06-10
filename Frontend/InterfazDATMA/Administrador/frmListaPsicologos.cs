@@ -16,7 +16,7 @@ namespace InterfazDATMA.Administrador
     {
         private PsicologoWS.PsicologoWSClient daoPsicologo;
 
-        public Header()
+        public Header() 
         { 
             InitializeComponent();
             daoPsicologo = new PsicologoWS.PsicologoWSClient();
