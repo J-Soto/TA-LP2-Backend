@@ -5,17 +5,17 @@
       <xsd:import schemaLocation="http://54.157.215.104:8080/DatmaSoftWebServices/PsicologoWS?xsd=1" namespace="http://services.datmasoft.datma.pe/" />
     </xsd:schema>
   </types>
-  <message name="eliminarPsicologo">
-    <part name="parameters" element="tns:eliminarPsicologo" />
-  </message>
-  <message name="eliminarPsicologoResponse">
-    <part name="parameters" element="tns:eliminarPsicologoResponse" />
-  </message>
   <message name="insertarPsicologo">
     <part name="parameters" element="tns:insertarPsicologo" />
   </message>
   <message name="insertarPsicologoResponse">
     <part name="parameters" element="tns:insertarPsicologoResponse" />
+  </message>
+  <message name="eliminarPsicologo">
+    <part name="parameters" element="tns:eliminarPsicologo" />
+  </message>
+  <message name="eliminarPsicologoResponse">
+    <part name="parameters" element="tns:eliminarPsicologoResponse" />
   </message>
   <message name="listarPsicologosPorNombre">
     <part name="parameters" element="tns:listarPsicologosPorNombre" />
@@ -23,43 +23,53 @@
   <message name="listarPsicologosPorNombreResponse">
     <part name="parameters" element="tns:listarPsicologosPorNombreResponse" />
   </message>
-  <message name="listarTodosPsicologos">
-    <part name="parameters" element="tns:listarTodosPsicologos" />
-  </message>
-  <message name="listarTodosPsicologosResponse">
-    <part name="parameters" element="tns:listarTodosPsicologosResponse" />
-  </message>
   <message name="modificarPsicologo">
     <part name="parameters" element="tns:modificarPsicologo" />
   </message>
   <message name="modificarPsicologoResponse">
     <part name="parameters" element="tns:modificarPsicologoResponse" />
   </message>
+  <message name="listarTodosPsicologos">
+    <part name="parameters" element="tns:listarTodosPsicologos" />
+  </message>
+  <message name="listarTodosPsicologosResponse">
+    <part name="parameters" element="tns:listarTodosPsicologosResponse" />
+  </message>
+  <message name="verificarDNI">
+    <part name="parameters" element="tns:verificarDNI" />
+  </message>
+  <message name="verificarDNIResponse">
+    <part name="parameters" element="tns:verificarDNIResponse" />
+  </message>
   <portType name="PsicologoWS">
-    <operation name="eliminarPsicologo">
-      <input wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/eliminarPsicologoRequest" message="tns:eliminarPsicologo" />
-      <output wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/eliminarPsicologoResponse" message="tns:eliminarPsicologoResponse" />
-    </operation>
     <operation name="insertarPsicologo">
       <input wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/insertarPsicologoRequest" message="tns:insertarPsicologo" />
       <output wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/insertarPsicologoResponse" message="tns:insertarPsicologoResponse" />
+    </operation>
+    <operation name="eliminarPsicologo">
+      <input wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/eliminarPsicologoRequest" message="tns:eliminarPsicologo" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/eliminarPsicologoResponse" message="tns:eliminarPsicologoResponse" />
     </operation>
     <operation name="listarPsicologosPorNombre">
       <input wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/listarPsicologosPorNombreRequest" message="tns:listarPsicologosPorNombre" />
       <output wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/listarPsicologosPorNombreResponse" message="tns:listarPsicologosPorNombreResponse" />
     </operation>
-    <operation name="listarTodosPsicologos">
-      <input wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/listarTodosPsicologosRequest" message="tns:listarTodosPsicologos" />
-      <output wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/listarTodosPsicologosResponse" message="tns:listarTodosPsicologosResponse" />
-    </operation>
     <operation name="modificarPsicologo">
       <input wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/modificarPsicologoRequest" message="tns:modificarPsicologo" />
       <output wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/modificarPsicologoResponse" message="tns:modificarPsicologoResponse" />
     </operation>
+    <operation name="listarTodosPsicologos">
+      <input wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/listarTodosPsicologosRequest" message="tns:listarTodosPsicologos" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/listarTodosPsicologosResponse" message="tns:listarTodosPsicologosResponse" />
+    </operation>
+    <operation name="verificarDNI">
+      <input wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/verificarDNIRequest" message="tns:verificarDNI" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/PsicologoWS/verificarDNIResponse" message="tns:verificarDNIResponse" />
+    </operation>
   </portType>
   <binding name="PsicologoWSPortBinding" type="tns:PsicologoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="eliminarPsicologo">
+    <operation name="insertarPsicologo">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -68,7 +78,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="insertarPsicologo">
+    <operation name="eliminarPsicologo">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -86,6 +96,15 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="modificarPsicologo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="listarTodosPsicologos">
       <soap:operation soapAction="" />
       <input>
@@ -95,7 +114,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="modificarPsicologo">
+    <operation name="verificarDNI">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

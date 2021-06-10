@@ -1,4 +1,5 @@
 ﻿using InterfazDATMA.plantilla;
+using InterfazDATMA.validacion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,19 +45,19 @@ namespace InterfazDATMA.Administrador
         {
             PsicologoWS.psicologo psicologo = new PsicologoWS.psicologo();
 
-            psicologo.nombre = txtNombre.Text;
-            psicologo.apellidoPaterno = txtApellidoPat.Text;
+            psicologo.nombre = txtNombre.Text.Trim();
+            psicologo.apellidoPaterno = txtApellidoPat.Text.Trim();
             psicologo.fechaNacimiento = dtpFechaNacimiento.Value;
             psicologo.distrito = new PsicologoWS.distrito();
             DistritoWS.distrito distritoSelected = cboDistrito.SelectedItem as DistritoWS.distrito;
             psicologo.distrito = new PsicologoWS.distrito();
             psicologo.distrito.idDistrito = distritoSelected.idDistrito;
-            psicologo.correo = txtCorreo.Text;
+            psicologo.correo = txtCorreo.Text.Trim();
 
-            psicologo.DNI = txtDni.Text;
+            psicologo.DNI = txtDni.Text.Trim();
 
-            psicologo.telefono = txtTelf.Text;
-            psicologo.celular = txtCelular.Text;
+            psicologo.telefono = txtTelf.Text.Trim();
+            psicologo.celular = txtCelular.Text.Trim();
             if (rbtnHombre.Checked == true) psicologo.genero = 'M';
             else psicologo.genero = 'F';
 
@@ -69,9 +70,40 @@ namespace InterfazDATMA.Administrador
                 psicologo.fotoPerfil = br.ReadBytes((int)fs.Length);
             }
 
-            
+            psicologo.password = txtPass.Text;
 
-            
+            //Validaciones:
+            if (psicologo.DNI.Length != 8)
+            {
+                MessageBox.Show("El DNI debe tener 8 digitos", "Mensaje de Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (psicologo.password != txtConfirmarPass.Text)
+            {
+                MessageBox.Show("Las contraseñas deben coincidir", "Mensaje de Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (psicologo.correo.Contains("@") != true)
+            {
+                MessageBox.Show("Correo no valido", "Mensaje de Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                try
+                {
+                    
+                    int idPsicologo = daoPsicologo.insertarPsicologo(psicologo);
+                    MessageBox.Show(idPsicologo.ToString());
+                    if (idPsicologo != 0)
+                    {
+                        MessageBox.Show("Se ha registrado con exito", "Mensaje de Confirmacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        psicologo.idPersona = idPsicologo;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception();
+                }
+            }
 
         }
 
@@ -117,6 +149,11 @@ namespace InterfazDATMA.Administrador
         private void cboDistrito_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtDni_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.SoloNumeros(e);
         }
     }
 }

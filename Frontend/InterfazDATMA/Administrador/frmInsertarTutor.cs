@@ -47,7 +47,7 @@ namespace InterfazDATMA.Administrador
             apPat = apPat.ToUpper();
             apMat = apMat.ToUpper();
 
-            
+            return 1;
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)

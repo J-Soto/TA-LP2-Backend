@@ -145,6 +145,7 @@ namespace InterfazDATMA.Administrador
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(248, 26);
             this.txtDni.TabIndex = 56;
+            this.txtDni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDni_KeyPress);
             // 
             // txtCorreo
             // 
