@@ -31,7 +31,7 @@ namespace InterfazDATMA.Administrador
         {
             this.Header = new System.Windows.Forms.Label();
             this.dgvLista = new System.Windows.Forms.DataGridView();
-            this.txtKey = new System.Windows.Forms.TextBox();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colApPat = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,13 +81,13 @@ namespace InterfazDATMA.Administrador
             this.dgvLista.Size = new System.Drawing.Size(2088, 609);
             this.dgvLista.TabIndex = 1;
             // 
-            // txtKey
+            // txtBuscar
             // 
-            this.txtKey.Location = new System.Drawing.Point(736, 323);
-            this.txtKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtKey.Name = "txtKey";
-            this.txtKey.Size = new System.Drawing.Size(816, 38);
-            this.txtKey.TabIndex = 5;
+            this.txtBuscar.Location = new System.Drawing.Point(736, 323);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(816, 38);
+            this.txtBuscar.TabIndex = 5;
             // 
             // btnBuscar
             // 
@@ -189,7 +189,7 @@ namespace InterfazDATMA.Administrador
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(72)))));
             this.ClientSize = new System.Drawing.Size(2529, 1282);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtKey);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.dgvLista);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -206,7 +206,7 @@ namespace InterfazDATMA.Administrador
 
         private System.Windows.Forms.Label Header;
         private System.Windows.Forms.DataGridView dgvLista;
-        private System.Windows.Forms.TextBox txtKey;
+        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colApPat;
