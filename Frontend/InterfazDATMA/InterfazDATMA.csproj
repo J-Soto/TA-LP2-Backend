@@ -183,6 +183,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\GrupoWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\MaterialWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -621,6 +626,22 @@
     <None Include="Connected Services\DistritoWS\InterfazDATMA.DistritoWS.modificarDistritoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\GrupoWS\GrupoWS.wsdl" />
+    <None Include="Connected Services\GrupoWS\GrupoWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\GrupoWS\InterfazDATMA.GrupoWS.eliminarGrupoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\GrupoWS\InterfazDATMA.GrupoWS.grupo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\GrupoWS\InterfazDATMA.GrupoWS.insertarGrupoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\GrupoWS\InterfazDATMA.GrupoWS.listarGrupoPorIdCursoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\MaterialWS\InterfazDATMA.MaterialWS.documento.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -802,6 +823,7 @@
     <WCFMetadataStorage Include="Connected Services\AsistenciaWS\" />
     <WCFMetadataStorage Include="Connected Services\CursoWS\" />
     <WCFMetadataStorage Include="Connected Services\DistritoWS\" />
+    <WCFMetadataStorage Include="Connected Services\GrupoWS\" />
     <WCFMetadataStorage Include="Connected Services\MaterialWS\" />
     <WCFMetadataStorage Include="Connected Services\PsicologoWS\" />
     <WCFMetadataStorage Include="Connected Services\SemanaWS\" />
@@ -925,6 +947,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\UsuarioWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\GrupoWS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\GrupoWS\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\GrupoWS\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
