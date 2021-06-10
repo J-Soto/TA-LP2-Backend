@@ -50,3 +50,4 @@ C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csproj.CoreCompileInputs.cache
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.exe
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
+C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csprojAssemblyReference.cache

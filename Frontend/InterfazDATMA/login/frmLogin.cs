@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using InterfazDATMA.plantilla;
 using InterfazDATMA;
+using System.ServiceModel;
 
 //using InterfazDATMA.UsuarioWS;
 
@@ -62,8 +63,10 @@ namespace InterfazDATMA
 
         private int verificarLogin(string user,string password)
         {
+          
             BindingList<UsuarioWS.usuario> usuarios = new BindingList<UsuarioWS.usuario>(
                 daoUsuario.listarUsuarios().ToList());
+            
             foreach (UsuarioWS.usuario item in usuarios)
             {
                 if (item.user == user && item.password == password)

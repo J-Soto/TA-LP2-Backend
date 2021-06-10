@@ -20,14 +20,13 @@ public class PsicologoMySQL  implements PsicologoDAO{
     
     @Override
     public int insertarPsicologo(Psicologo psicologo) {
-        int resultado = 0;
+        int resultado = -1;
         
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
             String instruccion = "{call INSERTAR_PSICOLOGO(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}";
             cst = con.prepareCall(instruccion);
-            
             cst.registerOutParameter("_id_psicologo", java.sql.Types.INTEGER); //id_persona
             cst.registerOutParameter("_id_usuario", java.sql.Types.INTEGER);
             cst.setInt("_fiddistrito", psicologo.getDistrito().getIdDistrito());
