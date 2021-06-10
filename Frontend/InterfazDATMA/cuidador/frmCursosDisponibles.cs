@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,35 +9,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     public partial class frmCursosDisponibles : Form
     {
-        public frmCursosDisponibles()
+        public frmListaCursoInscritos formAnterior;
+        private frmPlantillaGestion plantilla;
+        public frmCursosDisponibles(frmListaCursoInscritos formAnterior,frmPlantillaGestion plantilla)
         {
             InitializeComponent();
-        }
-
-
-        private void btnInicio_Click(object sender, EventArgs e)
-        {
-            //Form formularioMostrar = new frmMenuUsuario();
-            //formularioMostrar.Show();
-            this.Hide();
+            this.formAnterior = formAnterior;
+            this.plantilla = plantilla;
         }
 
         private void btnInscribirse_Click(object sender, EventArgs e)
         {
-            Form formularioMostrar = new frmInscripcionHecha();
-            formularioMostrar.Show();
-            this.Hide();
+            plantilla.abrirFormulario(new frmInscripcionHecha(this, plantilla));
         }
 
         private void btnMasInfo_Click(object sender, EventArgs e)
         {
-            Form formularioMostrar = new frmInformacionCurso();
-            formularioMostrar.Show();
-            this.Hide();
+            plantilla.abrirFormulario(new frmInformacionCurso(this, plantilla));
         }
     }
 }

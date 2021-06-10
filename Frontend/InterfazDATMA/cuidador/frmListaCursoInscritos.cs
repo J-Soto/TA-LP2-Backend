@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,23 +9,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     public partial class frmListaCursoInscritos : Form
     {
-        public static frmListaCursoInscritos current;
+        private frmWalkthrough formAnterior;
+        private frmPlantillaGestion plantillaGestion;
 
-        public frmListaCursoInscritos()
+        public frmListaCursoInscritos(frmWalkthrough formAnterior,frmPlantillaGestion plantillaGestion)
         {
-            current = this;
             InitializeComponent();
+            this.plantillaGestion = plantillaGestion;
+            this.formAnterior = formAnterior;
         }
 
         private void btnModulo1_Click(object sender, EventArgs e)
         {
-            Form next = new frmDetalleCursoInscrito();
-            Hide();
-            next.Show();
+            plantillaGestion.abrirFormulario(new frmDetalleCursoInscrito(this, plantillaGestion));
         }
 
         private void frmListaCursoInscritos_Load(object sender, EventArgs e)
@@ -35,12 +36,8 @@ namespace InterfaceDATMA
         private void btnCursosDisponibles_Click(object sender, EventArgs e)
         {
             bool hayCursos = verificarCursosDisponibles();
-            Form formularioMostrar;
-            if (hayCursos) formularioMostrar = new frmCursosDisponibles();
-            else formularioMostrar = new frmSinCursosDisponibles();
-
-            formularioMostrar.Show();
-            this.Hide();
+            if (hayCursos) plantillaGestion.abrirFormulario(new frmCursosDisponibles(this, plantillaGestion));
+            else plantillaGestion.abrirFormulario(new frmSinCursosDisponibles(this, plantillaGestion));
         }
 
         private bool verificarCursosDisponibles()
@@ -48,6 +45,16 @@ namespace InterfaceDATMA
             Random rd = new Random();
             if (rd.Next(2) == 1) return true;
             else return false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            plantillaGestion.abrirFormulario(new frmDetalleCursoInscrito(this, plantillaGestion));
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            plantillaGestion.abrirFormulario(new frmDetalleCursoInscrito(this, plantillaGestion));
         }
     }
 }

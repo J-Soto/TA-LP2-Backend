@@ -35,7 +35,7 @@ namespace InterfazDATMA.plantilla
             //Tutor
             else
             {
-                formInicial = new frmMenuUsuario(this);
+                //formInicial = new frmMenuUsuario(this);
                 abrirFormulario(formInicial);
             }
         }

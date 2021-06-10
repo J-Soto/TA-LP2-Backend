@@ -1,5 +1,5 @@
 ﻿
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     partial class frmNotificacionActiva
     {

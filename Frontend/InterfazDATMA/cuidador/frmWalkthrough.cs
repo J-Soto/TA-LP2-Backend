@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,15 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     public partial class frmWalkthrough : Form
     {
         private int estado = 1;
-        public frmWalkthrough()
+        private frmPlantillaGestion plantillaGestion;
+        public frmWalkthrough(frmPlantillaGestion plantillaGestion)
         {
             InitializeComponent();
             cambiarEstado(estado);
+            this.plantillaGestion = plantillaGestion;
         }
         
         private void cambiarEstado(int estado)
@@ -43,9 +46,7 @@ namespace InterfaceDATMA
 
         private void btnFinalizar_Click_1(object sender, EventArgs e)
         {
-            //Form formularioMostrar = new frmMenuUsuario();
-            //formularioMostrar.Show();
-            this.Hide();
+            plantillaGestion.abrirFormulario(new frmListaCursoInscritos(this,plantillaGestion));
         }
 
         private void btnNext_Click_1(object sender, EventArgs e)

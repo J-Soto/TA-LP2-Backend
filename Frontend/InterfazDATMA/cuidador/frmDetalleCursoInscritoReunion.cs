@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,19 +9,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     public partial class frmDetalleCursoInscritoReunion : Form
     {
-        public frmDetalleCursoInscritoReunion()
+        public frmDetalleCursoInscrito formAnterior;
+        private frmPlantillaGestion plantillaGestion;
+        public frmDetalleCursoInscritoReunion(frmDetalleCursoInscrito formAnterior, frmPlantillaGestion plantillaGestion)
         {
             InitializeComponent();
+            this.plantillaGestion = plantillaGestion;
+            this.formAnterior = formAnterior;
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Hide();
-            frmDetalleCursoInscrito.current.Show();
+            plantillaGestion.abrirFormulario(formAnterior);
         }
     }
 }

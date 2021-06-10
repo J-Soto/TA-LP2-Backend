@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     public partial class frmDetalleCursoInscritoMaterial : Form
     {
-        public frmDetalleCursoInscritoMaterial()
+        public frmDetalleCursoInscrito formAnterior;
+        private frmPlantillaGestion plantillaGestion;
+        public frmDetalleCursoInscritoMaterial(frmDetalleCursoInscrito formAnterior,frmPlantillaGestion plantillaGestion)
         {
             InitializeComponent();
+            this.formAnterior = formAnterior;
+            this.plantillaGestion = plantillaGestion;
         }
 
         private void VisitLink()
@@ -25,8 +30,7 @@ namespace InterfaceDATMA
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Hide();
-            frmDetalleCursoInscrito.current.Show();
+            plantillaGestion.abrirFormulario(formAnterior);
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

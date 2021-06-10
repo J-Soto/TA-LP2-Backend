@@ -1,5 +1,5 @@
 ﻿
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     partial class frmMenuUsuario
     {
@@ -38,15 +38,6 @@ namespace InterfaceDATMA
             this.lblMisCursos = new System.Windows.Forms.Label();
             this.lblCalendario = new System.Windows.Forms.Label();
             this.lblTotalCursos = new System.Windows.Forms.Label();
-            this.btnPerfil = new System.Windows.Forms.Button();
-            this.btnInicio = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlMenuVertical = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.dgvCal = new System.Windows.Forms.DataGridView();
             this.Actividad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,8 +50,6 @@ namespace InterfaceDATMA
             this.FechaFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Psicologa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCursosDisponibles = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlMenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +58,7 @@ namespace InterfaceDATMA
             // 
             this.lblMisCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMisCursos.ForeColor = System.Drawing.Color.White;
-            this.lblMisCursos.Location = new System.Drawing.Point(283, 57);
+            this.lblMisCursos.Location = new System.Drawing.Point(148, 46);
             this.lblMisCursos.Name = "lblMisCursos";
             this.lblMisCursos.Size = new System.Drawing.Size(99, 28);
             this.lblMisCursos.TabIndex = 2;
@@ -79,7 +68,7 @@ namespace InterfaceDATMA
             // 
             this.lblCalendario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCalendario.ForeColor = System.Drawing.Color.White;
-            this.lblCalendario.Location = new System.Drawing.Point(283, 247);
+            this.lblCalendario.Location = new System.Drawing.Point(148, 236);
             this.lblCalendario.Name = "lblCalendario";
             this.lblCalendario.Size = new System.Drawing.Size(99, 28);
             this.lblCalendario.TabIndex = 4;
@@ -89,130 +78,11 @@ namespace InterfaceDATMA
             // 
             this.lblTotalCursos.AutoSize = true;
             this.lblTotalCursos.ForeColor = System.Drawing.Color.White;
-            this.lblTotalCursos.Location = new System.Drawing.Point(779, 107);
+            this.lblTotalCursos.Location = new System.Drawing.Point(644, 96);
             this.lblTotalCursos.Name = "lblTotalCursos";
             this.lblTotalCursos.Size = new System.Drawing.Size(92, 13);
             this.lblTotalCursos.TabIndex = 6;
             this.lblTotalCursos.Text = "Total de cursos: 0";
-            // 
-            // btnPerfil
-            // 
-            this.btnPerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            this.btnPerfil.FlatAppearance.BorderSize = 0;
-            this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerfil.ForeColor = System.Drawing.Color.White;
-            this.btnPerfil.Image = global::InterfazDATMA.Properties.Resources.empleados;
-            this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPerfil.Location = new System.Drawing.Point(15, 246);
-            this.btnPerfil.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(237, 36);
-            this.btnPerfil.TabIndex = 3;
-            this.btnPerfil.Text = "PERFIL";
-            this.btnPerfil.UseVisualStyleBackColor = false;
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            this.btnInicio.Enabled = false;
-            this.btnInicio.FlatAppearance.BorderSize = 0;
-            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.ForeColor = System.Drawing.Color.White;
-            this.btnInicio.Image = global::InterfazDATMA.Properties.Resources.producto;
-            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.Location = new System.Drawing.Point(15, 205);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(237, 36);
-            this.btnInicio.TabIndex = 1;
-            this.btnInicio.Text = "INICIO";
-            this.btnInicio.UseVisualStyleBackColor = false;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::InterfazDATMA.Properties.Resources.DATMA_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(58, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 127);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pnlMenuVertical
-            // 
-            this.pnlMenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            this.pnlMenuVertical.Controls.Add(this.panel4);
-            this.pnlMenuVertical.Controls.Add(this.btnSalir);
-            this.pnlMenuVertical.Controls.Add(this.panel3);
-            this.pnlMenuVertical.Controls.Add(this.panel2);
-            this.pnlMenuVertical.Controls.Add(this.btnPerfil);
-            this.pnlMenuVertical.Controls.Add(this.panel1);
-            this.pnlMenuVertical.Controls.Add(this.btnInicio);
-            this.pnlMenuVertical.Controls.Add(this.pictureBox1);
-            this.pnlMenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMenuVertical.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenuVertical.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlMenuVertical.Name = "pnlMenuVertical";
-            this.pnlMenuVertical.Size = new System.Drawing.Size(254, 487);
-            this.pnlMenuVertical.TabIndex = 21;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(2, 513);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(7, 36);
-            this.panel4.TabIndex = 8;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(15, 513);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(237, 36);
-            this.btnSalir.TabIndex = 7;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(2, 285);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(7, 36);
-            this.panel3.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(2, 246);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(7, 36);
-            this.panel2.TabIndex = 4;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(2, 205);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(7, 36);
-            this.panel1.TabIndex = 2;
             // 
             // dgvCal
             // 
@@ -238,7 +108,7 @@ namespace InterfaceDATMA
             this.Eje});
             this.dgvCal.EnableHeadersVisualStyles = false;
             this.dgvCal.GridColor = System.Drawing.Color.SteelBlue;
-            this.dgvCal.Location = new System.Drawing.Point(287, 285);
+            this.dgvCal.Location = new System.Drawing.Point(152, 274);
             this.dgvCal.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCal.Name = "dgvCal";
             this.dgvCal.ReadOnly = true;
@@ -314,7 +184,7 @@ namespace InterfaceDATMA
             this.Psicologa});
             this.dgvCursos.EnableHeadersVisualStyles = false;
             this.dgvCursos.GridColor = System.Drawing.Color.SteelBlue;
-            this.dgvCursos.Location = new System.Drawing.Point(287, 87);
+            this.dgvCursos.Location = new System.Drawing.Point(152, 76);
             this.dgvCursos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCursos.Name = "dgvCursos";
             this.dgvCursos.ReadOnly = true;
@@ -370,7 +240,7 @@ namespace InterfaceDATMA
             this.btnCursosDisponibles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCursosDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnCursosDisponibles.ForeColor = System.Drawing.Color.White;
-            this.btnCursosDisponibles.Location = new System.Drawing.Point(771, 166);
+            this.btnCursosDisponibles.Location = new System.Drawing.Point(636, 155);
             this.btnCursosDisponibles.Margin = new System.Windows.Forms.Padding(2);
             this.btnCursosDisponibles.Name = "btnCursosDisponibles";
             this.btnCursosDisponibles.Size = new System.Drawing.Size(117, 40);
@@ -388,14 +258,11 @@ namespace InterfaceDATMA
             this.Controls.Add(this.btnCursosDisponibles);
             this.Controls.Add(this.dgvCursos);
             this.Controls.Add(this.dgvCal);
-            this.Controls.Add(this.pnlMenuVertical);
             this.Controls.Add(this.lblTotalCursos);
             this.Controls.Add(this.lblCalendario);
             this.Controls.Add(this.lblMisCursos);
             this.Name = "frmMenuUsuario";
             this.Text = "Menu Principal";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlMenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).EndInit();
             this.ResumeLayout(false);
@@ -407,15 +274,6 @@ namespace InterfaceDATMA
         private System.Windows.Forms.Label lblMisCursos;
         private System.Windows.Forms.Label lblCalendario;
         private System.Windows.Forms.Label lblTotalCursos;
-        private System.Windows.Forms.Button btnPerfil;
-        private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel pnlMenuVertical;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvCal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Actividad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;

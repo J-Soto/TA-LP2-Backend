@@ -1,5 +1,5 @@
 ﻿
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     partial class frmInscripcionHecha
     {
@@ -74,7 +74,7 @@ namespace InterfaceDATMA
             this.btnIrLista.Name = "btnIrLista";
             this.btnIrLista.Size = new System.Drawing.Size(161, 24);
             this.btnIrLista.TabIndex = 24;
-            this.btnIrLista.Text = "IR A LA LISTA DE CURSOS";
+            this.btnIrLista.Text = "ACEPTAR";
             this.btnIrLista.UseVisualStyleBackColor = false;
             this.btnIrLista.Click += new System.EventHandler(this.btnIrLista_Click);
             // 

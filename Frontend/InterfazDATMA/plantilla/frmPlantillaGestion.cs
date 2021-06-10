@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using InterfaceDATMA;
 using InterfazDATMA.Administrador;
+using InterfazDATMA.cuidador;
+using InterfazDATMA.psicologo;
 
 namespace InterfazDATMA.plantilla
 {
@@ -16,6 +18,7 @@ namespace InterfazDATMA.plantilla
     {
         private Form formularioActivo = null;
         private Form formInicial;
+        private Form formPerfil;
 
         public frmPlantillaGestion(int tipoUser)
         {
@@ -25,17 +28,21 @@ namespace InterfazDATMA.plantilla
             {
                 formInicial = new frmGestionarModulosPsicologo(this);
                 abrirFormulario(formInicial);
+                formPerfil = new frmPerfilPsicologo();
             }
             //Administrador
             else if (tipoUser == 2)
             {
                 formInicial = new frmGestionarModuloAdmin(this);
                 abrirFormulario(formInicial);
+                btnPerfil.Enabled = false;
             }
             //Tutor
             else if (tipoUser == 0)
             {
-
+                formInicial = new frmWalkthrough(this);
+                abrirFormulario(formInicial);
+                formPerfil = new frmPerfilCuidador();
             }
         }
 
@@ -72,6 +79,11 @@ namespace InterfazDATMA.plantilla
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(formPerfil);
         }
     }
 }

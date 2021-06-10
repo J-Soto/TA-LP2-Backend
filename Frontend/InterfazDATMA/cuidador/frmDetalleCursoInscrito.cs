@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfazDATMA.plantilla;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,56 +9,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     public partial class frmDetalleCursoInscrito : Form
     {
-        public static Form current;
+        public frmListaCursoInscritos formAnterior;
+        private frmPlantillaGestion plantillaGestion;
 
-        public frmDetalleCursoInscrito()
+        public frmDetalleCursoInscrito(frmListaCursoInscritos formAnterior,frmPlantillaGestion plantillaGestion)
         {
-            current = this;
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmDetalleCursoInscrito_Load(object sender, EventArgs e)
-        {
-           
+            this.formAnterior = formAnterior;
+            this.plantillaGestion = plantillaGestion;
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Hide();
-            frmListaCursoInscritos.current.Show();
+            plantillaGestion.abrirFormulario(formAnterior);
         }
 
         private void btnVideos_Click(object sender, EventArgs e)
         {
-            Form next = new frmDetalleCursoInscritoMaterial();
-            Hide();
-            next.Show();
+            plantillaGestion.abrirFormulario(new frmDetalleCursoInscritoMaterial(this, plantillaGestion));
         }
 
         private void btnReuniones_Click(object sender, EventArgs e)
         {
-            Form next = new frmDetalleCursoInscritoReunion();
-            Hide();
-            next.Show();
+            plantillaGestion.abrirFormulario(new frmDetalleCursoInscritoReunion(this, plantillaGestion));
         }
     }
 }

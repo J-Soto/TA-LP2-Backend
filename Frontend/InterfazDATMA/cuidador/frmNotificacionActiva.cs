@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InterfaceDATMA
+namespace InterfazDATMA
 {
     public partial class frmNotificacionActiva : Form
     {
@@ -17,16 +17,9 @@ namespace InterfaceDATMA
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            //Form formulario = new frmMenuUsuario();
-            //this.Hide();
-            //formulario.Show();
+            this.DialogResult = DialogResult.OK;
         }
     }
 }
