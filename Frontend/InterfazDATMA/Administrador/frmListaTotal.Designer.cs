@@ -74,7 +74,7 @@ namespace InterfazDATMA.Administrador
             this.colCel,
             this.colEmail});
             this.dgvLista.Location = new System.Drawing.Point(252, 417);
-            this.dgvLista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvLista.Margin = new System.Windows.Forms.Padding(4);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.RowHeadersWidth = 82;
             this.dgvLista.RowTemplate.Height = 33;
@@ -84,7 +84,7 @@ namespace InterfazDATMA.Administrador
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(736, 323);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(816, 38);
             this.txtBuscar.TabIndex = 5;
@@ -112,6 +112,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colApPat
             // 
+            this.colApPat.DataPropertyName = "persona.apellidoPaterno";
             this.colApPat.HeaderText = "Apellido Paterno";
             this.colApPat.MinimumWidth = 10;
             this.colApPat.Name = "colApPat";
@@ -120,6 +121,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colApMat
             // 
+            this.colApMat.DataPropertyName = "persona.apellidoMaterno";
             this.colApMat.HeaderText = "Apellido Materno";
             this.colApMat.MinimumWidth = 10;
             this.colApMat.Name = "colApMat";
@@ -128,6 +130,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colDNI
             // 
+            this.colDNI.DataPropertyName = "persona.DNI";
             this.colDNI.HeaderText = "DNI";
             this.colDNI.MinimumWidth = 10;
             this.colDNI.Name = "colDNI";
@@ -136,6 +139,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colFechaNac
             // 
+            this.colFechaNac.DataPropertyName = "persona.fechaNacimiento";
             this.colFechaNac.HeaderText = "Fecha de Nacimiento";
             this.colFechaNac.MinimumWidth = 10;
             this.colFechaNac.Name = "colFechaNac";
@@ -144,6 +148,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colGen
             // 
+            this.colGen.DataPropertyName = "persona.genero";
             this.colGen.HeaderText = "Genero";
             this.colGen.MinimumWidth = 10;
             this.colGen.Name = "colGen";
@@ -152,6 +157,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colEdad
             // 
+            this.colEdad.DataPropertyName = "persona.edad";
             this.colEdad.HeaderText = "Edad";
             this.colEdad.MinimumWidth = 10;
             this.colEdad.Name = "colEdad";
@@ -160,6 +166,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colTelf
             // 
+            this.colTelf.DataPropertyName = "persona.telefono";
             this.colTelf.HeaderText = "Telefono";
             this.colTelf.MinimumWidth = 10;
             this.colTelf.Name = "colTelf";
@@ -168,6 +175,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colCel
             // 
+            this.colCel.DataPropertyName = "persona.celular";
             this.colCel.HeaderText = "Celular";
             this.colCel.MinimumWidth = 10;
             this.colCel.Name = "colCel";
@@ -176,6 +184,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colEmail
             // 
+            this.colEmail.DataPropertyName = "persona.correo";
             this.colEmail.HeaderText = "Correo";
             this.colEmail.MinimumWidth = 10;
             this.colEmail.Name = "colEmail";
@@ -193,7 +202,7 @@ namespace InterfazDATMA.Administrador
             this.Controls.Add(this.dgvLista);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmListaTotal";
             this.Text = "frmListaTotal";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
