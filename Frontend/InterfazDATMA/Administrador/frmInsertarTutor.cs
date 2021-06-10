@@ -40,7 +40,7 @@ namespace InterfazDATMA.Administrador
             rbtnMujer.Checked = false;
             rbtnHombre.Checked = true;
         }
-
+        /*
 <<<<<<< HEAD
 =======
         private int verificarDNI(String dni, String nom, String apPat, String apMat)
@@ -52,7 +52,7 @@ namespace InterfazDATMA.Administrador
             return 1;
         }
 >>>>>>> 575130533f5ecbcca4a2944b0fb3e7bb233506f8
-
+        */
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             formPlantilla.abrirFormulario(new frmInsertarPreferencias(this, formPlantilla));
