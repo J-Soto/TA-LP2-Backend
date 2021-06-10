@@ -117,7 +117,7 @@ public class PsicologoWS {
     
     @WebMethod(operationName = "listarPsicologosPorNombre")
     public ArrayList<Psicologo> listarPsicologosPorNombre(@WebParam(name = "nombrePsico") String nombrePsico){
-        ArrayList<Psicologo> psicologos = new ArrayList<>();
+        ArrayList<Psicologo> psicologos = new ArrayList<Psicologo>();
         try {
             psicologos = daoPsicologo.listarPsicologos(nombrePsico);
         } catch (Exception ex) {
@@ -128,7 +128,7 @@ public class PsicologoWS {
     
     @WebMethod(operationName = "listarTodosPsicologos")
     public ArrayList<Psicologo> listarTodosPsicologos(){
-        ArrayList<Psicologo> psicologos = new ArrayList<>();
+        ArrayList<Psicologo> psicologos = new ArrayList<Psicologo>();
         try {
             psicologos = daoPsicologo.listarTodosPsicologos();
         } catch (Exception ex) {

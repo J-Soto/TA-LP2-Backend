@@ -109,12 +109,6 @@
     <Compile Include="Administrador\frmListaPsicologos.Designer.cs">
       <DependentUpon>frmListaPsicologos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administrador\frmListaTotal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrador\frmListaTotal.Designer.cs">
-      <DependentUpon>frmListaTotal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Administrador\frmListaTutores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,9 +389,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmListaPsicologos.resx">
       <DependentUpon>frmListaPsicologos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Administrador\frmListaTotal.resx">
-      <DependentUpon>frmListaTotal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmListaTutores.resx">
       <DependentUpon>frmListaTutores.cs</DependentUpon>

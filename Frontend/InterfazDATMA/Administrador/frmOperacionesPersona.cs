@@ -146,10 +146,6 @@ namespace InterfazDATMA.Administrador
             dgvPsicologos.Rows[e.RowIndex].Cells["Activo"].Value = 1;
         }
 
-        private void btnListar_Click(object sender, EventArgs e)
-        {
-            formPlantilla.abrirFormulario(new frmListaTotal());
-        }
 
         private void btnListarPsi_Click(object sender, EventArgs e)
         {

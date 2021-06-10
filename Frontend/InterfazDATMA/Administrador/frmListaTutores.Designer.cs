@@ -30,7 +30,7 @@ namespace InterfazDATMA.Administrador
         private void InitializeComponent()
         {
             this.Header = new System.Windows.Forms.Label();
-            this.dgvPsico = new System.Windows.Forms.DataGridView();
+            this.dgvTutor = new System.Windows.Forms.DataGridView();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colApPat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colApMat = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +43,7 @@ namespace InterfazDATMA.Administrador
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPsico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTutor)).BeginInit();
             this.SuspendLayout();
             // 
             // Header
@@ -60,10 +60,10 @@ namespace InterfazDATMA.Administrador
             this.Header.Text = "Lista Tutores";
             this.Header.Click += new System.EventHandler(this.Header_Click);
             // 
-            // dgvPsico
+            // dgvTutor
             // 
-            this.dgvPsico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPsico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvTutor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTutor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNombre,
             this.colApPat,
             this.colApMat,
@@ -74,13 +74,13 @@ namespace InterfazDATMA.Administrador
             this.colTelf,
             this.colCel,
             this.colEmail});
-            this.dgvPsico.Location = new System.Drawing.Point(220, 403);
-            this.dgvPsico.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvPsico.Name = "dgvPsico";
-            this.dgvPsico.RowHeadersWidth = 82;
-            this.dgvPsico.RowTemplate.Height = 33;
-            this.dgvPsico.Size = new System.Drawing.Size(2088, 609);
-            this.dgvPsico.TabIndex = 11;
+            this.dgvTutor.Location = new System.Drawing.Point(220, 403);
+            this.dgvTutor.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvTutor.Name = "dgvTutor";
+            this.dgvTutor.RowHeadersWidth = 82;
+            this.dgvTutor.RowTemplate.Height = 33;
+            this.dgvTutor.Size = new System.Drawing.Size(2088, 609);
+            this.dgvTutor.TabIndex = 11;
             // 
             // colNombre
             // 
@@ -198,7 +198,7 @@ namespace InterfazDATMA.Administrador
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(72)))));
             this.ClientSize = new System.Drawing.Size(2529, 1282);
-            this.Controls.Add(this.dgvPsico);
+            this.Controls.Add(this.dgvTutor);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.Header);
@@ -206,7 +206,7 @@ namespace InterfazDATMA.Administrador
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmListaTutores";
             this.Text = "frmListaTutores";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPsico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTutor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,7 +214,7 @@ namespace InterfazDATMA.Administrador
 
         #endregion
         private System.Windows.Forms.Label Header;
-        private System.Windows.Forms.DataGridView dgvPsico;
+        private System.Windows.Forms.DataGridView dgvTutor;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colApPat;
         private System.Windows.Forms.DataGridViewTextBoxColumn colApMat;
