@@ -26,9 +26,20 @@ namespace InterfazDATMA.Administrador
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
-        {
+        {/*
             BindingList<DistritoWS.distrito> distritos = new BindingList<DistritoWS.distrito>(
                 daoDistrito.listarDistritos(txtBuscar.Text).ToList());
+            dgvDistrito.DataSource = distritos;*/
+            BindingList<DistritoWS.distrito> distritos = new BindingList<DistritoWS.distrito>(
+                daoDistrito.lisrarTodosDistritos().ToList());
+            for (int i = 0; i < distritos.Count; i++)
+            {
+                if (!distritos[i].nombre.Contains(txtBuscar.Text))
+                {
+                    distritos.RemoveAt(i);
+                    i--;
+                }
+            }
             dgvDistrito.DataSource = distritos;
         }
 
@@ -40,12 +51,22 @@ namespace InterfazDATMA.Administrador
         private void btnAdd_Click(object sender, EventArgs e)
         {
             DistritoWS.distrito distrito = new DistritoWS.distrito();
-            distrito.nombre = txtBuscar.Text;
+            distrito.nombre = txtBuscar.Text;/*
             BindingList<DistritoWS.distrito> distritos = new BindingList<DistritoWS.distrito>(
                 daoDistrito.listarDistritos(txtBuscar.Text).ToList());
             foreach (DistritoWS.distrito item in distritos)
             {
                 if (distrito.nombre == item.nombre) return;
+            }*/
+            BindingList<DistritoWS.distrito> distritos = new BindingList<DistritoWS.distrito>(
+                daoDistrito.lisrarTodosDistritos().ToList());
+            for (int i = 0; i < distritos.Count; i++)
+            {
+                if (!distritos[i].nombre.Contains(distrito.nombre))
+                {
+                    distritos.RemoveAt(i);
+                    i--;
+                }
             }
             daoDistrito.insertarDistrito(distrito);
         }

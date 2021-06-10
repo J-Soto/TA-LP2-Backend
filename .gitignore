@@ -39,3 +39,4 @@ hs_err_pid*
 /Backend/DatmaSoftController/dist/
 /Backend/DatmaSoftWebServices/dist/
 >>>>>>> d550ddcd923757d09f710e8df453d1a5854a3659
+!/Backend/DatmaSoftWebServices/src/java/pe/datma/datmasoft/lib/gson-2.8.7.jar

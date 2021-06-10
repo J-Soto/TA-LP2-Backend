@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using InterfazDATMA.plantilla;
 using InterfazDATMA;
 
-//using InterfazDATMA.UsuarioWS;
 
 namespace InterfazDATMA
 {

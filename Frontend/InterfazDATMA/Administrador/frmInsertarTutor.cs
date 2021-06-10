@@ -41,27 +41,10 @@ namespace InterfazDATMA.Administrador
             rbtnHombre.Checked = true;
         }
 
-        private int verificarDNI(String dni, String nom, String apPat, String apMat)
-        {
-            nom = nom.ToUpper();
-            apPat = apPat.ToUpper();
-            apMat = apMat.ToUpper();
-
-            
-        }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            if (verificarDNI(txtDni.Text,txtNombre.Text,txtApPat.Text,txtApMat.Text)==1)
-            {
-
-                formPlantilla.abrirFormulario(new frmInsertarPreferencias(this, formPlantilla));
-            }
-            else
-            {
-                MessageBox.Show("Los nombres no corresponden al dni", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            
+            formPlantilla.abrirFormulario(new frmInsertarPreferencias(this, formPlantilla));
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
