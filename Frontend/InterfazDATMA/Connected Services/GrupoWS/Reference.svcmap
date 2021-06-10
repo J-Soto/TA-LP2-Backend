@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d231f76b-d3d7-4409-b4a2-6aa30f2f3237" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fc8deef7-8265-4f51-8c49-40bb77d6c56c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="http://54.157.215.104:8080/DatmaSoftWebServices/GrupoWS?WSDL" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="GrupoWS.wsdl" MetadataType="Wsdl" ID="c93341df-707c-41e1-bcbf-a6a4e3b6b869" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/GrupoWS?WSDL" />
-    <MetadataFile FileName="GrupoWS.xsd" MetadataType="Schema" ID="aea5c80d-3c23-4f21-914b-e6695a9f5699" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/GrupoWS?xsd=1" />
+    <MetadataFile FileName="GrupoWS.wsdl" MetadataType="Wsdl" ID="f8e6df9e-5cdf-4abf-9dab-7069765573ce" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/GrupoWS?WSDL" />
+    <MetadataFile FileName="GrupoWS.xsd" MetadataType="Schema" ID="d920718d-2424-407c-b076-97ae004a7721" SourceId="1" SourceUrl="http://54.157.215.104:8080/DatmaSoftWebServices/GrupoWS?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
