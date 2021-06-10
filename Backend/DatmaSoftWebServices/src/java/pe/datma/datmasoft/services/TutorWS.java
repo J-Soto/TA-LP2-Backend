@@ -115,7 +115,7 @@ public class TutorWS {
     
     @WebMethod(operationName = "listarTutoresPorNombre")
     public ArrayList<Tutor> listarTutoresPorNombre(@WebParam(name = "nombreTutor") String nombreTutor){
-        ArrayList<Tutor> tutores = new ArrayList<>();
+        ArrayList<Tutor> tutores = new ArrayList<Tutor>();
         try {
             tutores = daoTutor.listarTutores(nombreTutor);
         } catch (Exception ex) {
@@ -126,7 +126,7 @@ public class TutorWS {
     
     @WebMethod(operationName = "listarTodosTutores")
     public ArrayList<Tutor> listarTodosTutores(){
-        ArrayList<Tutor> tutores = new ArrayList<>();
+        ArrayList<Tutor> tutores = new ArrayList<Tutor>();
         try {
             tutores = daoTutor.listarTodosTutores();
         } catch (Exception ex) {

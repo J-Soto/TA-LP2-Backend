@@ -1,4 +1,6 @@
-﻿using System;
+﻿using InterfazDATMA.PsicologoWS;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +21,12 @@ namespace InterfazDATMA.Administrador
             InitializeComponent();
             daoPsicologo = new PsicologoWS.PsicologoWSClient();
             dgvPsico.AutoGenerateColumns = false;
-            dgvPsico.DataSource = new BindingList<PsicologoWS.PsicologoWSClient>(daoPsicologo.listarTodosPsicologos());
+            dgvPsico.DataSource = new BindingList<PsicologoWS.psicologo>(daoPsicologo.listarTodosPsicologos().ToList());
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            BindingList<PsicologoWS.PsicologoWSClient> psicos = new BindingList<PsicologoWS.PsicologoWSClient>(daoPsicologo.listarTodosPsicologos());
+{
+            BindingList<PsicologoWS.psicologo> psicos = new BindingList<PsicologoWS.psicologo>(daoPsicologo.listarTodosPsicologos().ToList());
             for (int i = 0; i < psicos.Count; i++)
             {
                 if (!psicos[i].nombre.Contains(txtBuscar.Text))
