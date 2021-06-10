@@ -36,10 +36,11 @@ public class PsicologoWS {
     @WebMethod(operationName = "verificarDNI")
     public int verificarDNI(@WebParam(name = "dni") String dni,
             @WebParam(name = "nom") String nom,
-            @WebParam(name = "apPat") String apPat,
-            @WebParam(name = "apMat") String apMat){
-        int resultado = 0;
+            @WebParam(name = "apPat") String app,
+            @WebParam(name = "apMat") String apm){
+        int resultado=0;
         String enlace="https://dni.optimizeperu.com/api/persons/"+dni+"?format=json";
+        //String enlace="https://dni.optimizeperu.com/api/prod/persons/"+dni;
         try {
             //String param = "?Authorization=" + "k4d2956bd531ab61d44f4fa07304b20e13913815";
             URL url = new URL(enlace);
@@ -58,12 +59,21 @@ public class PsicologoWS {
             String NOM=json.get("name").toString();
             String APP=json.get("first_name").toString();
             String APM=json.get("last_name").toString();
-            String CUI=json.get("cui").toString();
-
+            
+            //System.out.println(DNI.length());
+            DNI=DNI.substring(1,DNI.length()-1);
+            NOM=NOM.substring(1,NOM.length()-1);
+            APP=APP.substring(1,APP.length()-1);
+            APM=APM.substring(1,APM.length()-1);
+            nom=nom.toUpperCase();
+            app=app.toUpperCase();
+            apm=apm.toUpperCase();
+            if(NOM.equals(nom) && APP.equals(app) && APM.equals(apm) && 
+                    DNI.equals(dni))
+                resultado=1;
+//      
             con.disconnect();
-            if(NOM==nom.toUpperCase() && APP==apPat.toUpperCase() && 
-                    APM==apMat.toUpperCase() && 
-                    DNI==dni)resultado=1;
+            
            
         } catch (Exception e) {
             System.out.println(e.getMessage());
