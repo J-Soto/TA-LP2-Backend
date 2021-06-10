@@ -16,5 +16,13 @@ namespace InterfazDATMA.Administrador
         {
             InitializeComponent();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            BindingList<UsuarioWS.persona> personas = new BindingList<UsuarioWS.persona>(); 
+
+                    
+            //dgvLista.DataSource = 
+        }
     }
 }
