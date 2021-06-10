@@ -59,7 +59,7 @@ public class TutorMySQL implements TutorDAO {
             
             cst.close();
             con.close();       
-            resultado = 1;
+            resultado = cst.getInt("_id_tutor");
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }finally{
@@ -144,13 +144,71 @@ public class TutorMySQL implements TutorDAO {
     }
 
     @Override
-    public ArrayList<Tutor> listarTutores() {
+    public ArrayList<Tutor> listarTutores(String nombre) {
         ArrayList<Tutor> tutores = new ArrayList<>();
         
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
-            String instruccion = "{call LISTAR_TUTORES()}";
+            String instruccion = "{call LISTAR_TUTORES(?)}";
+            cst = con.prepareCall(instruccion);
+            cst.setString("_nombre", nombre);
+            rs = cst.executeQuery();
+            
+            while(rs.next()){
+                Tutor tutor = new Tutor();
+                tutor.setIdPersona(rs.getInt("idpersona"));
+                tutor.setDNI(rs.getString("dni"));
+                tutor.setNombre(rs.getString("nombre"));
+                tutor.setApellidoPaterno(rs.getString("apellidopaterno"));
+                tutor.setApellidoMaterno(rs.getString("apellidomaterno"));
+                tutor.setFechaNacimiento(rs.getDate("fechanacimiento"));
+                tutor.setGenero(rs.getString("genero").charAt(0));
+                tutor.setEdad(rs.getInt("edad"));
+                tutor.setTelefono(rs.getString("telefono"));
+                tutor.setCelular(rs.getString("celular"));
+                tutor.setCorreo(rs.getString("correo"));
+                tutor.setDistrito(new Distrito());
+                tutor.getDistrito().setIdDistrito(rs.getInt("iddistrito"));
+                tutor.getDistrito().setNombre(rs.getString("nombre_distrito"));
+                tutor.setIdUsuario(rs.getInt("idusuario"));
+                tutor.setUser(rs.getString("user"));
+                tutor.setPassword(rs.getString("password"));
+                tutor.setTipo(rs.getInt("tipo"));
+                tutor.setFotoPerfil(rs.getBytes("foto"));
+                tutor.setGestante(rs.getInt("gestante"));
+                tutor.setDia(rs.getInt("preferenciaDias"));
+                tutor.setTurno(rs.getInt("preferenciaTurno"));
+                tutor.setBajoRecursos(rs.getInt("bajosrecursos"));
+                tutor.setTiposConexion(rs.getInt("tipointernet"));
+                tutor.setRedesSociales(rs.getInt("redsocial"));
+                tutor.setDispositivos(rs.getInt("tipodispositivo"));
+                tutor.setActivo(1);
+                tutor.setActivoTutor(1);
+                tutores.add(tutor);
+            }
+           
+            
+            cst.close();
+            con.close();       
+            
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{ con.close(); }catch(Exception ex){}
+        }
+        
+        return tutores;
+    }
+
+    @Override
+    public ArrayList<Tutor> listarTodosTutores() {
+        ArrayList<Tutor> tutores = new ArrayList<>();
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String instruccion = "{call LISTAR_TODOS_TUTORES()}";
             cst = con.prepareCall(instruccion);
             rs = cst.executeQuery();
             
@@ -199,4 +257,6 @@ public class TutorMySQL implements TutorDAO {
         
         return tutores;
     }
+    
+   
 }

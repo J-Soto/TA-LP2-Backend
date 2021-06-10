@@ -14,7 +14,6 @@ public class Actividad {
     private LocalTime horaFin;
     private Date fecha; //fecha de dictado de la actividad
     private ArrayList<Material> materiales;
-    private Asistencia asistencia;
 
     
     public int getIdActividad() {
@@ -81,12 +80,4 @@ public class Actividad {
         this.materiales = materiales;
     }
 
-    public Asistencia getAsistencia() {
-        return asistencia;
-    }
-
-    public void setAsistencia(Asistencia asistencia) {
-        this.asistencia = asistencia;
-    }
-    
 }

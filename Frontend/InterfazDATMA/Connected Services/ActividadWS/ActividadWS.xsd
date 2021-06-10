@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.datmasoft.datma.pe/" targetNamespace="http://services.datmasoft.datma.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarActividad" type="tns:eliminarActividad" />
+  <xs:element name="eliminarActividadResponse" type="tns:eliminarActividadResponse" />
+  <xs:element name="insertarActividad" type="tns:insertarActividad" />
+  <xs:element name="insertarActividadResponse" type="tns:insertarActividadResponse" />
+  <xs:element name="listarActividad" type="tns:listarActividad" />
+  <xs:element name="listarActividadResponse" type="tns:listarActividadResponse" />
+  <xs:element name="modificarActividad" type="tns:modificarActividad" />
+  <xs:element name="modificarActividadResponse" type="tns:modificarActividadResponse" />
+  <xs:complexType name="modificarActividad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="actividad" type="tns:actividad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actividad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="horaFin" type="tns:localTime" />
+      <xs:element minOccurs="0" name="horaInicio" type="tns:localTime" />
+      <xs:element name="idActividad" type="xs:int" />
+      <xs:element minOccurs="0" name="linkZoom" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="materiales" nillable="true" type="tns:material" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="localTime" final="extension restriction">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="material">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="actividad" type="tns:actividad" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="estado" type="xs:int" />
+      <xs:element name="idMaterial" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="tipoMaterial" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarActividadResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarActividad">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarActividadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:actividad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarActividad">
+    <xs:sequence>
+      <xs:element name="idActividad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarActividadResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarActividad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="actividad" type="tns:actividad" />
+      <xs:element name="idSemana" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarActividadResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

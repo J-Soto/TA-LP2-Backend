@@ -8,5 +8,6 @@ public interface TutorDAO {
     public int insertarTutor(Tutor tutor);
     public int modificarTutor(Tutor tutor);
     public int eliminarTutor(int idTutor, int idUsuario);
-    public ArrayList<Tutor> listarTutores();
+    public ArrayList<Tutor> listarTutores(String nombre);
+    public ArrayList<Tutor> listarTodosTutores();
 }

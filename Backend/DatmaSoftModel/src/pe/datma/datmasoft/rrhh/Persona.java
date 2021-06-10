@@ -113,4 +113,8 @@ public class Persona {
         this.celular = celular;
     }
     
+    public String getNombreCompleto() {
+        return getNombre()+" "+getApellidoPaterno()+" "+getApellidoMaterno();
+    }
+    
 }

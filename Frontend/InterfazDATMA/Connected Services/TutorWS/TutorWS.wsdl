@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://services.datmasoft.datma.pe/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="TutorWS" targetNamespace="http://services.datmasoft.datma.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://54.157.215.104:8080/DatmaSoftWebServices/TutorWS?xsd=1" namespace="http://services.datmasoft.datma.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarTodosTutores">
+    <part name="parameters" element="tns:listarTodosTutores" />
+  </message>
+  <message name="listarTodosTutoresResponse">
+    <part name="parameters" element="tns:listarTodosTutoresResponse" />
+  </message>
+  <message name="listarTutoresPorNombre">
+    <part name="parameters" element="tns:listarTutoresPorNombre" />
+  </message>
+  <message name="listarTutoresPorNombreResponse">
+    <part name="parameters" element="tns:listarTutoresPorNombreResponse" />
+  </message>
+  <message name="eliminarTutor">
+    <part name="parameters" element="tns:eliminarTutor" />
+  </message>
+  <message name="eliminarTutorResponse">
+    <part name="parameters" element="tns:eliminarTutorResponse" />
+  </message>
+  <message name="insertarTutor">
+    <part name="parameters" element="tns:insertarTutor" />
+  </message>
+  <message name="insertarTutorResponse">
+    <part name="parameters" element="tns:insertarTutorResponse" />
+  </message>
+  <message name="modificarTutor">
+    <part name="parameters" element="tns:modificarTutor" />
+  </message>
+  <message name="modificarTutorResponse">
+    <part name="parameters" element="tns:modificarTutorResponse" />
+  </message>
+  <portType name="TutorWS">
+    <operation name="listarTodosTutores">
+      <input wsam:Action="http://services.datmasoft.datma.pe/TutorWS/listarTodosTutoresRequest" message="tns:listarTodosTutores" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/TutorWS/listarTodosTutoresResponse" message="tns:listarTodosTutoresResponse" />
+    </operation>
+    <operation name="listarTutoresPorNombre">
+      <input wsam:Action="http://services.datmasoft.datma.pe/TutorWS/listarTutoresPorNombreRequest" message="tns:listarTutoresPorNombre" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/TutorWS/listarTutoresPorNombreResponse" message="tns:listarTutoresPorNombreResponse" />
+    </operation>
+    <operation name="eliminarTutor">
+      <input wsam:Action="http://services.datmasoft.datma.pe/TutorWS/eliminarTutorRequest" message="tns:eliminarTutor" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/TutorWS/eliminarTutorResponse" message="tns:eliminarTutorResponse" />
+    </operation>
+    <operation name="insertarTutor">
+      <input wsam:Action="http://services.datmasoft.datma.pe/TutorWS/insertarTutorRequest" message="tns:insertarTutor" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/TutorWS/insertarTutorResponse" message="tns:insertarTutorResponse" />
+    </operation>
+    <operation name="modificarTutor">
+      <input wsam:Action="http://services.datmasoft.datma.pe/TutorWS/modificarTutorRequest" message="tns:modificarTutor" />
+      <output wsam:Action="http://services.datmasoft.datma.pe/TutorWS/modificarTutorResponse" message="tns:modificarTutorResponse" />
+    </operation>
+  </portType>
+  <binding name="TutorWSPortBinding" type="tns:TutorWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarTodosTutores">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTutoresPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTutor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarTutor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarTutor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TutorWS">
+    <port name="TutorWSPort" binding="tns:TutorWSPortBinding">
+      <soap:address location="http://54.157.215.104:8080/DatmaSoftWebServices/TutorWS" />
+    </port>
+  </service>
+</definitions>

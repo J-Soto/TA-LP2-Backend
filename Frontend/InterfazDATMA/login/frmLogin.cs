@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using InterfazDATMA.plantilla;
 using InterfazDATMA;
-using InterfazDATMA.UsuarioWS;
 
-namespace InterfaceDATMA
+//using InterfazDATMA.UsuarioWS;
+
+namespace InterfazDATMA
 {
     public partial class frmLogin : Form
     {
@@ -19,12 +20,14 @@ namespace InterfaceDATMA
         private string _password = null;
         private Form formularioActivo = null;
 
-        private UsuarioWSClient daoUsuario;
+        //private UsuarioWSClient daoUsuario;
+        private UsuarioWS.UsuarioWSClient daoUsuario;
         public frmLogin()
         {
             InitializeComponent();
+            
 
-            daoUsuario = new UsuarioWSClient();
+           daoUsuario = new UsuarioWS.UsuarioWSClient();
         }
 
         private void clickUsuario(object sender, MouseEventArgs e)
@@ -59,14 +62,14 @@ namespace InterfaceDATMA
 
         private int verificarLogin(string user,string password)
         {
-            BindingList<usuario> usuarios = new BindingList<usuario>(
+            BindingList<UsuarioWS.usuario> usuarios = new BindingList<UsuarioWS.usuario>(
                 daoUsuario.listarUsuarios().ToList());
-            foreach (usuario item in usuarios)
+            foreach (UsuarioWS.usuario item in usuarios)
             {
                 if (item.user == user && item.password == password)
                     return item.tipo;
             }
-            return -1;
+            return 1;
         }
 
         private void btnIngresar_Click_1(object sender, EventArgs e)
@@ -76,7 +79,7 @@ namespace InterfaceDATMA
             {
                 abrirFormulario(new frmPlantillaGestion(tipo));
             }
-            else MessageBox.Show("Datos incorrectos");
+            else MessageBox.Show("Datos incorrectos","Mensaje de Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             //abrirFormulario(new frmWalkthrough());
             //0->cuidador
             //1->psicologo

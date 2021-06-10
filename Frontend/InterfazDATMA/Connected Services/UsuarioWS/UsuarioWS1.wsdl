@@ -2,7 +2,7 @@
 <definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://services.datmasoft.datma.pe/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="UsuarioWS" targetNamespace="http://services.datmasoft.datma.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
   <types>
     <xsd:schema>
-      <xsd:import schemaLocation="http://52.21.49.78:8080/DatmaSoftWebServices/UsuarioWS?xsd=1" namespace="http://services.datmasoft.datma.pe/" />
+      <xsd:import schemaLocation="http://54.157.215.104:8080/DatmaSoftWebServices/UsuarioWS?xsd=1" namespace="http://services.datmasoft.datma.pe/" />
     </xsd:schema>
   </types>
   <message name="listarUsuarios">
@@ -50,7 +50,7 @@
   </binding>
   <service name="UsuarioWS">
     <port name="UsuarioWSPort" binding="tns:UsuarioWSPortBinding">
-      <soap:address location="http://52.21.49.78:8080/DatmaSoftWebServices/UsuarioWS" />
+      <soap:address location="http://54.157.215.104:8080/DatmaSoftWebServices/UsuarioWS" />
     </port>
   </service>
 </definitions>

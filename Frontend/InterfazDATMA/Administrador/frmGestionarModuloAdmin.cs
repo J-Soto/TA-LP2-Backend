@@ -28,5 +28,10 @@ namespace InterfazDATMA.Administrador
         {
             plantillaGestion.abrirFormulario(new frmOperacionesPersona(this, plantillaGestion));
         }
+
+        private void btnOpCurso_Click(object sender, EventArgs e)
+        {
+            plantillaGestion.abrirFormulario(new frmOperacionesCursos(this, plantillaGestion));
+        }
     }
 }

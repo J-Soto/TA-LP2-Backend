@@ -62,7 +62,7 @@ public class UsuarioMySQL implements UsuarioDAO{
                 usuario.setUser(rs.getString("user"));
                 usuario.setPassword(rs.getString("password"));
                 usuario.setTipo(rs.getInt("tipo"));
-                //usuario.setFotoPerfil(rs.getBytes("foto"));
+                usuario.setFotoPerfil(rs.getBytes("foto"));
                 usuario.setActivo(rs.getInt("activo"));
                 usuarios.add(usuario);
             }

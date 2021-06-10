@@ -32,7 +32,7 @@ public class SemanaMySQL implements SemanaDAO {
            
             cst.executeUpdate();
             semana.setId(cst.getInt("_idsemana"));
-            resultado = 1;
+            resultado = cst.getInt("_idsemana");
         }catch(ClassNotFoundException | SQLException ex){
             System.out.println(ex.getMessage());
         }finally{
@@ -74,7 +74,7 @@ public class SemanaMySQL implements SemanaDAO {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
-            String query = "{call LISTAR_TEMA()}";
+            String query = "{call LISTAR_SEMANA()}";
             cst = con.prepareCall(query);
             rs = cst.executeQuery();
             while (rs.next()) {
