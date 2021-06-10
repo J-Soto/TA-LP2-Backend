@@ -15,16 +15,33 @@ namespace InterfazDATMA.Administrador
     {
         private frmPlantillaGestion formPlantillaGest;
         private frmGestionarModuloAdmin formGestionarModuloAdmin;
-        
+        private CursoWS.CursoWSClient daoCurso;
+        private BindingList<CursoWS.curso> cursos;
 
         public frmOperacionesCursos(frmGestionarModuloAdmin formGestionarModuloAdmin, frmPlantillaGestion formPlantillaGest)
         {
             this.formGestionarModuloAdmin = formGestionarModuloAdmin;
             this.formPlantillaGest = formPlantillaGest;
+            this.daoCurso = new CursoWS.CursoWSClient();
 
             InitializeComponent();
             dgvCursos.AutoGenerateColumns = false;
             dgvCursos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            FetchCursos();
+            UpdateCursosTable();
+        }
+
+        private void UpdateCursosTable()
+        {
+            dgvCursos.Rows.Clear();
+            foreach (var curso in cursos) {
+                dgvCursos.Rows.Add(curso.descripcion, curso.fechaInicio, curso.fechaFin, curso.fechaInscripcion, curso.cantSemanas);
+            }
+        }
+
+        private void FetchCursos()
+        {
+            cursos = new BindingList<CursoWS.curso>(daoCurso.listarCursos().ToList());
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -36,6 +53,20 @@ namespace InterfazDATMA.Administrador
         {
             frmInsertarCurso formInsertarCurso = new frmInsertarCurso(this, formPlantillaGest);
             formPlantillaGest.abrirFormulario(formInsertarCurso);
+        }
+
+        private void frmOperacionesCursos_VisibleChanged(object sender, EventArgs e)
+        {
+            FetchCursos();
+            UpdateCursosTable();
+        }
+
+        private void btnEliminarCurso_Click(object sender, EventArgs e)
+        {
+            var index = dgvCursos.CurrentCell.RowIndex;
+            daoCurso.eliminarCurso(cursos[index].idCurso);
+            cursos.RemoveAt(index);
+            UpdateCursosTable();
         }
     }
 }
