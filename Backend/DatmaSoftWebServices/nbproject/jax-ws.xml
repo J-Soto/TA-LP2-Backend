@@ -31,6 +31,9 @@
     <service name="SemanaWS">
       <implementation-class>pe.datma.datmasoft.services.SemanaWS</implementation-class>
     </service>
+    <service name="GrupoWS">
+      <implementation-class>pe.datma.datmasoft.services.GrupoWS</implementation-class>
+    </service>
   </services>
   <clients/>
 </jax-ws>
