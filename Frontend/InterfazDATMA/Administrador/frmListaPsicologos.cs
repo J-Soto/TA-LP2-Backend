@@ -16,8 +16,13 @@ namespace InterfazDATMA.Administrador
     {
         private PsicologoWS.PsicologoWSClient daoPsicologo;
 
+<<<<<<< HEAD
         public Header()
         {
+=======
+        public Header() 
+        { 
+>>>>>>> 798706b4dd0fe2d8dca406a6c987a5d4e33e57a0
             InitializeComponent();
             daoPsicologo = new PsicologoWS.PsicologoWSClient();
             dgvPsico.AutoGenerateColumns = false;
