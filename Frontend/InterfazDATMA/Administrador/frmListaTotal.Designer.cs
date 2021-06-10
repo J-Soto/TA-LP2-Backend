@@ -104,6 +104,7 @@ namespace InterfazDATMA.Administrador
             // 
             // colNombre
             // 
+            this.colNombre.DataPropertyName = "persona.nombre";
             this.colNombre.HeaderText = "Nombre";
             this.colNombre.MinimumWidth = 10;
             this.colNombre.Name = "colNombre";
