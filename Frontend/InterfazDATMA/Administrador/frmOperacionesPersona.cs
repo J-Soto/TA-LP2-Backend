@@ -41,8 +41,15 @@ namespace InterfazDATMA.Administrador
 
         public void inicializarTablas()
         {
-            BindingList<PsicologoWS.psicologo> psicologos = new BindingList<PsicologoWS.psicologo>(daoPsicologo.listarTodosPsicologos().ToList());
-
+            BindingList<PsicologoWS.psicologo> psicologos;
+            try
+            {
+                psicologos = new BindingList<PsicologoWS.psicologo>(daoPsicologo.listarTodosPsicologos().ToList());
+            }
+            catch (ArgumentNullException ex)
+            {
+                psicologos = new BindingList<PsicologoWS.psicologo>();
+            }
             dgvPsicologos.DataSource = psicologos;
         }
 
