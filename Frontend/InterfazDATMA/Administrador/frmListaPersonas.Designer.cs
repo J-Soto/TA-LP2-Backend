@@ -33,11 +33,12 @@ namespace InterfazDATMA.Administrador
             // 
             // frmListaPersonas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(72)))));
-            this.ClientSize = new System.Drawing.Size(1871, 963);
+            this.ClientSize = new System.Drawing.Size(2495, 1194);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmListaPersonas";
             this.Text = "frmListaPersonas";
             this.ResumeLayout(false);
