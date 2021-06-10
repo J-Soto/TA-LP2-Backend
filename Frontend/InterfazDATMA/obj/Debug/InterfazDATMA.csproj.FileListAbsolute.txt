@@ -51,13 +51,6 @@ C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.exe
 C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
 <<<<<<< HEAD
-C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmBuscarPsicologoGrupo.resources
-C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmCrearGrupo.resources
-C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmCrearTemaDeCurso.resources
-C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmInsertarCurso.resources
-C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmOperacionesCursos.resources
-C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmSeleccionarTemasDeCurso.resources
-C:\Users\maldo\OneDrive\Documentos\LenguajeProgramacion2\TA\Proyecto_TA_Final\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmVerGruposCurso.resources
 >>>>>>> 2737b8b9cb73c66c0f68c8538c2c50379384b7e0
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmBuscarPsicologoGrupo.resources
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmCrearGrupo.resources
@@ -68,3 +61,49 @@ C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\Interfaz
 C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmVerGruposCurso.resources
 =======
 >>>>>>> 575130533f5ecbcca4a2944b0fb3e7bb233506f8
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csprojAssemblyReference.cache
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmGestionarModuloAdmin.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmInsertarDistrito.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmInsertarPreferencias.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmInsertarPsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmInsertarTutor.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaPersonas.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.Header.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaTotal.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmListaTutores.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmModificarPreferencias.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmModificarPsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmModificarTutor.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Administrador.frmOperacionesPersona.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.cuidador.frmPerfilCuidador.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.plantilla.frmPlantillaV2.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmAgregarMaterialPsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmAgregarReunionPsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmConfigurarModuloPsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmCursosDisponibles.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmDetalleCurso.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmDetalleCursoInscrito.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmDetalleCursoInscritoMaterial.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmDetalleCursoInscritoReunion.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmGestionarModulosPsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmInformacionCurso.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmInscripcionHecha.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmListaCuidadoresDePsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmListaCursoInscritos.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.frmLogin.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmMenuUsuario.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmModificarPrograma.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmNotificacionActiva.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.plantilla.frmPlantillaGestion.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.psicologo.frmPerfilPsicologo.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmRegistrarAsistenciaCuidadores.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmSinCursosDisponibles.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfaceDATMA.frmWalkthrough.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.Properties.Resources.resources
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csproj.GenerateResource.cache
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.csproj.CoreCompileInputs.cache
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.exe
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\obj\Debug\InterfazDATMA.pdb
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe.config
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.exe
+C:\Users\JLHP\Desktop\LP 2\TA\TA-DATMA\Frontend\InterfazDATMA\bin\Debug\InterfazDATMA.pdb

@@ -65,10 +65,10 @@ namespace InterfazDATMA
                 daoUsuario.listarUsuarios().ToList());
             foreach (UsuarioWS.usuario item in usuarios)
             {
-                if (item.user == user && item.password == password)
+                if (item.user.Contains(user) && item.password.Contains(password))
                     return item.tipo;
             }
-            return 1;
+            return -1;
         }
 
         private void btnIngresar_Click_1(object sender, EventArgs e)

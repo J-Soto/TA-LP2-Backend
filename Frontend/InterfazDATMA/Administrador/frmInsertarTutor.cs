@@ -41,17 +41,6 @@ namespace InterfazDATMA.Administrador
             rbtnHombre.Checked = true;
         }
 
-<<<<<<< HEAD
-=======
-        private int verificarDNI(String dni, String nom, String apPat, String apMat)
-        {
-            nom = nom.ToUpper();
-            apPat = apPat.ToUpper();
-            apMat = apMat.ToUpper();
-
-            return 1;
-        }
->>>>>>> 575130533f5ecbcca4a2944b0fb3e7bb233506f8
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
