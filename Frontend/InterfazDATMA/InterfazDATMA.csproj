@@ -103,12 +103,6 @@
     <Compile Include="Administrador\frmInsertarTutor.Designer.cs">
       <DependentUpon>frmInsertarTutor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administrador\frmListaPersonas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrador\frmListaPersonas.Designer.cs">
-      <DependentUpon>frmListaPersonas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Administrador\frmListaPsicologos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -393,9 +387,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmInsertarTutor.resx">
       <DependentUpon>frmInsertarTutor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Administrador\frmListaPersonas.resx">
-      <DependentUpon>frmListaPersonas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\frmListaPsicologos.resx">
       <DependentUpon>frmListaPsicologos.cs</DependentUpon>
