@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace InterfazDATMA.Administrador
 {
-    public partial class frmModificarPreferencias : Form
+    public partial class frmModificarPreferencias : Form 
     {
         private frmPlantillaGestion formPlantilla;
         public frmModificarTutor formAnterior;
