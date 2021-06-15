@@ -15,6 +15,7 @@ public class Tema {
     private int id;
     private String nombre;
     private String descripcion;
+    private int id_curso_tema;
     private Date fechaInicio;
     private Date fechaFin;
     
@@ -57,5 +58,14 @@ public class Tema {
     public void setFechaFin(Date fechaFin) {
         this.fechaFin = fechaFin;
     }
+
+    public int getId_curso_tema() {
+        return id_curso_tema;
+    }
+
+    public void setId_curso_tema(int id_curso_tema) {
+        this.id_curso_tema = id_curso_tema;
+    }
+    
     
 }
