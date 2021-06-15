@@ -15,5 +15,5 @@ import pe.datma.datmasoft.rrhh.Usuario;
 public interface UsuarioDAO {
     int insertarUsuario(Usuario user);
     ArrayList<Usuario> listarUsuarios();
-    int verificarUsuario(String user,String password);
+    Usuario verificarUsuario(String user,String password);
 }

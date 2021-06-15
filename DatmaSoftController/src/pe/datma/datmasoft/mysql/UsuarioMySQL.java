@@ -77,8 +77,8 @@ public class UsuarioMySQL implements UsuarioDAO{
     }
 
     @Override
-    public int verificarUsuario(String user, String password) {
-        int resultado = -1;
+    public Usuario verificarUsuario(String user, String password) {
+        Usuario usuario = null;
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
@@ -86,9 +86,13 @@ public class UsuarioMySQL implements UsuarioDAO{
             cs.setString("_user", user);
             cs.setString("_password", password);
             rs = cs.executeQuery();
-            if(rs.next()){
-                resultado=rs.getInt("tipo");
+            if(!rs.next()){
+                return usuario;
             }
+            usuario = new Usuario();
+            usuario.setIdUsuario(rs.getInt("idusuario"));
+            usuario.setTipo(rs.getInt("tipo"));
+            usuario.setUser(rs.getString("user"));
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }finally{
@@ -96,7 +100,7 @@ public class UsuarioMySQL implements UsuarioDAO{
             try{cs.close();}catch(Exception ex){System.out.println(ex.getMessage());}
             try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
         }
-        return resultado;
+        return usuario;
     }
     
 }

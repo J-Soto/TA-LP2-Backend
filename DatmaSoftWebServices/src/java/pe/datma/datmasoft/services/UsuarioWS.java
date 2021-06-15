@@ -52,14 +52,14 @@ public class UsuarioWS {
     }
     
     @WebMethod(operationName = "verificarUsuario")
-    public int verificarUsuario(@WebParam(name = "user") String user,
+    public Usuario verificarUsuario(@WebParam(name = "user") String user,
             @WebParam(name = "pass") String password) {
-        int resultado=0;
+        Usuario usuario = null;
         try {
-            resultado=daoUsuario.verificarUsuario(user, password);
+            usuario = daoUsuario.verificarUsuario(user, password);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
-        return resultado;
+        return usuario;
     }
 }
