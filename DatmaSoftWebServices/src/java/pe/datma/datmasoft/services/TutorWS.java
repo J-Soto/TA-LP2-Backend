@@ -40,7 +40,7 @@ public class TutorWS {
             @WebParam(name = "nom") String nom,
             @WebParam(name = "apPat") String app,
             @WebParam(name = "apMat") String apm){
-        int resultado=-1;
+        int resultado=0;
         String enlace="https://dni.optimizeperu.com/api/persons/"+dni+"?format=json";
         //String enlace="https://dni.optimizeperu.com/api/prod/persons/"+dni;
         try {
@@ -72,7 +72,6 @@ public class TutorWS {
             if(NOM.equals(nom) && APP.equals(app) && APM.equals(apm) && 
                     DNI.equals(dni))
                 resultado=1;
-            else resultado=0;
         
             con.disconnect();
 //      
