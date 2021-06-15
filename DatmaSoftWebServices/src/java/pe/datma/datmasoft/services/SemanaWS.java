@@ -28,11 +28,11 @@ public class SemanaWS {
     
     
     @WebMethod(operationName = "insertarSemana")
-    public int insertarSemana(@WebParam(name = "semana") Semana semana){
+    public int insertarSemana(@WebParam(name = "semana") Semana semana,@WebParam(name = "fidCursoTema") int fidCursoTema){
         int resultado = 0;
         
         try {
-            resultado = daoSemana.insertar(semana);
+            resultado = daoSemana.insertar(semana, fidCursoTema);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
