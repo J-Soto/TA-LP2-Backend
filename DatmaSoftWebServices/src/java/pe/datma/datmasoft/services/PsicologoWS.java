@@ -10,6 +10,7 @@ package pe.datma.datmasoft.services;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -44,10 +45,9 @@ public class PsicologoWS {
         String enlace="https://dni.optimizeperu.com/api/persons/"+dni+"?format=json";
         //String enlace="https://dni.optimizeperu.com/api/prod/persons/"+dni;
         try {
-            //String param = "?Authorization=" + "k4d2956bd531ab61d44f4fa07304b20e13913815";
             URL url = new URL(enlace);
             HttpURLConnection con=(HttpURLConnection)url.openConnection();
-            //con.setRequestProperty("token", "k4d2956bd531ab61d44f4fa07304b20e13913815");
+            //con.setRequestProperty("authorization","token k4d2956bd531ab61d44f4fa07304b20e13913815");
             con.setRequestMethod("GET");
             
             BufferedReader input = new BufferedReader(new InputStreamReader(con.getInputStream()));
@@ -73,13 +73,16 @@ public class PsicologoWS {
             if(NOM.equals(nom) && APP.equals(app) && APM.equals(apm) && 
                     DNI.equals(dni))
                 resultado=1;
-//      
+        
             con.disconnect();
-            
-           
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+//      
+        } catch (FileNotFoundException e) {
+            System.out.println(e);
+            resultado=-1;
+        } catch(Exception ex){
+            System.out.println(ex.getMessage());
+        } 
+        
         return resultado;
     }
     

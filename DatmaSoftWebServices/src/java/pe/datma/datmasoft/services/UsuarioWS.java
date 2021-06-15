@@ -50,4 +50,16 @@ public class UsuarioWS {
         }
         return resultado;
     }
+    
+    @WebMethod(operationName = "verificarUsuario")
+    public int verificarUsuario(@WebParam(name = "user") String user,
+            @WebParam(name = "pass") String password) {
+        int resultado=0;
+        try {
+            resultado=daoUsuario.verificarUsuario(user, password);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
+    }
 }
