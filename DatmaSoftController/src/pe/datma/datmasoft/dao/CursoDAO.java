@@ -24,7 +24,7 @@ public interface CursoDAO {
     //curso_tema:
     int insertarCursoTema(int idCurso, int idTema, Date fechaInicio, Date fechaFin);
     int modificarCursoTema(int idCurso, int idTema, Date fechaInicio, Date fechaFin);
-    int eliminarCursoTema(int idCurso, int idTema);
+    int eliminarCursoTema(int idCurso_Tema);
     
     //Requerimiento del Curso: 
     int insertarRequerimiento(int idCursoDep,int idCursoReq,String descripcion);
