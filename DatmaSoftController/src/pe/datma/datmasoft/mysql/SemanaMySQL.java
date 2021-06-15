@@ -16,20 +16,21 @@ public class SemanaMySQL implements SemanaDAO {
     ResultSet rs;
 
     @Override
-    public int insertar(Semana semana) {
+    public int insertar(Semana semana, int fidCursoTema) {
         int resultado = 0;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
-            String query = "{call INSERTAR_SEMANA(?,?,?,?,?)}";
+            String query = "{call INSERTAR_SEMANA(?,?,?,?,?,?)}";
             cst = con.prepareCall(query);
             
-            cst.registerOutParameter("_idsemana", java.sql.Types.INTEGER); 
+            cst.registerOutParameter("_idsemana", java.sql.Types.INTEGER);
+            cst.setInt("_fidcurso_tema", fidCursoTema);
             cst.setInt("_fidcurso", semana.getCurso().getIdCurso());
             cst.setString("_nombre", semana.getNombre());
             cst.setString("_descripcion", semana.getDescripcion());
             cst.setDate("_fechainicio", new java.sql.Date(semana.getFechaInicio().getTime()));
-           
+            
             cst.executeUpdate();
             resultado = cst.getInt("_idsemana");
             semana.setId(cst.getInt("_idsemana"));
