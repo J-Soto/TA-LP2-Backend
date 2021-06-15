@@ -98,6 +98,7 @@ public class CursoWS {
         return grupos;
     }
     
+    //
     @WebMethod(operationName = "listarTemasPorIdCurso")
     public ArrayList<Tema> listarTemasPorIdCurso(@WebParam(name="idCurso") int idCurso){
         ArrayList<Tema> temas = new ArrayList<>();
@@ -155,11 +156,12 @@ public class CursoWS {
         return resultado;
     }
     
+    //
     @WebMethod(operationName = "eliminarCursoTema")
-    public int eliminarCursoTema(@WebParam(name="idCurso") int idCurso,@WebParam(name="idTema") int idTema){
+    public int eliminarCursoTema(@WebParam(name="idCurso_tema") int idCurso_tema){
         int resultado = 0;
         try {
-            resultado = daoCurso.eliminarCursoTema(idCurso, idTema);
+            resultado = daoCurso.eliminarCursoTema(idCurso_tema);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
