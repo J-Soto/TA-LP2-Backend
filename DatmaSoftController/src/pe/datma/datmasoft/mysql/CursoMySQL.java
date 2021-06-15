@@ -263,6 +263,7 @@ public class CursoMySQL implements CursoDAO {
             rs = cs.executeQuery();
             while(rs.next()){
                 Tema tema = new Tema();
+                tema.setId_curso_tema(rs.getInt("idcurso_tema"));
                 tema.setId(rs.getInt("idtema"));
                 tema.setNombre(rs.getString("nombre_tema"));
                 tema.setDescripcion(rs.getString("descripcion"));
@@ -390,14 +391,13 @@ public class CursoMySQL implements CursoDAO {
     }
 
     @Override
-    public int eliminarCursoTema(int idCurso, int idTema) {
+    public int eliminarCursoTema(int idCurso_Tema) {
         int resultado = 0;
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
-            cs = con.prepareCall("{CALL ELIMINAR_CURSO_TEMA(?,?)}");
-            cs.setInt("_fidcurso", idCurso);
-            cs.setInt("_fidtema", idTema);
+            cs = con.prepareCall("{CALL ELIMINAR_CURSO_TEMA(?)}");
+            cs.setInt("_fid_curso_tema", idCurso_Tema);
             cs.executeUpdate();
             resultado = 1;
             cs.close();
