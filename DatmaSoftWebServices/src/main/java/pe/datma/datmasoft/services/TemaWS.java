@@ -29,7 +29,7 @@ public class TemaWS {
     
     @WebMethod(operationName = "listarTemas")
     public ArrayList<Tema> listarTemas(){
-        ArrayList<Tema> temas = new ArrayList<>();
+        ArrayList<Tema> temas = null;
         
         try {
             temas = daoTema.listar();
