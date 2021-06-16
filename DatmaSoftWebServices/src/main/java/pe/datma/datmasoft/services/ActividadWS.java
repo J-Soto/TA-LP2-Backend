@@ -33,7 +33,7 @@ public class ActividadWS {
     public ArrayList<Actividad> listarActividad() {
         ArrayList<Actividad> actividades=new ArrayList<Actividad>();
         try {
-            actividades=daoActividad.listarActividad();
+            actividades=daoActividad.listarActividad(); 
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }

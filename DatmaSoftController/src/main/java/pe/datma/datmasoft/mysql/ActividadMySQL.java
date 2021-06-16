@@ -35,7 +35,7 @@ public class ActividadMySQL implements ActividadDAO{
                 actividad.setFecha(rs.getTimestamp("fechaInicial"));
                 actividad.setHoraInicio(rs.getTime("horainicio").toLocalTime());
                 actividad.setHoraFin(rs.getTime("horafin").toLocalTime());
-              
+                actividad.setIdSemana(rs.getInt("fidsemana"));
                 actividades.add(actividad);
             }
             
