@@ -85,6 +85,17 @@ public class CursoWS {
         }
         return cursos;
     }
+    
+    @WebMethod(operationName = "listarCursosPsicologo")
+    public ArrayList<Curso> listarCursosPsicologo(@WebParam(name="idPsicologo") int idPsicologo) {
+        ArrayList<Curso> cursos = new ArrayList<>();
+        try {
+            cursos = daoCurso.listarCursosPsicologo(idPsicologo);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return cursos;
+    }
   
     
     @WebMethod(operationName = "listarGruposPorIdCurso")
@@ -203,5 +214,4 @@ public class CursoWS {
         }
         return resultado;
     }
-    
 }

@@ -94,7 +94,6 @@ public class UsuarioMySQL implements UsuarioDAO{
             usuario.setIdUsuario(rs.getInt("idusuario"));
             usuario.setTipo(rs.getInt("tipo"));
             usuario.setUser(rs.getString("user"));
-            // usuario.setPassword(BCrypt.withDefaults().hashToString(12, password.toCharArray()));
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }finally{

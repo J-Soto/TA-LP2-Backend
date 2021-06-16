@@ -29,5 +29,8 @@ public interface CursoDAO {
     //Requerimiento del Curso: 
     int insertarRequerimiento(int idCursoDep,int idCursoReq,String descripcion);
     int eliminarRequerimiento(int idCursoDep, int idRequerimiento);
-    int modificarRequerimiento(int idCursoDep, int idRequerimiento,String descripcion); 
+    int modificarRequerimiento(int idCursoDep, int idRequerimiento,String descripcion);
+    
+    //psicologo_curso
+    ArrayList<Curso> listarCursosPsicologo(int idPsicologo);
 }

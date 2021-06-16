@@ -409,6 +409,33 @@ public class CursoMySQL implements CursoDAO {
         }
         return resultado;  
     }
-    
-  
+
+    @Override
+    public ArrayList<Curso> listarCursosPsicologo(int idPsicologo) {
+        ArrayList<Curso> cursos = new ArrayList<>();
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            cs = con.prepareCall("{CALL LISTAR_CURSOS_PSICOLOGO(?)}");
+            cs.setInt("_idPsicologo", idPsicologo);
+            rs = cs.executeQuery();
+            while(rs.next()){
+                Curso curso = new Curso();
+                curso.setIdCurso(rs.getInt("idcurso"));
+                curso.setDescripcion(rs.getString("nombre"));
+                curso.setFechaInicio(rs.getDate("fechainicial"));
+                curso.setFechaFin(rs.getDate("fechafinal"));
+                curso.setFechaInscripcion(rs.getDate("fechainscripcion"));
+                curso.setCantSemanas(rs.getInt("cantsemanas"));
+                cursos.add(curso);
+            }
+            cs.close();
+            con.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+        }
+        return cursos;
+    }
 }
