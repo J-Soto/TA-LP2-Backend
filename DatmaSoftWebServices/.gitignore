@@ -1,7 +1,1 @@
-build/
-dist/
-nbproject/
-!nbproject/project.properties
-!nbproject/project.xml
-!nbproject/ant-deploy.xml
-!nbproject/jax-ws.xml
+target/
