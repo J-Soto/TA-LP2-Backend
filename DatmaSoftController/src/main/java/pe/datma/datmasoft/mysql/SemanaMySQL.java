@@ -49,14 +49,12 @@ public class SemanaMySQL implements SemanaDAO {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
-            String query = "{call MODIFICAR_SEMANA(?,?,?,?,?)}";
+            String query = "{call MODIFICAR_SEMANA(?,?,?)}";
             cst = con.prepareCall(query);
             
             cst.setInt("_idsemana", semana.getId());
-            cst.setInt("_fidcurso", semana.getCurso().getIdCurso());
             cst.setString("_nombre", semana.getNombre());
             cst.setString("_descripcion", semana.getDescripcion());
-            cst.setDate("_fechainicio", new java.sql.Date(semana.getFechaInicio().getTime()));
            
             cst.executeUpdate();
             resultado = 1;
