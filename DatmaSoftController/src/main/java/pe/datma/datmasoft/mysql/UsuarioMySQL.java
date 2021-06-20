@@ -10,6 +10,7 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import pe.datma.datmasoft.config.DBManager;
 import pe.datma.datmasoft.dao.UsuarioDAO;
@@ -83,23 +84,27 @@ public class UsuarioMySQL implements UsuarioDAO{
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
-            cs = con.prepareCall("{CALL VERIFICAR_USUARIO(?,?)}");
+            cs = con.prepareCall("{CALL VERIFICAR_USUARIO(?)}");
             cs.setString("_user", user);
-            cs.setString("_password", password);
             rs = cs.executeQuery();
             if(!rs.next()){
+                return usuario;
+            }
+            String hash = rs.getString("password");
+            BCrypt.Result result = BCrypt.verifyer().verify(password.toCharArray(), hash);
+            if (!result.verified) {
                 return usuario;
             }
             usuario = new Usuario();
             usuario.setIdUsuario(rs.getInt("idusuario"));
             usuario.setTipo(rs.getInt("tipo"));
             usuario.setUser(rs.getString("user"));
-        }catch(Exception ex){
+        }catch(ClassNotFoundException | SQLException ex) {
             System.out.println(ex.getMessage());
         }finally{
-            try{rs.close();}catch(Exception ex){System.out.println(ex.getMessage());}
-            try{cs.close();}catch(Exception ex){System.out.println(ex.getMessage());}
-            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+            try{rs.close();}catch(SQLException ex){System.out.println(ex.getMessage());}
+            try{cs.close();}catch(SQLException ex){System.out.println(ex.getMessage());}
+            try{con.close();}catch(SQLException ex){System.out.println(ex.getMessage());}
         }
         return usuario;
     }

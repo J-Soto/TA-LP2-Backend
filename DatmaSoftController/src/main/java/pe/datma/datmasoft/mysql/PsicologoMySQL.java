@@ -1,5 +1,6 @@
 package pe.datma.datmasoft.mysql;
 
+import at.favre.lib.crypto.bcrypt.BCrypt;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -41,7 +42,8 @@ public class PsicologoMySQL  implements PsicologoDAO{
             cst.setString("_celular", psicologo.getCelular());
             cst.setString("_correo", psicologo.getCorreo());
             cst.setString("_user", psicologo.getUser());
-            cst.setString("_password", psicologo.getPassword());
+            String hash = BCrypt.withDefaults().hashToString(12, psicologo.getPassword().toCharArray());
+            cst.setString("_password", hash);
             cst.setBytes("_foto", psicologo.getFotoPerfil());
             
             
@@ -87,7 +89,8 @@ public class PsicologoMySQL  implements PsicologoDAO{
             cst.setString("_celular", psicologo.getCelular());
             cst.setString("_correo", psicologo.getCorreo());
             cst.setString("_user", psicologo.getUser());
-            cst.setString("_password", psicologo.getPassword());
+            String hash = BCrypt.withDefaults().hashToString(12, psicologo.getPassword().toCharArray());
+            cst.setString("_password", hash);
             cst.setBytes("_foto", psicologo.getFotoPerfil());
 
             cst.executeUpdate();
