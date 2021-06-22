@@ -42,10 +42,10 @@ public class ReportePsicologos extends HttpServlet {
         try {
             JasperReport reporte=(JasperReport)
                     JRLoader.loadObject(ReportePsicologos.class.getResource(
-                    "pe/datma/datmasoft/reportes/ReportePsicologos.jasper"));
+                    "/pe/datma/datmasoft/reportes/ReportePsicologos.jasper"));
             //Cargar imagen
             String rutaImagen=ReportePsicologos.class.getResource(
-                    "pe/datma/datmasoft/img/DATMA logo.png").getPath();
+                    "/pe/datma/datmasoft/img/DATMA logo.png").getPath();
             Image logo=(new ImageIcon(rutaImagen)).getImage();
             //Arreglo de Parametros
             HashMap hm=new HashMap();
@@ -59,7 +59,7 @@ public class ReportePsicologos extends HttpServlet {
             //Mostrarlo via web
             JasperExportManager.exportReportToPdfStream(jp, response.getOutputStream());
         } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+            ex.printStackTrace();
         }
     }
 
