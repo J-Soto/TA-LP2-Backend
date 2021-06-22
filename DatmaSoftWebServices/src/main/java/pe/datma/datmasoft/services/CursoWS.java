@@ -205,7 +205,7 @@ public class CursoWS {
     }
     
     @WebMethod(operationName = "modificarRequerimiento")
-    public int modificarRequerimiento(int idCursoDep, int idRequerimiento, String descripcion){
+    public int modificarRequerimiento(@WebParam(name="idCursoDep") int idCursoDep,@WebParam(name="idRequerimiento") int idRequerimiento,@WebParam(name="descripcion") String descripcion){
         int resultado = 0;
         try {
             resultado = daoCurso.modificarRequerimiento(idCursoDep, idRequerimiento, descripcion);
@@ -213,5 +213,29 @@ public class CursoWS {
             System.out.println(ex.getMessage());
         }
         return resultado;
+    }
+    
+    //psicologo_curso:
+    @WebMethod(operationName = "insertarPsicologoCurso")
+    public int insertarPsicologoCurso(@WebParam(name="idPsicologo") int idPsicologo,@WebParam(name="idCurso") int idCurso){
+        int resultado = 0;
+        try {
+            resultado = daoCurso.insertarPsicologoCurso(idPsicologo, idCurso);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
+    }
+    
+    
+    @WebMethod(operationName = "listarCursosGrupoPsicologo")
+    public ArrayList<Grupo> listarCursosGrupoPsicologo(@WebParam(name="idPsicologo") int idPsicologo,@WebParam(name="idCurso") int idCurso){
+        ArrayList<Grupo> grupos = new ArrayList<>();
+        try {
+            grupos = daoCurso.listarCursosGrupoPsicologo(idPsicologo, idCurso);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return grupos;
     }
 }

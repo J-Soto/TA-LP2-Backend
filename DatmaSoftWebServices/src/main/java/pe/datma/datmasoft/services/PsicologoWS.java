@@ -142,4 +142,16 @@ public class PsicologoWS {
         }
         return psicologos;   
     }
+    
+    @WebMethod(operationName = "buscarPsicologoPorIdUsuario")
+    public Psicologo buscarPsicologoPorIdUsuario(@WebParam(name = "idUsuario") int idUsuario){
+        Psicologo psicologo = new Psicologo();
+        try {
+            psicologo = daoPsicologo.buscarPsicologoPorIdUsuario(idUsuario);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return psicologo;
+    }
+    
 }
