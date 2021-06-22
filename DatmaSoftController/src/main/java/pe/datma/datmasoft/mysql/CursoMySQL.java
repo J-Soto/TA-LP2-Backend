@@ -410,6 +410,9 @@ public class CursoMySQL implements CursoDAO {
         return resultado;  
     }
 
+    
+    //psicologo_curso:
+    
     @Override
     public ArrayList<Curso> listarCursosPsicologo(int idPsicologo) {
         ArrayList<Curso> cursos = new ArrayList<>();
@@ -438,4 +441,64 @@ public class CursoMySQL implements CursoDAO {
         }
         return cursos;
     }
+
+    @Override
+    public int insertarPsicologoCurso(int idPsicologo, int idCurso) {
+        int resultado = 0;
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            cs = con.prepareCall("{CALL INSERTAR_PSICOLOGO_CURSO(?,?,?)}");
+            cs.registerOutParameter("_id_psicologo_curso", java.sql.Types.INTEGER);
+            cs.setInt("_fid_psicologo", idPsicologo);
+            cs.setInt("_fid_curso", idCurso);
+            cs.executeUpdate();
+            
+            resultado = cs.getInt("_id_psicologo_curso");
+            cs.close();
+            con.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+        }
+        
+        return resultado;
+    }
+
+    @Override
+    public ArrayList<Grupo> listarCursosGrupoPsicologo(int idPsicologo, int idCurso) {
+        ArrayList<Grupo> grupos = new ArrayList<>();
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            String instruccion = "{CALL LISTAR_CURSOS_GRUPO_PSICOLOGO(?,?)}";
+            cs = con.prepareCall(instruccion);
+            cs.setInt("_idpsicologo", idPsicologo);
+            cs.setInt("_idcurso", idCurso);
+            
+            rs = cs.executeQuery();
+            
+            while(rs.next()){
+                Grupo grupo = new Grupo();
+                grupo.setIdGrupo(rs.getInt("idgrupo"));
+                grupo.setNombrePromocion(rs.getString("nombre_grupo"));
+                grupo.setMaxCantCuidadores(rs.getInt("maxtutores"));
+                grupos.add(grupo);
+            }
+            
+            cs.close();
+            con.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+        }
+        
+        return grupos;
+    }
+   
+    
 }
