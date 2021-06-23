@@ -9,6 +9,7 @@ import java.awt.Image;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.HashMap;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -52,7 +53,8 @@ public class ReportePsicologos extends HttpServlet {
             HashMap hm=new HashMap();
             hm.put("Logo_DATMA", logo);
             //Objeto conexion
-            Connection con=DBManager.getInstance().getConnection();
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con=DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
             //Poblar Reporte
             JasperPrint jp=JasperFillManager.fillReport(reporte,hm,con);
             //Cerrar Conexion

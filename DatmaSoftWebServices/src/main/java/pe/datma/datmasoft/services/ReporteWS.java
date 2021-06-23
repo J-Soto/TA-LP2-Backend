@@ -7,6 +7,7 @@ package pe.datma.datmasoft.services;
 
 import java.awt.Image;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.HashMap;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
@@ -46,7 +47,8 @@ public class ReporteWS {
             HashMap hm=new HashMap();
             hm.put("Logo_DATMA", logo);
             //Objeto conexion
-            Connection con=DBManager.getInstance().getConnection();
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con=DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
             //Poblar Reporte
             JasperPrint jp=JasperFillManager.fillReport(reporte,hm,con);
             //Cerrar Conexion
