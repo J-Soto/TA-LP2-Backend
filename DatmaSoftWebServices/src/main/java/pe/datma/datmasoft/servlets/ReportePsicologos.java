@@ -45,11 +45,12 @@ public class ReportePsicologos extends HttpServlet {
                     "/pe/datma/datmasoft/reportes/ReportePsicologos.jasper"));
             //Cargar imagen
             String rutaImagen=ReportePsicologos.class.getResource(
-                    "/pe/datma/datmasoft/img/DATMA logo.png").getPath();
+                    "/pe/datma/datmasoft/img/DATMA_logo.png").getPath();
+            rutaImagen=rutaImagen.replace("%20", " ");
             Image logo=(new ImageIcon(rutaImagen)).getImage();
             //Arreglo de Parametros
             HashMap hm=new HashMap();
-            hm.put("Logo DATMA", logo);
+            hm.put("Logo_DATMA", logo);
             //Objeto conexion
             Connection con=DBManager.getInstance().getConnection();
             //Poblar Reporte
