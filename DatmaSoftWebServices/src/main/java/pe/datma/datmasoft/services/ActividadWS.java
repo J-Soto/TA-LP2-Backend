@@ -11,6 +11,9 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import pe.datma.datmasoft.dao.ActividadDAO;
 import pe.datma.datmasoft.modulos.Actividad;
+import pe.datma.datmasoft.modulos.Asistencia;
+import pe.datma.datmasoft.modulos.Documento;
+import pe.datma.datmasoft.modulos.Video;
 import pe.datma.datmasoft.mysql.ActividadMySQL;
 
 /**
@@ -73,4 +76,42 @@ public class ActividadWS {
         }
         return resultado;
     }
+    
+    @WebMethod(operationName = "listarAsistenciasPorIdActividadYGrupo")
+    public ArrayList<Asistencia> listarAsistenciasPorIdActividadYGrupo(@WebParam(name = "idActividad") int idActividad,@WebParam(name = "idGrupo") int idGrupo){
+        ArrayList<Asistencia> asistencias = new ArrayList<>();
+        
+        try {
+            asistencias = daoActividad.listarAsistenciasPorIdActividadYGrupo(idActividad, idGrupo);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        
+        return asistencias;
+    }
+    
+    @WebMethod(operationName = "listarDocumentosPorIdActividad")
+    public ArrayList<Documento> listarDocumentosPorIdActividad(@WebParam(name = "idActividad") int idActividad){
+        ArrayList<Documento> documentos = new ArrayList<>();
+        try {
+            documentos = daoActividad.listarDocumentosPorIdActividad(idActividad);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return documentos;
+    }
+    
+    @WebMethod(operationName = "listarVideosPorIdActividad")
+    public ArrayList<Video> listarVideosPorIdActividad(@WebParam(name = "idActividad") int idActividad){
+        ArrayList<Video> videos = new ArrayList<>();
+        
+        try {
+            videos = daoActividad.listarVideosPorIdActividad(idActividad);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        
+        return videos;
+    }
+    
 }

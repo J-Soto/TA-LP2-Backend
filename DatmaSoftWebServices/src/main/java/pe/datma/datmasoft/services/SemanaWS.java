@@ -10,6 +10,7 @@ import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import pe.datma.datmasoft.dao.SemanaDAO;
+import pe.datma.datmasoft.modulos.Actividad;
 import pe.datma.datmasoft.modulos.Semana;
 import pe.datma.datmasoft.mysql.SemanaMySQL;
 
@@ -66,6 +67,17 @@ public class SemanaWS {
         return semanas;
     }
     
-    
+    @WebMethod(operationName = "listarActividadesPorIdSemana")
+    public ArrayList<Actividad> listarActividadesPorIdSemana(@WebParam(name = "idSemana")  int idSemana){
+        ArrayList<Actividad> actividades = new ArrayList<>();
+        
+         try {
+            actividades = daoSemana.listarActividadesPorIdSemana(idSemana);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+         
+         return actividades;
+    }
     
 }
