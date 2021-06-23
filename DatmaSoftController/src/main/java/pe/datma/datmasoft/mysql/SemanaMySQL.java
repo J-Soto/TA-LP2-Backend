@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import pe.datma.datmasoft.config.DBManager;
 import pe.datma.datmasoft.dao.SemanaDAO;
+import pe.datma.datmasoft.modulos.Actividad;
 import pe.datma.datmasoft.modulos.Semana;
 
 public class SemanaMySQL implements SemanaDAO {
@@ -93,5 +94,47 @@ public class SemanaMySQL implements SemanaDAO {
         }
         return arr;
     }
+
+    @Override
+    public ArrayList<Actividad> listarActividadesPorIdSemana(int idSemana) {
+        
+        ArrayList<Actividad> actividades = new ArrayList<>();
+        
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String query = "{CALL LISTAR_ACTIVIDADES_POR_ID_SEMANA(?)}";
+            cst = con.prepareCall(query);
+            cst.setInt("_idsemana", idSemana);
+            rs = cst.executeQuery();
+            
+            
+            while (rs.next()) {
+                Actividad actividad = new Actividad();
+                
+                actividad.setIdActividad(rs.getInt("idactividad"));
+                actividad.setNombre(rs.getString("nombre"));
+                actividad.setFecha(rs.getDate("fechaInicial"));
+                actividad.setHoraInicio(rs.getTime("horainicio").toLocalTime());
+                actividad.setHoraFin(rs.getTime("horafin").toLocalTime());
+                actividad.setLinkZoom(rs.getString("link"));
+                
+                actividades.add(actividad);
+            }
+            
+            rs.close();
+            cst.close();
+            con.close();
+        } catch(ClassNotFoundException | SQLException ex) {
+            System.out.println(ex.getMessage());
+            
+        } finally {
+            try { con.close(); } catch (SQLException ex) {}
+        }
+        
+        return actividades;
+    }
+
+    
     
 }
