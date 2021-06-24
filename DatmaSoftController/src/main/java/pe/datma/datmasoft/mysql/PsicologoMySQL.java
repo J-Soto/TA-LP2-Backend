@@ -42,8 +42,8 @@ public class PsicologoMySQL  implements PsicologoDAO{
             cst.setString("_celular", psicologo.getCelular());
             cst.setString("_correo", psicologo.getCorreo());
             cst.setString("_user", psicologo.getUser());
-            String hash = BCrypt.withDefaults().hashToString(12, psicologo.getPassword().toCharArray());
-            cst.setString("_password", hash);
+            //String hash = BCrypt.withDefaults().hashToString(12, psicologo.getPassword().toCharArray());
+            cst.setString("_password", psicologo.getPassword());
             cst.setBytes("_foto", psicologo.getFotoPerfil());
             
             
@@ -89,8 +89,8 @@ public class PsicologoMySQL  implements PsicologoDAO{
             cst.setString("_celular", psicologo.getCelular());
             cst.setString("_correo", psicologo.getCorreo());
             cst.setString("_user", psicologo.getUser());
-            String hash = BCrypt.withDefaults().hashToString(12, psicologo.getPassword().toCharArray());
-            cst.setString("_password", hash);
+            //String hash = BCrypt.withDefaults().hashToString(12, psicologo.getPassword().toCharArray());
+            cst.setString("_password", psicologo.getPassword());
             cst.setBytes("_foto", psicologo.getFotoPerfil());
 
             cst.executeUpdate();
