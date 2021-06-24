@@ -166,4 +166,15 @@ public class PsicologoWS {
         return psicologos;   
     }
     
+     @WebMethod(operationName = "cursosDictandoPorPsicologo")
+    public int cursosDictandoPorPsicologo(@WebParam(name = "idPsicologo") int idPsicologo) {
+        int resultado = -1;
+        try {
+            resultado = daoPsicologo.cursosDictandoPorPsicologo(idPsicologo);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
+    }
+    
 }

@@ -320,6 +320,30 @@ public class PsicologoMySQL  implements PsicologoDAO{
         
         return psicologos;
     }
+
+    @Override
+    public int cursosDictandoPorPsicologo(int idPsicologo) {
+        int resultado = -1;
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String instruccion = "{call CURSOS_DICTANDO_POR_PSICOLOGO(?,?)}";
+            cst = con.prepareCall(instruccion);
+            cst.setInt("_id_psicologo", idPsicologo);
+            cst.registerOutParameter("num_cursos", java.sql.Types.INTEGER);
+            cst.executeUpdate();
+            resultado=cst.getInt("num_cursos");
+            cst.close();
+            con.close();       
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{ con.close(); }catch(Exception ex){}
+        }
+        
+        return resultado;
+    }
     
     
 

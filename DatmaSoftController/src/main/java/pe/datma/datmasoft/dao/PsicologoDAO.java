@@ -11,6 +11,7 @@ public interface PsicologoDAO {
     int eliminarPsicologo(int idPsicologo, int idUsuario);
     ArrayList<Psicologo> listarTodosPsicologos();
     ArrayList<Psicologo> listarPsicologosPorIdCurso(int idCurso);
+    int cursosDictandoPorPsicologo(int idPsicologo);
     
     Psicologo buscarPsicologoPorIdUsuario(int idUsuario);
     
