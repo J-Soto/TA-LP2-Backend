@@ -154,4 +154,16 @@ public class PsicologoWS {
         return psicologo;
     }
     
+    @WebMethod(operationName = "listarPsicologosPorIdCurso")
+    public ArrayList<Psicologo> listarPsicologosPorIdCurso(
+            @WebParam(name = "idCurso") int idCurso){
+        ArrayList<Psicologo> psicologos = new ArrayList<Psicologo>();
+        try {
+            psicologos = daoPsicologo.listarPsicologosPorIdCurso(idCurso);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return psicologos;   
+    }
+    
 }

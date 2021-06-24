@@ -10,6 +10,7 @@ public interface PsicologoDAO {
     int modificarPsicologo(Psicologo psicologo);
     int eliminarPsicologo(int idPsicologo, int idUsuario);
     ArrayList<Psicologo> listarTodosPsicologos();
+    ArrayList<Psicologo> listarPsicologosPorIdCurso(int idCurso);
     
     Psicologo buscarPsicologoPorIdUsuario(int idUsuario);
     

@@ -284,6 +284,42 @@ public class PsicologoMySQL  implements PsicologoDAO{
         
         return psicologo;
     }
+
+    @Override
+    public ArrayList<Psicologo> listarPsicologosPorIdCurso(int idCurso) {
+        ArrayList<Psicologo> psicologos = new ArrayList<>();
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String instruccion = "{call LISTAR_PSICOLOGOS_POR_ID_CURSO(?)}";
+            cst = con.prepareCall(instruccion);
+            cst.setInt("_id_curso", idCurso);
+            rs = cst.executeQuery();
+            
+            while(rs.next()){
+                Psicologo psicologo = new Psicologo();
+                psicologo.setIdPersona(rs.getInt("idpersona"));
+                psicologo.setDNI(rs.getString("dni"));
+                psicologo.setNombre(rs.getString("nombre"));
+                psicologo.setApellidoPaterno(rs.getString("apellidopaterno"));
+                psicologo.setApellidoMaterno(rs.getString("apellidomaterno"));
+                               
+                psicologo.setActivo(1);
+                psicologo.setActivoPsicologo(1);
+                psicologos.add(psicologo);
+            }
+            cst.close();
+            con.close();       
+            
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{ con.close(); }catch(Exception ex){}
+        }
+        
+        return psicologos;
+    }
     
     
 
