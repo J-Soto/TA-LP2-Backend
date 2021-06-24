@@ -1,6 +1,5 @@
 package pe.datma.datmasoft.modulos;
 
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -13,8 +12,6 @@ public class Actividad {
     private String descripcion;
     private String horaInicioStr;
     private String horaFinStr;
-    private LocalTime horaInicio;
-    private LocalTime horaFin;
     private Date fecha; //fecha de dictado de la actividad
     private ArrayList<Material> materiales;
 
@@ -74,23 +71,6 @@ public class Actividad {
         this.descripcion = descripcion;
     }
 
-    public LocalTime getHoraInicio() {
-        return horaInicio;
-    }
-
-    public void setHoraInicio(LocalTime horaInicio) {
-        this.horaInicio = horaInicio;
-        this.horaInicioStr = horaInicio.toString();
-    }
-
-    public LocalTime getHoraFin() {
-        return horaFin;
-    }
-
-    public void setHoraFin(LocalTime horaFin) {
-        this.horaFin = horaFin;
-        this.horaFinStr = horaFin.toString();
-    }
 
     public Date getFecha() {
         return fecha;
