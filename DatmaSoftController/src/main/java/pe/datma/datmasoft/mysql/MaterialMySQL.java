@@ -29,7 +29,7 @@ public class MaterialMySQL implements MaterialDAO{
             cs.setInt("_tipoarchivo", video.getTipoMaterial());
             cs.setString("_descripcion", video.getDescripcion());
             cs.setString("_link", video.getLinkVideo());
-            cs.setTime("_duracion", java.sql.Time.valueOf(video.getDuracion()));
+            cs.setString("_duracion", video.getDuracion());
             cs.executeUpdate();
             video.setIdMaterial(cs.getInt("_id_material"));
             resultado = video.getIdMaterial();
@@ -76,7 +76,7 @@ public class MaterialMySQL implements MaterialDAO{
             cs.setInt("_id_material_video", video.getIdMaterial());
             cs.setString("_descripcion", video.getDescripcion());
             cs.setString("_link", video.getLinkVideo());
-            cs.setTime("_duracion", java.sql.Time.valueOf(video.getDuracion()));
+            cs.setString("_duracion", video.getDuracion());
             cs.executeUpdate();
             resultado = 1;
             cs.close();
@@ -125,7 +125,7 @@ public class MaterialMySQL implements MaterialDAO{
                 Video video = new Video();
                 video.setDescripcion(rs.getString("descripcion"));
                 video.setLinkVideo(rs.getString("link"));
-                video.setDuracion(rs.getTime("duracion").toString());//No se si funciona este to string
+                video.setDuracion(rs.getString("duracion"));
                 
                 videos.add(video);
             }

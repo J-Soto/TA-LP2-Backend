@@ -36,8 +36,8 @@ public class ActividadMySQL implements ActividadDAO{
                 Actividad actividad = new Actividad();
                 actividad.setNombre(rs.getString("nombre"));
                 actividad.setFecha(rs.getTimestamp("fechaInicial"));
-                actividad.setHoraInicio(rs.getTime("horainicio").toLocalTime());
-                actividad.setHoraFin(rs.getTime("horafin").toLocalTime());
+                actividad.setHoraInicioStr(rs.getString("horainicio"));
+                actividad.setHoraFinStr(rs.getString("horafin"));
                 actividad.setIdSemana(rs.getInt("fidsemana"));
                 actividades.add(actividad);
             }
@@ -82,8 +82,8 @@ public class ActividadMySQL implements ActividadDAO{
             cs.setInt("_fidsemana", idsemana);
             cs.setString("_nombre", actividad.getNombre());
             cs.setDate("_fechaInicial", new java.sql.Date(actividad.getFecha().getTime()));
-            cs.setTime("_horainicio", java.sql.Time.valueOf(actividad.getHoraInicio()));
-            cs.setTime("_horafin", java.sql.Time.valueOf(actividad.getHoraFin()));
+            cs.setString("_horainicio", actividad.getHoraInicioStr());
+            cs.setString("_horafin", actividad.getHoraFinStr());
             cs.setString("_link", actividad.getLinkZoom());
             cs.executeUpdate();
             actividad.setIdActividad(cs.getInt("idactividad"));
@@ -107,8 +107,8 @@ public class ActividadMySQL implements ActividadDAO{
             cs.setInt("_id_actividad", actividad.getIdActividad());
             cs.setString("_nombre", actividad.getNombre());
             cs.setDate("_fechaInicial", new java.sql.Date(actividad.getFecha().getTime()));
-            cs.setTime("_horainicio", java.sql.Time.valueOf(actividad.getHoraInicio()));
-            cs.setTime("_horafin", java.sql.Time.valueOf(actividad.getHoraFin()));
+            cs.setString("_horainicio", actividad.getHoraInicioStr());
+            cs.setString("_horafin", actividad.getHoraFinStr());
             cs.setString("_link", actividad.getLinkZoom());
             cs.executeUpdate();
             resultado = 1;
@@ -207,8 +207,7 @@ public class ActividadMySQL implements ActividadDAO{
                 video.setTipoMaterial(rs.getInt("tipoarchivo"));
                 video.setDescripcion(rs.getString("descripcion"));
                 video.setLinkVideo(rs.getString("link"));
-                video.setDuracion(rs.getTime("duracion").toString());
-                
+                video.setDuracion(rs.getString("duracion"));
                 videos.add(video);
             }
             

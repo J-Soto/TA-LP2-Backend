@@ -115,8 +115,8 @@ public class SemanaMySQL implements SemanaDAO {
                 actividad.setIdActividad(rs.getInt("idactividad"));
                 actividad.setNombre(rs.getString("nombre"));
                 actividad.setFecha(rs.getDate("fechaInicial"));
-                actividad.setHoraInicio(rs.getTime("horainicio").toLocalTime());
-                actividad.setHoraFin(rs.getTime("horafin").toLocalTime());
+                actividad.setHoraInicioStr(rs.getString("horainicio"));
+                actividad.setHoraFinStr(rs.getString("horafin"));
                 actividad.setLinkZoom(rs.getString("link"));
                 
                 actividades.add(actividad);
