@@ -47,12 +47,12 @@ public class PsicologoMySQL  implements PsicologoDAO{
             cst.setBytes("_foto", psicologo.getFotoPerfil());
             
             
-            cst.executeUpdate();
+            cst.executeUpdate();/*
             psicologo.setIdPersona(cst.getInt("_id_psicologo")); //idPersona == idPsicologo
             psicologo.setIdUsuario(cst.getInt("_id_usuario"));
             psicologo.setActivo(1);
             psicologo.setActivoPsicologo(1);
-            
+            */
             resultado = cst.getInt("_id_psicologo");
             cst.close();
             con.close();       

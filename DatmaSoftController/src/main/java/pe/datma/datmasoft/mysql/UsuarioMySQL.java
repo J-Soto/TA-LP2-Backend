@@ -89,12 +89,12 @@ public class UsuarioMySQL implements UsuarioDAO{
             rs = cs.executeQuery();
             if(!rs.next()){
                 return usuario;
-            }
+            }/*
             String hash = rs.getString("password");
             BCrypt.Result result = BCrypt.verifyer().verify(password.toCharArray(), hash);
             if (!result.verified) {
                 return usuario;
-            }
+            }*/
             usuario = new Usuario();
             usuario.setIdUsuario(rs.getInt("idusuario"));
             usuario.setTipo(rs.getInt("tipo"));
