@@ -75,6 +75,17 @@ public class CursoWS {
         return cursos;
     }
     
+    @WebMethod(operationName = "listarCursosDisponibles")
+    public ArrayList<Curso> listarCursosDisponibles() {
+        ArrayList<Curso> cursos = new ArrayList<>();
+        try {
+            cursos = daoCurso.listarCursosDisponibles();
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return cursos;
+    }
+    
     @WebMethod(operationName = "listarCursosPorNombre")
     public ArrayList<Curso> listarCursosPorNombre(@WebParam(name="nombreCurso") String nombreCurso){
         ArrayList<Curso> cursos = new ArrayList<>();

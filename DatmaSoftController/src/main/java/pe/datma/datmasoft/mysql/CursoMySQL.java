@@ -499,6 +499,41 @@ public class CursoMySQL implements CursoDAO {
         
         return grupos;
     }
+
+    @Override
+    public ArrayList<Curso> listarCursosDisponibles() {
+        ArrayList<Curso> cursos = new ArrayList<>();
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            String instruccion = "{CALL LISTAR_CURSOS_DISPONIBLES()}";
+            cs = con.prepareCall(instruccion);
+            
+            rs = cs.executeQuery();
+            
+            while(rs.next()){
+                Curso curso = new Curso();
+                curso.setIdCurso(rs.getInt("idcurso"));
+                curso.setDescripcion(rs.getString("nombre"));
+                curso.setFechaInicio(new java.util.Date(rs.getDate("fechainicial").getTime()));
+                curso.setFechaFin(new java.util.Date(rs.getDate("fechafinal").getTime()));
+                curso.setFechaInscripcion(new java.util.Date(rs.getDate("fechainscripcion").getTime()));
+                curso.setCantSemanas(rs.getInt("cantsemanas"));
+                curso.setEstado(rs.getInt("activo"));
+                cursos.add(curso);
+            }
+            
+            cs.close();
+            con.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+        }
+        
+        return cursos;
+    }
    
     
 }
