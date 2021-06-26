@@ -13,6 +13,7 @@ import javax.jws.WebParam;
 import pe.datma.datmasoft.dao.UsuarioDAO;
 import pe.datma.datmasoft.mysql.UsuarioMySQL;
 import pe.datma.datmasoft.rrhh.Usuario;
+import pe.datma.datmasoft.util.JavaMailUtil;
 
 /**
  *
@@ -62,5 +63,21 @@ public class UsuarioWS {
             System.out.println(ex.getMessage());
         }
         return usuario;
+    }
+    
+    @WebMethod(operationName = "enviarDatosUsuario")
+    public int enviarDatosUsuario(@WebParam(name = "correo") String correo,
+            @WebParam(name = "user") String user,
+            @WebParam(name = "password") String password) throws Exception {
+        int resultado=-1;
+        try {
+            System.setProperty("jaxp.debug", "1");
+            System.setProperty("javax.xml.soap.SAAJMetaFactory", "com.sun.xml.messaging.saaj.soap.SAAJMetaFactoryImpl");
+            JavaMailUtil.sendMail(correo,user,password);
+            resultado=1;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return resultado;
     }
 }
