@@ -35,7 +35,8 @@ public class UsuarioMySQL implements UsuarioDAO{
             cs = con.prepareCall("{CALL INSERTAR_USUARIO(?,?,?,?,?)}");
             cs.registerOutParameter("_id_usuario", java.sql.Types.INTEGER);
             cs.setString("_user",user.getUser());
-            cs.setString("_password", user.getPassword());
+            String hash = BCrypt.withDefaults().hashToString(12, user.getPassword().toCharArray());
+            cs.setString("_password", hash);
             cs.setInt("_tipo", user.getTipo());
             cs.setBytes("_foto", user.getFotoPerfil());
             cs.executeUpdate();
@@ -89,12 +90,12 @@ public class UsuarioMySQL implements UsuarioDAO{
             rs = cs.executeQuery();
             if(!rs.next()){
                 return usuario;
-            }/*
+            }
             String hash = rs.getString("password");
             BCrypt.Result result = BCrypt.verifyer().verify(password.toCharArray(), hash);
             if (!result.verified) {
                 return usuario;
-            }*/
+            }
             usuario = new Usuario();
             usuario.setIdUsuario(rs.getInt("idusuario"));
             usuario.setTipo(rs.getInt("tipo"));
