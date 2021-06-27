@@ -126,11 +126,12 @@ public class CursoMySQL implements CursoDAO {
             cs = con.prepareCall("{CALL MODIFICAR_CURSO(?,?,?,?,?,?)}");
             cs.setInt("_idcurso", curso.getIdCurso());
             cs.setString("_nombre", curso.getDescripcion());
-            cs.setDate("_fecha_inicial", new java.sql.Date(curso.getFechaInicio().getTime()));
-            cs.setDate("_fecha_final", new java.sql.Date(curso.getFechaFin().getTime()));
-            cs.setDate("_fecha_inscripcion", new java.sql.Date(curso.getFechaInscripcion().getTime()));
-            cs.setInt("_cant_semanas", curso.getCantSemanas());
+            cs.setDate("_fechainicial", new java.sql.Date(curso.getFechaInicio().getTime()));
+            cs.setDate("_fechafinal", new java.sql.Date(curso.getFechaFin().getTime()));
+            cs.setDate("_fechainscripcion", new java.sql.Date(curso.getFechaInscripcion().getTime()));
+            cs.setInt("_cantsemanas", curso.getCantSemanas());
             cs.executeUpdate();
+            resultado=1;
             
             cs.close();
             con.close();
