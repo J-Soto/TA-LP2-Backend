@@ -261,6 +261,13 @@ public class TutorMySQL implements TutorDAO {
         
         return tutores;
     }
-    
-   
+
+    @Override
+    public Tutor getTutorFromIdUsuario(int idUsuario) {
+        ArrayList<Tutor> arr = listarTodosTutores();
+        for (Tutor tutor: arr) {
+            if (tutor.getIdUsuario() == idUsuario) return tutor;
+        }
+        return null;
+    }
 }

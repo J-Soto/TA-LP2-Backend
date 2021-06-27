@@ -260,4 +260,15 @@ public class CursoWS {
         }
         return grupos;
     }
+    
+    @WebMethod(operationName = "listarCursosDeTutor")
+    public ArrayList<Curso> listarCursosDeTutor(int idTutor) {
+        ArrayList<Curso> cursos = null;
+        try {
+            cursos = daoCurso.listarCursosDeTutor(idTutor);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return cursos;
+    }
 }

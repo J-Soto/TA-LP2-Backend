@@ -141,4 +141,14 @@ public class TutorWS {
         return tutores;
     }
     
+    @WebMethod(operationName = "getTutorFromIdUsuario")
+    public Tutor getTutorFromIdUsuario(int idUsuario){
+        Tutor tutor = null;
+        try {
+            tutor = daoTutor.getTutorFromIdUsuario(idUsuario);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return tutor;
+    }
 }
