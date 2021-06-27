@@ -31,7 +31,7 @@ public class CursoWS {
     
     
     @WebMethod(operationName = "insertarCurso")
-    public int insertarCurso(Curso curso){
+    public int insertarCurso(@WebParam(name="curso") Curso curso){
         int resultado = 0;
         try {
             resultado = daoCurso.insertarCurso(curso);
@@ -41,9 +41,20 @@ public class CursoWS {
         return resultado;
     }
     
+    @WebMethod(operationName = "eliminarPsicologoCurso")
+    public int eliminarPsicologoCurso(@WebParam(name="idPsi") int idPsi,
+            @WebParam(name="idCurso") int idCurso){
+        int resultado = 0;
+        try {
+            resultado = daoCurso.eliminarPsicologoCurso(idPsi, idCurso);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
+    }
     
     @WebMethod(operationName = "modificarCurso")
-    public int modificarCurso(Curso curso){
+    public int modificarCurso(@WebParam(name="curso") Curso curso){
         int resultado = 0;
         try {
             resultado = daoCurso.modificarCurso(curso);

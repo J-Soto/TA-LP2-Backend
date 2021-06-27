@@ -35,6 +35,7 @@ public interface CursoDAO {
     //psicologo_curso
     ArrayList<Curso> listarCursosPsicologo(int idPsicologo);
     int insertarPsicologoCurso(int idPsicologo, int idCurso);
+    int eliminarPsicologoCurso(int idPsicologo, int idCurso);
     ArrayList<Grupo> listarCursosGrupoPsicologo(int idPsicologo, int idCurso);
     
 }

@@ -534,6 +534,28 @@ public class CursoMySQL implements CursoDAO {
         
         return cursos;
     }
+
+    @Override
+    public int eliminarPsicologoCurso(int idPsicologo, int idCurso) {
+        int resultado = 0;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            cs = con.prepareCall("{CALL ELIMINAR_PSICOLOGO_CURSO(?,?)}");
+            cs.setInt("_id_psicologo",idPsicologo);
+            cs.setInt("_id_curso",idCurso);
+            cs.executeUpdate();
+            
+            resultado = 1;
+            cs.close();
+            con.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+        }
+        return resultado;
+    }
    
     
 }
