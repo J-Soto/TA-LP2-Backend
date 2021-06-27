@@ -48,7 +48,7 @@ public class MaterialMySQL implements MaterialDAO{
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
-            cs = con.prepareCall("{CALL LISTAR_MATERIAL_DOCUMENTO(?,?,?,?,?)}");
+            cs = con.prepareCall("{CALL INSERTAR_MATERIAL_DOCUMENTO(?,?,?,?,?)}");
             cs.registerOutParameter("_id_material", java.sql.Types.INTEGER);
             cs.setInt("_fidactividad", documento.getActividad().getIdActividad());
             cs.setInt("_tipoarchivo", documento.getTipoMaterial());
