@@ -135,6 +135,26 @@ public class SemanaMySQL implements SemanaDAO {
         return actividades;
     }
 
+    @Override
+    public int eliminarSemana(int idSemana) {
+        int resultado = 0;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            cst = con.prepareCall("{CALL ELIMINAR_SEMANA(?)}");
+            cst.setInt("_id_semana", idSemana);       
+            cst.executeUpdate();
+            
+            cst.close();
+            con.close();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+        }
+        return resultado; 
+    }
+
     
     
 }

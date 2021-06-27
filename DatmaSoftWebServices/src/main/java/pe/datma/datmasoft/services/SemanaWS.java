@@ -41,6 +41,17 @@ public class SemanaWS {
         return resultado;
     }
     
+    @WebMethod(operationName = "eliminarSemana")
+    public int eliminarSemana(@WebParam(name = "idSemana") int idSemana){
+        int resultado = 0;
+        try {
+            resultado = daoSemana.eliminarSemana(idSemana);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
+    }
+    
     @WebMethod(operationName = "modificarSemana")
     public int modificarSemana(@WebParam(name = "semana") Semana semana){
         int resultado = 0;
