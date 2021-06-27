@@ -42,8 +42,8 @@ public class TutorMySQL implements TutorDAO {
             cst.setString("_celular", tutor.getCelular());
             cst.setString("_correo", tutor.getCorreo());
             cst.setString("_user", tutor.getUser());
-            //String hash = BCrypt.withDefaults().hashToString(12, tutor.getPassword().toCharArray());
-            cst.setString("_password", tutor.getPassword());
+            String hash = BCrypt.withDefaults().hashToString(12, tutor.getPassword().toCharArray());
+            cst.setString("_password", hash);
             cst.setBytes("_foto", tutor.getFotoPerfil());
             cst.setInt("_gestante",tutor.getGestante() );
             cst.setInt("_preferenciaDias",tutor.getDia() );
@@ -96,8 +96,8 @@ public class TutorMySQL implements TutorDAO {
             cst.setString("_celular", tutor.getCelular());
             cst.setString("_correo", tutor.getCorreo());
             cst.setString("_user", tutor.getUser());
-            //String hash = BCrypt.withDefaults().hashToString(12, tutor.getPassword().toCharArray());
-            cst.setString("_password", tutor.getPassword());
+            String hash = BCrypt.withDefaults().hashToString(12, tutor.getPassword().toCharArray());
+            cst.setString("_password", hash);
             cst.setBytes("_foto", tutor.getFotoPerfil());
             cst.setInt("_gestante",tutor.getGestante() );
             cst.setInt("_preferenciaDias",tutor.getDia() );
