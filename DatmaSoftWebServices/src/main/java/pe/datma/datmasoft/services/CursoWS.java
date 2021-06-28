@@ -87,10 +87,10 @@ public class CursoWS {
     }
     
     @WebMethod(operationName = "listarCursosDisponibles")
-    public ArrayList<Curso> listarCursosDisponibles() {
-        ArrayList<Curso> cursos = new ArrayList<>();
+    public ArrayList<Curso> listarCursosDisponibles(@WebParam(name="idTutor") int idTutor) {
+        ArrayList<Curso> cursos = null;
         try {
-            cursos = daoCurso.listarCursosDisponibles();
+            cursos = daoCurso.listarCursosDisponibles(idTutor);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }

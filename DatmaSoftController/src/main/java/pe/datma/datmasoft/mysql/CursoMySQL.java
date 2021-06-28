@@ -502,15 +502,15 @@ public class CursoMySQL implements CursoDAO {
     }
 
     @Override
-    public ArrayList<Curso> listarCursosDisponibles() {
+    public ArrayList<Curso> listarCursosDisponibles(int idTutor) {
         ArrayList<Curso> cursos = new ArrayList<>();
         
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
-            String instruccion = "{CALL LISTAR_CURSOS_DISPONIBLES()}";
+            String instruccion = "{CALL LISTAR_CURSOS_DISPONIBLES(?)}";
             cs = con.prepareCall(instruccion);
-            
+            cs.setInt("_idtutor", idTutor);
             rs = cs.executeQuery();
             
             while(rs.next()){

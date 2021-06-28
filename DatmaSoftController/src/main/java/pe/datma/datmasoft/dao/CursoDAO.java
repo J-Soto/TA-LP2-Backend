@@ -15,7 +15,7 @@ public interface CursoDAO {
     int modificarCurso(Curso curso);
     int eliminarCurso(int idCurso);
     ArrayList<Curso> listarCursos();
-    ArrayList<Curso> listarCursosDisponibles();
+    ArrayList<Curso> listarCursosDisponibles(int idTutor);
     ArrayList<Curso> listarCursosPorNombre(String nombreCurso);
     ArrayList<Grupo> listarGruposPorIdCurso(int idCurso);
     ArrayList<Tema> listarTemasPorIdCurso(int idCurso);
