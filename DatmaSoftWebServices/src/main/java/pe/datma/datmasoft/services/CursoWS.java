@@ -41,6 +41,17 @@ public class CursoWS {
         return resultado;
     }
     
+    @WebMethod(operationName = "insertarTutorCurso")
+    public int insertarTutorCurso(@WebParam(name="idTutor") int idTutor, @WebParam(name="idCurso") int idCurso){
+        int resultado = 0;
+        try {
+            resultado = daoCurso.insertarTutorCurso(idTutor, idCurso);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
+    }
+    
     @WebMethod(operationName = "eliminarPsicologoCurso")
     public int eliminarPsicologoCurso(@WebParam(name="idPsi") int idPsi,
             @WebParam(name="idCurso") int idCurso){

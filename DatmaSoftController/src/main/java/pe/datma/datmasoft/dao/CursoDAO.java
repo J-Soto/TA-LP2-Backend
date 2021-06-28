@@ -40,4 +40,5 @@ public interface CursoDAO {
     
     // curso_tutor
     ArrayList<Curso> listarCursosDeTutor(int idTutor);
+    int insertarTutorCurso(int idTutor, int idCurso);
 }

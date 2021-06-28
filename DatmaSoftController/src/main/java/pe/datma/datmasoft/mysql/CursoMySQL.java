@@ -586,6 +586,28 @@ public class CursoMySQL implements CursoDAO {
         }
         return cursos;
     }
+
+    @Override
+    public int insertarTutorCurso(int idTutor, int idCurso) {
+        int resultado = 0;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
+            cs = con.prepareCall("{CALL INSERTAR_TUTOR_CURSO(?,?,?)}");
+            cs.registerOutParameter("_id_tutor_curso", java.sql.Types.INTEGER);
+            cs.setInt("_fid_tutor", idTutor);
+            cs.setInt("_fid_curso",idCurso);
+            cs.executeUpdate();
+            resultado=cs.getInt("_id_tutor_curso");
+            cs.close();
+            con.close();
+        }catch(ClassNotFoundException | SQLException ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(SQLException ex){System.out.println(ex.getMessage());}
+        }
+        return resultado;
+    }
    
     
 }
