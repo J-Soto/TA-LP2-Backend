@@ -23,4 +23,5 @@ public interface GrupoDAO {
     int eliminarGrupoPsicologo(int idPsicologo, int idGrupo);
     ArrayList<Psicologo> listarPsicologosPorIdGrupo(int idGrupo);
     
+    int getGrupoNumInscritos(int idGrupo);
 }

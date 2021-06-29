@@ -357,6 +357,31 @@ public class GrupoMySQL implements  GrupoDAO{
          
         return psicologos;
     }
+
+    @Override
+    public int getGrupoNumInscritos(int idGrupo) {
+        int resultado = 0;
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String instruccion = "{call GET_GRUPO_NUM_INSCRITOS(?,?)}";
+            cst = con.prepareCall(instruccion);
+            
+            cst.registerOutParameter("_numinscritos", java.sql.Types.INTEGER); 
+            cst.setInt("_fidgrupo", idGrupo);
+            cst.executeUpdate();
+            
+            resultado = cst.getInt("_numinscritos");
+            cst.close();
+            con.close();       
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{ con.close(); }catch(Exception ex){}
+        }
+        return resultado;
+    }
    
     
 }

@@ -31,6 +31,18 @@ public class GrupoWS {
         return resultado;
     }
     
+    @WebMethod(operationName = "getGrupoNumInscritos")
+    public int getGrupoNumInscritos(@WebParam(name = "idGrupo") int idGrupo){
+        int resultado = -1;
+        try {
+            resultado = daoGrupo.getGrupoNumInscritos(idGrupo);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        
+        return resultado;
+    }
+    
     
     @WebMethod(operationName = "modificarGrupo")
     public int modificarGrupo(@WebParam(name = "grupo") Grupo grupo){
