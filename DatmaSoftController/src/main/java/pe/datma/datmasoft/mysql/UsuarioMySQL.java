@@ -121,7 +121,8 @@ public class UsuarioMySQL implements UsuarioDAO{
             cs = con.prepareCall(instruccion);
             cs.setInt("_id_usuario", user.getIdUsuario());
             cs.setString("_user", user.getUser());
-            cs.setString("_password", user.getPassword());
+            String hash = BCrypt.withDefaults().hashToString(12, user.getPassword().toCharArray());
+            cs.setString("_password", hash);
             cs.setBytes("_foto", user.getFotoPerfil());
             
             cs.executeUpdate();
