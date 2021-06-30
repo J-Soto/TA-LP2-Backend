@@ -6,8 +6,8 @@ import pe.datma.datmasoft.dao.ActividadDAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import pe.datma.datmasoft.modulos.Actividad;
 import pe.datma.datmasoft.modulos.Asistencia;
@@ -47,7 +47,39 @@ public class ActividadMySQL implements ActividadDAO{
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }finally{
-            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());};
+            try{con.close();}catch(Exception ex){System.out.println(ex.getMessage());}
+        }
+        return actividades;
+    }
+    
+    @Override
+    public ArrayList<Actividad> listarActividadesIdSemana(int idSemana) {
+        ArrayList<Actividad> actividades = new ArrayList<>();
+           
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String instruccion = "{call LISTAR_ACTIVIDADES_POR_ID_SEMANA(?)}";
+            cs = con.prepareCall(instruccion);
+            cs.setInt("_idsemana", idSemana);
+            rs = cs.executeQuery();
+            
+            while(rs.next()){
+                Actividad actividad = new Actividad();
+                actividad.setNombre(rs.getString("nombre"));
+                actividad.setFecha(rs.getTimestamp("fechaInicial"));
+                actividad.setHoraInicioStr(rs.getString("horainicio"));
+                actividad.setHoraFinStr(rs.getString("horafin"));
+                actividad.setIdSemana(rs.getInt("fidsemana"));
+                actividades.add(actividad);
+            }
+            
+            rs.close();
+            cs.close();
+        } catch (ClassNotFoundException | SQLException e) {
+            System.out.println(e.getMessage());
+        }finally{
+            try{con.close();}catch(SQLException ex){System.out.println(ex.getMessage());}
         }
         return actividades;
     }
@@ -220,8 +252,5 @@ public class ActividadMySQL implements ActividadDAO{
         }
         
         return videos;
-    }
-   
-    
-    
+    }    
 }

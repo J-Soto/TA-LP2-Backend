@@ -9,6 +9,7 @@ import pe.datma.datmasoft.modulos.Video;
 
 public interface ActividadDAO {
     ArrayList<Actividad> listarActividad();
+    ArrayList<Actividad> listarActividadesIdSemana(int idSemana);
     int eliminarActividad(int idActividad);
     int insertarActividad(Actividad actividad,int idsemana);
     int modificarActividad(Actividad actividad);

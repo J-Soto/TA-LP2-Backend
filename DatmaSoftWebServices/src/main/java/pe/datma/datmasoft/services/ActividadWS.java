@@ -43,6 +43,17 @@ public class ActividadWS {
         return actividades;
     }
     
+    @WebMethod(operationName = "listarActividadesIdSemana")
+    public ArrayList<Actividad> listarActividadesIdSemana(@WebParam(name = "idSemana") int idSemana) {
+        ArrayList<Actividad> actividades = null;
+        try {
+            actividades=daoActividad.listarActividadesIdSemana(idSemana); 
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return actividades;
+    }
+    
     @WebMethod(operationName = "eliminarActividad")
     public int eliminarActividad(@WebParam(name = "idActividad") int idActividad) {
         int resultado=0;
