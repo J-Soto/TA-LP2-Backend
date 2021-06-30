@@ -80,4 +80,15 @@ public class UsuarioWS {
         }
         return resultado;
     }
+    
+    @WebMethod(operationName = "modificarUsuario")
+    public int modificarUsuario(@WebParam(name = "usuario") Usuario user){
+        int resultado=0;
+        try {
+            resultado=daoUsuario.modificarUsuario(user);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return resultado;
+    }
 }

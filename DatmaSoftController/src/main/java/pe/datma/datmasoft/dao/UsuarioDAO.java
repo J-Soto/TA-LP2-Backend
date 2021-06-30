@@ -16,4 +16,5 @@ public interface UsuarioDAO {
     int insertarUsuario(Usuario user);
     ArrayList<Usuario> listarUsuarios();
     Usuario verificarUsuario(String user,String password);
+    int modificarUsuario(Usuario user);
 }

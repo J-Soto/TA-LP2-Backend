@@ -109,5 +109,33 @@ public class UsuarioMySQL implements UsuarioDAO{
         }
         return usuario;
     }
+
+    @Override
+    public int modificarUsuario(Usuario user) {
+        int resultado = 0;
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(DBManager.url,DBManager.user,DBManager.password);
+            String instruccion = "{call MODIFICAR_USUARIO(?,?,?,?)}";
+            cs = con.prepareCall(instruccion);
+            cs.setInt("_id_usuario", user.getIdUsuario());
+            cs.setString("_user", user.getUser());
+            cs.setString("_password", user.getPassword());
+            cs.setBytes("_foto", user.getFotoPerfil());
+            
+            cs.executeUpdate();
+           
+            cs.close();
+            con.close();       
+            resultado = 1;
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{ con.close(); }catch(Exception ex){}
+        }
+        
+        return resultado;
+    }
     
 }
