@@ -54,7 +54,8 @@ public class ReportePreferenciasTutor extends HttpServlet {
             String rutaSubreporte5 = ReportePreferenciasTutor.class.getResource(
                     "/pe/datma/datmasoft/reportes/ReporteRedes.jasper").getPath().replace("%20", " ");
             //Referencia a la imagen
-            String rutaImagen = ReportePreferenciasTutor.class.getResource("/pe/datma/datmasoft/img/DATMA_logo.png").getPath();
+            String rutaImagen = ReportePreferenciasTutor.class.getResource(
+                    "/pe/datma/datmasoft/img/DATMA_logo.png").getPath().replace("%20", " ");
             Image logo = (new ImageIcon(rutaImagen)).getImage();
             //Arreglo de parametros que ingresan a la generación del reporte
             HashMap hm = new HashMap();
