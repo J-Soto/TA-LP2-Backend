@@ -4,9 +4,17 @@
         <servlet-name>ReportePsicologos</servlet-name>
         <servlet-class>pe.datma.datmasoft.servlets.ReportePsicologos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ReportePreferenciasTutor</servlet-name>
+        <servlet-class>pe.datma.datmasoft.servlets.ReportePreferenciasTutor</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ReportePsicologos</servlet-name>
         <url-pattern>/ReportePsicologos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReportePreferenciasTutor</servlet-name>
+        <url-pattern>/ReportePreferenciasTutor</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

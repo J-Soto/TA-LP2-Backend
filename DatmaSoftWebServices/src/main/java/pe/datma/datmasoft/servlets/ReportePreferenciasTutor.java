@@ -3,15 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pe.datma.datmasoft.services;
+package pe.datma.datmasoft.servlets;
 
 import java.awt.Image;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.HashMap;
-import javax.jws.WebService;
-import javax.jws.WebMethod;
-import javax.jws.WebParam;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.swing.ImageIcon;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -19,52 +22,24 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import pe.datma.datmasoft.config.DBManager;
-import pe.datma.datmasoft.servlets.ReportePreferenciasTutor;
-import pe.datma.datmasoft.servlets.ReportePsicologos;
 
 /**
  *
  * @author JLHP
  */
-@WebService(serviceName = "ReporteWS")
-public class ReporteWS {
+public class ReportePreferenciasTutor extends HttpServlet {
 
     /**
-     * This is a sample web service operation
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
      */
-    @WebMethod(operationName = "reportePsicologos")
-    public byte[] reportePsicologos() {
-        byte[] arreglo=null;
-        try {
-            JasperReport reporte=(JasperReport)
-                    JRLoader.loadObject(ReportePsicologos.class.getResource(
-                    "/pe/datma/datmasoft/reportes/ReportePsicologos.jasper"));
-            //Cargar imagen
-            String rutaImagen=ReportePsicologos.class.getResource(
-                    "/pe/datma/datmasoft/img/DATMA_logo.png").getPath();
-            rutaImagen=rutaImagen.replace("%20", " ");
-            Image logo=(new ImageIcon(rutaImagen)).getImage();
-            //Arreglo de Parametros
-            HashMap hm=new HashMap();
-            hm.put("Logo_DATMA", logo);
-            //Objeto conexion
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=DriverManager.getConnection(DBManager.url, DBManager.user, DBManager.password);
-            //Poblar Reporte
-            JasperPrint jp=JasperFillManager.fillReport(reporte,hm,con);
-            //Cerrar Conexion
-            con.close();
-            //Mostrarlo via web
-            arreglo=JasperExportManager.exportReportToPdf(jp);
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-        return arreglo;
-    }
-    
-    @WebMethod(operationName = "reportePreferencias")
-    public byte[] reportePreferencias() {
-        byte[] arreglo=null;
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         try {
             JasperReport reporte = (JasperReport) JRLoader.loadObject(ReportePreferenciasTutor.class.getResource(
                 "/pe/datma/datmasoft/reportes/ReportePreferenciasTutor.jasper"));
@@ -79,8 +54,7 @@ public class ReporteWS {
             String rutaSubreporte5 = ReportePreferenciasTutor.class.getResource(
                     "/pe/datma/datmasoft/reportes/ReporteRedes.jasper").getPath().replace("%20", " ");
             //Referencia a la imagen
-            String rutaImagen = ReportePreferenciasTutor.class.getResource(
-                    "/pe/datma/datmasoft/img/DATMA_logo.png").getPath().replace("%20", " ");
+            String rutaImagen = ReportePreferenciasTutor.class.getResource("/pe/datma/datmasoft/img/DATMA_logo.png").getPath();
             Image logo = (new ImageIcon(rutaImagen)).getImage();
             //Arreglo de parametros que ingresan a la generación del reporte
             HashMap hm = new HashMap();
@@ -98,10 +72,49 @@ public class ReporteWS {
             //Cerramos la conexion
             con.close();
             //Mostrarlo via web
-            arreglo=JasperExportManager.exportReportToPdf(jp);
+            JasperExportManager.exportReportToPdfStream(jp, response.getOutputStream());
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        return arreglo;
     }
+
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    /**
+     * Handles the HTTP <code>GET</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
+    /**
+     * Handles the HTTP <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
+    /**
+     * Returns a short description of the servlet.
+     *
+     * @return a String containing servlet description
+     */
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
+
 }
