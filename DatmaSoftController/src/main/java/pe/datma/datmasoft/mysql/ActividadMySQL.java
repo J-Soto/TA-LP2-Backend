@@ -66,6 +66,7 @@ public class ActividadMySQL implements ActividadDAO{
             
             while(rs.next()){
                 Actividad actividad = new Actividad();
+                actividad.setIdActividad(rs.getInt("idactividad"));
                 actividad.setNombre(rs.getString("nombre"));
                 actividad.setFecha(rs.getTimestamp("fechaInicial"));
                 actividad.setHoraInicioStr(rs.getString("horainicio"));
