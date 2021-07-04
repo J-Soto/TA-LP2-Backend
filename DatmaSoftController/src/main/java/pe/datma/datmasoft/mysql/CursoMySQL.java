@@ -153,6 +153,7 @@ public class CursoMySQL implements CursoDAO {
             cs = con.prepareCall("{CALL ELIMINAR_CURSO(?)}");
             cs.setInt("_idcurso", idCurso);       
             cs.executeUpdate();
+            resultado=1;
             
             cs.close();
             con.close();

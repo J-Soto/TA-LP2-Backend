@@ -68,12 +68,15 @@ public class UsuarioWS {
     @WebMethod(operationName = "enviarDatosUsuario")
     public int enviarDatosUsuario(@WebParam(name = "correo") String correo,
             @WebParam(name = "user") String user,
-            @WebParam(name = "password") String password) throws Exception {
+            @WebParam(name = "password") String password,
+            @WebParam(name = "nombreCompleto") String nombreCompleto,
+            @WebParam(name = "mensaje") String mensaje,
+            @WebParam(name = "motivo") int motivo) throws Exception {
         int resultado=-1;
         try {
             System.setProperty("jaxp.debug", "1");
             System.setProperty("javax.xml.soap.SAAJMetaFactory", "com.sun.xml.messaging.saaj.soap.SAAJMetaFactoryImpl");
-            JavaMailUtil.sendMail(correo,user,password);
+            JavaMailUtil.sendMail(correo,user,password,nombreCompleto,mensaje,motivo);
             resultado=1;
         } catch (Exception e) {
             System.out.println(e.getMessage());

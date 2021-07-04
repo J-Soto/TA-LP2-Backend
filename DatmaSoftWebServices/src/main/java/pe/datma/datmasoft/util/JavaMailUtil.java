@@ -21,7 +21,8 @@ import javax.mail.internet.MimeMessage;
  * @author JLHP
  */
 public class JavaMailUtil {
-    public static void sendMail(String recipient,String recUser,String recPassword) throws Exception{
+    public static void sendMail(String recipient,String recUser,String recPassword,
+            String recNombre,String recMensaje,int motivo) throws Exception{
         Properties properties = new Properties();  
         properties.put("mail.smtp.auth", "true");  
         properties.put("mail.smtp.starttls.enable", "true");  
@@ -40,25 +41,38 @@ public class JavaMailUtil {
         });
         
         Message message=prepareMessage(session,myAccountEmail,recipient,
-                recUser,recPassword);
+                recUser,recPassword,recNombre,recMensaje,motivo);
         Transport.send(message);
         System.out.println("Mensaje enviado con exito\n");
     }
 
     private static Message prepareMessage(Session session,String myAccountEmail,
-            String recipient,String recUser,String recPassword) {
+            String recipient,String recUser,String recPassword,
+            String recNombre,String recMensaje,int motivo) {
         try {
             Message message=new MimeMessage(session);
             message.setFrom(new InternetAddress(myAccountEmail));
             message.setRecipient(Message.RecipientType.TO, 
                     new InternetAddress(recipient));
-            message.setSubject("Confirmacion DATMA");
-            message.setText("Felicidades, ha pasado el último filtro y ha"+
+            //motivo: 0->nuevo usuario,1->actualizar usuario,2->eliminar curso
+            if(motivo==0){
+                message.setSubject("Confirmación DATMA");
+                message.setText("Estimado(a) "+recNombre+", ha pasado el último filtro y ha"+
                     " sido aceptado(a) en el programa. A continuación se le"+
                     " daran los datos que le permitiran ingresar a su cuenta."+
                     "\n\nUsuario: "+recUser+"\nContraseña: "+recPassword+"\n\n"+
                     "Se aconseja cambiar su usuario y contraseña lo antes posible"+
                     " por razones de seguridad.");
+            }else if(motivo==1){
+                message.setSubject("Credenciales DATMA");
+                message.setText("Estimado(a) "+recNombre+", ha actualizado"+
+                    " satisfactoriamente sus datos.\n\n"+
+                    "Usuario: "+recUser+"\nContraseña: "+recPassword);
+            }else{
+                message.setSubject("Información DATMA");
+                message.setText("Estimado(a) "+recNombre+", se informa:\n "+recMensaje);
+            }
+            
             return message;
         } catch (Exception ex) {
             Logger.getLogger(JavaMailUtil.class.getName()).log(Level.SEVERE, null, ex);
